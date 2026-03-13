@@ -146,66 +146,31 @@
   "telegram": {
     "accounts": {
       "default": {
-        "allowFrom": [
-          "8294029208"
-        ],
-        "dmPolicy": "allowlist",
-        "groupAllowFrom": [
-          "8294029208"
-        ],
-        "groupPolicy": "allowlist",
         "streaming": "partial"
       },
       "finance": {
         "botToken": "${TELEGRAM_FINANCE_BOT_TOKEN}",
-        "allowFrom": [
-          "8294029208"
-        ],
-        "dmPolicy": "allowlist",
-        "groupAllowFrom": [
-          "8294029208"
-        ],
-        "groupPolicy": "allowlist",
         "groups": {
           "*": {
             "requireMention": true
           }
-        },
-        "streaming": "off"
+        }
       },
       "xiaodong": {
         "botToken": "${TELEGRAM_XIAODONG_BOT_TOKEN}",
-        "allowFrom": [
-          "8294029208"
-        ],
-        "dmPolicy": "allowlist",
-        "groupAllowFrom": [
-          "8294029208"
-        ],
-        "groupPolicy": "allowlist",
         "groups": {
           "*": {
             "requireMention": true
           }
-        },
-        "streaming": "off"
+        }
       },
       "xiaoguan": {
         "botToken": "${TELEGRAM_XIAOGUAN_BOT_TOKEN}",
-        "allowFrom": [
-          "8294029208"
-        ],
-        "dmPolicy": "allowlist",
-        "groupAllowFrom": [
-          "8294029208"
-        ],
-        "groupPolicy": "allowlist",
         "groups": {
           "*": {
             "requireMention": true
           }
-        },
-        "streaming": "off"
+        }
       }
     },
     "allowFrom": [
@@ -214,6 +179,9 @@
     "blockStreaming": true,
     "dmPolicy": "allowlist",
     "enabled": true,
+    "groupAllowFrom": [
+      "8294029208"
+    ],
     "groupPolicy": "allowlist",
     "streaming": "off"
   }

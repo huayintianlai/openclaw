@@ -61,7 +61,7 @@
     }
   ],
   "browser": {
-    "defaultProfile": "openclaw",
+    "defaultProfile": "chrome",
     "enabled": true,
     "profiles": {
       "openclaw": {

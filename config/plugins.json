@@ -1,0 +1,109 @@
+{
+  "allow": [
+    "openclaw-mem0",
+    "openclaw-lark",
+    "tavily-search-plugin",
+    "knowledge-search-plugin",
+    "telegram"
+  ],
+  "entries": {
+    "feishu": {
+      "enabled": false
+    },
+    "knowledge-search-plugin": {
+      "config": {
+        "apiToken": "${KNOWLEDGE_API_TOKEN}",
+        "apiUrl": "http://127.0.0.1:8002"
+      },
+      "enabled": true
+    },
+    "memory-core": {
+      "enabled": false
+    },
+    "memory-lancedb": {
+      "enabled": false
+    },
+    "openclaw-lark": {
+      "enabled": true
+    },
+    "openclaw-mem0": {
+      "config": {
+        "autoCapture": true,
+        "autoRecall": true,
+        "mode": "open-source",
+        "oss": {
+          "embedder": {
+            "config": {
+              "apiKey": "${OPENAI_API_KEY}",
+              "model": "${MEM0_EMBEDDER_MODEL}"
+            },
+            "provider": "openai"
+          },
+          "historyDbPath": "${MEM0_HISTORY_DB_PATH}",
+          "historyStore": {
+            "config": {
+              "historyDbPath": "${MEM0_HISTORY_DB_PATH}"
+            },
+            "provider": "sqlite"
+          },
+          "llm": {
+            "config": {
+              "apiKey": "${OPENAI_API_KEY}",
+              "custom_prompt": "你是记忆提取专家。从对话中提取值得长期保存的信息，并为每条记忆添加类型标签。\n\n**记忆类型：**\n- [偏好] 用户的喜好和习惯\n- [决策] 明确的决策和原则\n- [事实] 重要的事实信息\n- [目标] 项目背景和目标\n- [反馈] 用户的反馈和评价\n- [上下文] 背景信息\n- [关系] 人际关系信息\n\n**必须存储：**\n- 用户偏好和习惯\n- 明确的决策和原则\n- 重要的事实信息\n- 项目背景和目标\n\n**必须忽略：**\n- 闲聊和寒暄\n- 临时性问题（\"今天天气怎么样\"）\n- 推测性陈述（\"我觉得可能...\"）\n- 不确定的信息（\"也许\"、\"大概\"）\n\n**输出格式：**\n[类型] 记忆内容\n\n示例：\n[偏好] 用户喜欢用 Notion 做笔记\n[决策] 团队决定使用 TypeScript 重构项目\n[事实] 公司总部在上海\n[目标] 本月目标是完成记忆系统优化\n\n如果没有值得保存的信息，返回空。",
+              "model": "${MEM0_LLM_MODEL}"
+            },
+            "provider": "openai"
+          },
+          "vectorStore": {
+            "config": {
+              "apiKey": "${QDRANT_API_KEY}",
+              "checkCompatibility": false,
+              "collectionName": "${MEM0_QDRANT_COLLECTION}",
+              "dimension": 1536,
+              "embeddingModelDims": 1536,
+              "url": "${QDRANT_URL}"
+            },
+            "provider": "qdrant"
+          }
+        },
+        "searchThreshold": 0.65,
+        "topK": 5,
+        "userId": "${MEM0_BASE_USER_ID}"
+      },
+      "enabled": true
+    }
+  },
+  "installs": {
+    "knowledge-search-plugin": {
+      "installPath": "/Users/xiaojiujiu2/.openclaw/extensions/knowledge-search-plugin",
+      "installedAt": "2026-03-12T14:50:00.000Z",
+      "source": "path",
+      "sourcePath": "/Users/xiaojiujiu2/.openclaw/extensions/knowledge-search-plugin",
+      "version": "1.0.0"
+    },
+    "openclaw-lark": {
+      "installPath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark",
+      "installedAt": "2026-03-13T10:45:00.000Z",
+      "source": "path",
+      "sourcePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark",
+      "version": "2026.3.12"
+    },
+    "openclaw-mem0": {
+      "installPath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-mem0",
+      "installedAt": "2026-03-12T00:00:00.000Z",
+      "source": "path",
+      "sourcePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-mem0",
+      "version": "0.3.0"
+    },
+    "tavily-search-plugin": {
+      "installPath": "/Users/xiaojiujiu2/.openclaw/extensions/tavily-search-plugin",
+      "installedAt": "2026-03-12T18:30:00.000Z",
+      "source": "path",
+      "sourcePath": "/Users/xiaojiujiu2/.openclaw/extensions/tavily-search-plugin",
+      "version": "1.0.0"
+    }
+  },
+  "slots": {
+    "memory": "openclaw-mem0"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "agents": {
+    "$include": "./config/agents.json"
+  },
+  "bindings": [
+    {
+      "agentId": "xiaodong",
+      "match": {
+        "accountId": "xiaodong",
+        "channel": "telegram"
+      }
+    },
+    {
+      "agentId": "xiaodong",
+      "match": {
+        "accountId": "xiaodong",
+        "channel": "feishu"
+      }
+    },
+    {
+      "agentId": "xiaoguan",
+      "match": {
+        "accountId": "xiaoguan",
+        "channel": "telegram"
+      }
+    },
+    {
+      "agentId": "xiaoguan",
+      "match": {
+        "accountId": "xiaoguan",
+        "channel": "feishu"
+      }
+    },
+    {
+      "agentId": "finance",
+      "match": {
+        "accountId": "finance",
+        "channel": "telegram"
+      }
+    },
+    {
+      "agentId": "finance",
+      "match": {
+        "accountId": "finance",
+        "channel": "feishu"
+      }
+    },
+    {
+      "agentId": "aduan",
+      "match": {
+        "accountId": "aduan",
+        "channel": "feishu"
+      }
+    },
+    {
+      "agentId": "echo",
+      "match": {
+        "accountId": "echo",
+        "channel": "feishu"
+      }
+    }
+  ],
+  "browser": {
+    "defaultProfile": "openclaw",
+    "enabled": true,
+    "profiles": {
+      "openclaw": {
+        "cdpPort": 18800,
+        "color": "#FF4500"
+      }
+    }
+  },
+  "channels": {
+    "$include": "./config/channels.json"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "ownerDisplay": "raw",
+    "restart": true
+  },
+  "env": {
+    "CUSTOM_API_KEY": "${CUSTOM_API_KEY}",
+    "YUNYI_API_KEY": "${YUNYI_API_KEY}",
+    "FEISHU_ADUAN_APP_ID": "${FEISHU_ADUAN_APP_ID}",
+    "FEISHU_ADUAN_APP_SECRET": "${FEISHU_ADUAN_APP_SECRET}",
+    "FEISHU_ECHO_APP_ID": "${FEISHU_ECHO_APP_ID}",
+    "FEISHU_ECHO_APP_SECRET": "${FEISHU_ECHO_APP_SECRET}",
+    "FEISHU_FINANCE_APP_ID": "${FEISHU_FINANCE_APP_ID}",
+    "FEISHU_FINANCE_APP_SECRET": "${FEISHU_FINANCE_APP_SECRET}",
+    "FEISHU_XIAODONG_APP_ID": "${FEISHU_XIAODONG_APP_ID}",
+    "FEISHU_XIAODONG_APP_SECRET": "${FEISHU_XIAODONG_APP_SECRET}",
+    "FEISHU_XIAOGUAN_APP_ID": "${FEISHU_XIAOGUAN_APP_ID}",
+    "FEISHU_XIAOGUAN_APP_SECRET": "${FEISHU_XIAOGUAN_APP_SECRET}",
+    "KIMI_API_KEY": "${KIMI_API_KEY}",
+    "MINIMAX_API_KEY": "${MINIMAX_API_KEY}",
+    "MOONSHOT_API_KEY": "${MOONSHOT_API_KEY}",
+    "OPENCLAW_GATEWAY_TOKEN": "${OPENCLAW_GATEWAY_TOKEN}",
+    "TELEGRAM_FINANCE_BOT_TOKEN": "${TELEGRAM_FINANCE_BOT_TOKEN}",
+    "TELEGRAM_XIAODONG_BOT_TOKEN": "${TELEGRAM_XIAODONG_BOT_TOKEN}",
+    "TELEGRAM_XIAOGUAN_BOT_TOKEN": "${TELEGRAM_XIAOGUAN_BOT_TOKEN}",
+    "shellEnv": {
+      "enabled": false
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "rateLimit": {
+        "exemptLoopback": true,
+        "lockoutMs": 300000,
+        "maxAttempts": 10,
+        "windowMs": 60000
+      },
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18801",
+        "http://127.0.0.1:18801",
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "http://192.168.10.90:18789",
+        "http://kenmini-m4.local:18789"
+      ],
+      "allowInsecureAuth": true,
+      "basePath": "/ui",
+      "enabled": true
+    },
+    "mode": "local",
+    "nodes": {
+      "browser": {
+        "mode": "auto",
+        "node": "mac-browser-node"
+      }
+    },
+    "port": 18789
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "meta": {
+    "lastTouchedAt": "2026-03-13T10:45:00.000Z",
+    "lastTouchedVersion": "2026.3.12"
+  },
+  "models": {
+    "$include": "./config/models.json"
+  },
+  "plugins": {
+    "$include": "./config/plugins.json"
+  },
+  "secrets": {
+    "defaults": {
+      "env": "default"
+    },
+    "providers": {
+      "default": {
+        "source": "env"
+      }
+    }
+  },
+  "session": {
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "30d",
+      "resetArchiveRetention": "30d"
+    }
+  },
+  "tools": {
+    "deny": [],
+    "elevated": {
+      "enabled": false
+    },
+    "fs": {
+      "workspaceOnly": true
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-02T11:18:50.516Z",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.2.26"
+  }
+}

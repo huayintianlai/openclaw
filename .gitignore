@@ -1,0 +1,5 @@
+*
+!.gitignore
+!openclaw.json
+!config/
+!config/*.json

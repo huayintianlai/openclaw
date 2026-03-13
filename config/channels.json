@@ -1,0 +1,220 @@
+{
+  "feishu": {
+    "accounts": {
+      "aduan": {
+        "allowFrom": [
+          "ou_bcbb8a1cb438a3839a33cb148b903a1a",
+          "ou_dc95eabe8982323faf7e9f3701e61e22",
+          "ou_87bb675cf1a555992cf71df25f860c63",
+          "1417145e",
+          "ou_1417145e"
+        ],
+        "appId": "${FEISHU_ADUAN_APP_ID}",
+        "appSecret": "${FEISHU_ADUAN_APP_SECRET}",
+        "botName": "ceo_aduan",
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true
+      },
+      "default": {
+        "allowFrom": [
+          "ou_dc95eabe8982323faf7e9f3701e61e22",
+          "ou_7e15e0ba20128ad3914123824f2fde3d",
+          "ou_87bb675cf1a555992cf71df25f860c63"
+        ],
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true
+      },
+      "echo": {
+        "allowFrom": [
+          "ou_dc95eabe8982323faf7e9f3701e61e22",
+          "ou_87bb675cf1a555992cf71df25f860c63",
+          "ou_deb896dc0dd4234e4c7b7339f69565e8"
+        ],
+        "appId": "${FEISHU_ECHO_APP_ID}",
+        "appSecret": "${FEISHU_ECHO_APP_SECRET}",
+        "botName": "艾可",
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true,
+        "streaming": false
+      },
+      "finance": {
+        "allowFrom": [
+          "ou_dc95eabe8982323faf7e9f3701e61e22",
+          "ou_7e15e0ba20128ad3914123824f2fde3d"
+        ],
+        "appId": "${FEISHU_FINANCE_APP_ID}",
+        "appSecret": "${FEISHU_FINANCE_APP_SECRET}",
+        "botName": "Finance Bot",
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true
+      },
+      "xiaodong": {
+        "allowFrom": [
+          "ou_dc95eabe8982323faf7e9f3701e61e22",
+          "ou_87bb675cf1a555992cf71df25f860c63"
+        ],
+        "appId": "${FEISHU_XIAODONG_APP_ID}",
+        "appSecret": "${FEISHU_XIAODONG_APP_SECRET}",
+        "botName": "小东",
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true
+      },
+      "xiaoguan": {
+        "allowFrom": [
+          "ou_dc95eabe8982323faf7e9f3701e61e22"
+        ],
+        "appId": "${FEISHU_XIAOGUAN_APP_ID}",
+        "appSecret": "${FEISHU_XIAOGUAN_APP_SECRET}",
+        "botName": "小冠",
+        "dmPolicy": "allowlist",
+        "enabled": true,
+        "groupAllowFrom": [
+          "oc_660c980239cd01d78c7dfe45d1a2d944"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "oc_660c980239cd01d78c7dfe45d1a2d944": {
+            "requireMention": true
+          }
+        },
+        "requireMention": true
+      }
+    },
+    "blockStreaming": false,
+    "defaultAccount": "xiaodong",
+    "enabled": true,
+    "replyMode": "streaming",
+    "streaming": true,
+    "tools": {
+      "doc": true,
+      "drive": true,
+      "perm": false,
+      "scopes": true,
+      "wiki": true
+    }
+  },
+  "telegram": {
+    "accounts": {
+      "default": {
+        "allowFrom": [
+          "8294029208"
+        ],
+        "dmPolicy": "allowlist",
+        "groupAllowFrom": [
+          "8294029208"
+        ],
+        "groupPolicy": "allowlist",
+        "streaming": "partial"
+      },
+      "finance": {
+        "botToken": "${TELEGRAM_FINANCE_BOT_TOKEN}",
+        "allowFrom": [
+          "8294029208"
+        ],
+        "dmPolicy": "allowlist",
+        "groupAllowFrom": [
+          "8294029208"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "*": {
+            "requireMention": true
+          }
+        },
+        "streaming": "off"
+      },
+      "xiaodong": {
+        "botToken": "${TELEGRAM_XIAODONG_BOT_TOKEN}",
+        "allowFrom": [
+          "8294029208"
+        ],
+        "dmPolicy": "allowlist",
+        "groupAllowFrom": [
+          "8294029208"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "*": {
+            "requireMention": true
+          }
+        },
+        "streaming": "off"
+      },
+      "xiaoguan": {
+        "botToken": "${TELEGRAM_XIAOGUAN_BOT_TOKEN}",
+        "allowFrom": [
+          "8294029208"
+        ],
+        "dmPolicy": "allowlist",
+        "groupAllowFrom": [
+          "8294029208"
+        ],
+        "groupPolicy": "allowlist",
+        "groups": {
+          "*": {
+            "requireMention": true
+          }
+        },
+        "streaming": "off"
+      }
+    },
+    "allowFrom": [
+      "8294029208"
+    ],
+    "blockStreaming": true,
+    "dmPolicy": "allowlist",
+    "enabled": true,
+    "groupPolicy": "allowlist",
+    "streaming": "off"
+  }
+}

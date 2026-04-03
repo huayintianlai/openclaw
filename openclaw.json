@@ -1,6 +1,621 @@
 {
   "agents": {
-    "$include": "./config/agents.json"
+    "defaults": {
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "1h"
+      },
+      "heartbeat": {
+        "directPolicy": "allow",
+        "every": "30m",
+        "target": "last"
+      },
+      "maxConcurrent": 4,
+      "model": {
+        "fallbacks": [
+          "custom/gpt-5.4",
+          "minimax/MiniMax-M2.5",
+          "moonshot/kimi-k2.5",
+          "deepseek/deepseek-chat"
+        ],
+        "primary": "custom/gpt-5.4"
+      },
+      "models": {
+        "custom/gpt-5.4": {
+          "params": {
+            "transport": "sse"
+          }
+        },
+        "deepseek/deepseek-chat": {},
+        "gemini/gemini-2.5-pro": {},
+        "grok/grok-2-latest": {},
+        "yunyi-codex/gpt-5.4": {
+          "params": {
+            "transport": "sse"
+          }
+        }
+      },
+      "sandbox": {
+        "mode": "off"
+      },
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace"
+    },
+    "list": [
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/xiaodong/agent",
+        "heartbeat": {
+          "activeHours": {
+            "end": "22:00",
+            "start": "08:30",
+            "timezone": "Asia/Shanghai"
+          },
+          "every": "30m",
+          "lightContext": true
+        },
+        "id": "xiaodong",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "name": "小东",
+        "sandbox": {
+          "mode": "off"
+        },
+        "subagents": {
+          "allowAgents": [
+            "xiaodong_crossborder_scout",
+            "xiaodong_ai_scout"
+          ]
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "write",
+            "edit",
+            "read",
+            "session_status",
+            "exec",
+            "browser",
+            "feishu_chat",
+            "sessions_spawn",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_drive_file",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "process"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/xiaodong"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/xiaodong_crossborder_scout/agent",
+        "id": "xiaodong_crossborder_scout",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "read",
+            "browser",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "sessions_send",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_task_task",
+            "feishu_task_tasklist",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "exec",
+            "process",
+            "apply_patch"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/xiaodong_crossborder_scout"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/xiaodong_ai_scout/agent",
+        "heartbeat": {
+          "every": "48h",
+          "prompt": "执行一次 AI 资讯巡检。严格读取并遵守工作区 HEARTBEAT.md。只有在正式落库成功后才可声称已归档；若遇到 need_user_authorization、SCHEMA_DRIFT 或写入失败，返回 AI_SCOUT_BLOCKED 并停止，不要降级伪完成。"
+        },
+        "id": "xiaodong_ai_scout",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "read",
+            "browser",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "exec",
+            "process",
+            "apply_patch"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/xiaodong_ai_scout"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/xiaoguan/agent",
+        "heartbeat": {
+          "activeHours": {
+            "end": "22:00",
+            "start": "08:30",
+            "timezone": "Asia/Shanghai"
+          },
+          "every": "24h",
+          "prompt": "优先检查 wechat-ops runtime 的 results/pending 队列并按规则消费：群聊 delta 命中线索时写群消息监听表，朋友圈 unseen 命中已知客户时创建或更新小冠清单，watcher health 异常只报告事实。然后继续检查客户偏好记录、任务清单和预定订单，记录 Boss 的新动态；对到期或紧急事项主动提醒并给出下一步建议。"
+        },
+        "id": "xiaoguan",
+        "model": {
+          "fallbacks": [
+            "moonshot/kimi-k2.5",
+            "deepseek/deepseek-chat"
+          ]
+        },
+        "name": "小冠",
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "exec",
+            "tavily_search",
+            "tavily_fetch",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "write",
+            "edit",
+            "read",
+            "session_status",
+            "feishu_task_task",
+            "feishu_task_tasklist",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "process"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/xiaoguan"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/finance/agent",
+        "heartbeat": {
+          "every": "24h",
+          "prompt": "Read HEARTBEAT.md and follow it. If data is missing or field schema changed, report risks. If no action needed, reply HEARTBEAT_OK."
+        },
+        "id": "finance",
+        "model": {
+          "fallbacks": [
+            "moonshot/kimi-k2.5",
+            "deepseek/deepseek-chat"
+          ]
+        },
+        "tools": {
+          "allow": [
+            "read",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "session_status",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "exec",
+            "process",
+            "write",
+            "edit",
+            "apply_patch"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/finance"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/aduan/agent",
+        "heartbeat": {
+          "activeHours": {
+            "end": "22:00",
+            "start": "09:00",
+            "timezone": "Asia/Shanghai"
+          },
+          "every": "4h",
+          "lightContext": true,
+          "prompt": "Read HEARTBEAT.md, DECISION_GATE.md, and ADUAN_DATA_CONTRACT.md, follow strictly. 阿段 v1 is a private decision gate, not a strategy copilot. Heartbeat should prioritize three workflows only: new-direction gate, daily interruption gate, and Monday board check. Default to evaluate-before-judging, keep output short, and protect the cashflow main track. Stage A quick screen from recent session history and latest structured packets; Stage B sessions_spawn only when business anomalies, key-field gaps, or data staleness >24h materially affect PASS/HOLD/NO judgment. If Stage B runs, require finance/xiaoguan/xiaodong to return aduan_signal_v1 JSON packets and merge by confidence/data quality before deciding. Enforce non-stock boundary and one-vote veto. If no clear anomaly or gate trigger, reply HEARTBEAT_OK and do not spawn subagents."
+        },
+        "id": "aduan",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "name": "ceo_aduan",
+        "sandbox": {
+          "mode": "off"
+        },
+        "subagents": {
+          "allowAgents": [
+            "xiaodong",
+            "xiaodong_crossborder_scout",
+            "xiaoguan",
+            "finance"
+          ]
+        },
+        "tools": {
+          "allow": [
+            "sessions_spawn",
+            "sessions_send",
+            "sessions_list",
+            "sessions_history",
+            "session_status",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "read",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_drive_file",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "exec",
+            "process",
+            "apply_patch",
+            "browser",
+            "gateway",
+            "cron",
+            "write",
+            "edit",
+            "web_search",
+            "web_fetch"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/aduan"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/aduan_learner/agent",
+        "heartbeat": {
+          "every": "168h",
+          "prompt": "每 168 小时执行一次全网搜索（关键词：段永平 雪球 最新回复 等），总结他对投资管理的最新段式认知，使用 write/edit 追加到 /workspace/aduan/LATEST_THOUGHTS.md 中。完成后回复 HEARTBEAT_OK。"
+        },
+        "id": "aduan_learner",
+        "model": {
+          "fallbacks": [
+            "moonshot/kimi-k2.5",
+            "deepseek/deepseek-chat"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "read",
+            "write",
+            "edit",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/aduan"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/aduan_reflector/agent",
+        "heartbeat": {
+          "every": "168h",
+          "prompt": "每 168 小时执行一次系统复盘，读取本周 aduan 的 sessions_history。以“本分”和“平常心”为原则，挑出 aduan 过去的短视、妥协或不当建议，提炼成避坑规则。使用 write/edit 追加记录到 /workspace/aduan/REFLECTION_RULES.md 中。完成后回复 HEARTBEAT_OK。"
+        },
+        "id": "aduan_reflector",
+        "model": {
+          "fallbacks": [
+            "moonshot/kimi-k2.5",
+            "deepseek/deepseek-chat"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "sessions_history",
+            "read",
+            "write",
+            "edit",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/aduan"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/aduan_growth/agent",
+        "heartbeat": {
+          "every": "48h"
+        },
+        "id": "aduan_growth",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "read",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "exec",
+            "process",
+            "apply_patch",
+            "browser"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/aduan_growth"
+      },
+      {
+        "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/echo/agent",
+        "heartbeat": {
+          "activeHours": {
+            "end": "21:00",
+            "start": "09:00",
+            "timezone": "Asia/Shanghai"
+          },
+          "every": "24h",
+          "prompt": "检查是否有待审核的意向客户、是否需要发布公众号文章、GoldFinger 采集任务状态。如有需要主动提醒用户。"
+        },
+        "id": "echo",
+        "model": {
+          "fallbacks": [
+            "minimax/MiniMax-M2.5",
+            "moonshot/kimi-k2.5"
+          ]
+        },
+        "name": "艾可",
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "allow": [
+            "tavily_search",
+            "tavily_fetch",
+            "memory_search",
+            "memory_get",
+            "memory_store",
+            "memory_list",
+            "memory_forget",
+            "knowledge_search",
+            "knowledge_ingest_file",
+            "knowledge_get_file",
+            "knowledge_return_file",
+            "write",
+            "edit",
+            "read",
+            "session_status",
+            "exec",
+            "browser",
+            "feishu_fetch_doc",
+            "feishu_create_doc",
+            "feishu_update_doc",
+            "feishu_search_doc_wiki",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node",
+            "feishu_drive_file",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_view"
+          ],
+          "deny": [
+            "process"
+          ],
+          "profile": "full"
+        },
+        "workspace": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/echo"
+      }
+    ]
   },
   "bindings": [
     {
@@ -61,7 +676,7 @@
     }
   ],
   "browser": {
-    "defaultProfile": "chrome",
+    "defaultProfile": "openclaw",
     "enabled": true,
     "profiles": {
       "openclaw": {
@@ -71,17 +686,195 @@
     }
   },
   "channels": {
-    "$include": "./config/channels.json"
+    "feishu": {
+      "accounts": {
+        "aduan": {
+          "allowFrom": [
+            "ou_bcbb8a1cb438a3839a33cb148b903a1a",
+            "ou_dc95eabe8982323faf7e9f3701e61e22",
+            "ou_87bb675cf1a555992cf71df25f860c63",
+            "1417145e",
+            "ou_1417145e"
+          ],
+          "appId": "${FEISHU_ADUAN_APP_ID}",
+          "appSecret": "${FEISHU_ADUAN_APP_SECRET}",
+          "botName": "ceo_aduan",
+          "dmPolicy": "allowlist",
+          "enabled": true,
+          "groupPolicy": "allowlist",
+          "groups": {
+            "oc_660c980239cd01d78c7dfe45d1a2d944": {
+              "allowFrom": [
+                "*"
+              ],
+              "requireMention": true
+            }
+          },
+          "requireMention": true
+        },
+        "echo": {
+          "allowFrom": [
+            "ou_dc95eabe8982323faf7e9f3701e61e22",
+            "ou_87bb675cf1a555992cf71df25f860c63",
+            "ou_deb896dc0dd4234e4c7b7339f69565e8"
+          ],
+          "appId": "${FEISHU_ECHO_APP_ID}",
+          "appSecret": "${FEISHU_ECHO_APP_SECRET}",
+          "botName": "艾可",
+          "dmPolicy": "allowlist",
+          "enabled": true,
+          "groupPolicy": "allowlist",
+          "groups": {
+            "oc_660c980239cd01d78c7dfe45d1a2d944": {
+              "allowFrom": [
+                "*"
+              ],
+              "requireMention": true
+            }
+          },
+          "requireMention": true
+        },
+        "finance": {
+          "allowFrom": [
+            "ou_dc95eabe8982323faf7e9f3701e61e22",
+            "ou_7e15e0ba20128ad3914123824f2fde3d"
+          ],
+          "appId": "${FEISHU_FINANCE_APP_ID}",
+          "appSecret": "${FEISHU_FINANCE_APP_SECRET}",
+          "botName": "Finance Bot",
+          "dmPolicy": "allowlist",
+          "enabled": true,
+          "groupPolicy": "allowlist",
+          "groups": {
+            "oc_660c980239cd01d78c7dfe45d1a2d944": {
+              "allowFrom": [
+                "*"
+              ],
+              "requireMention": true
+            }
+          },
+          "requireMention": true
+        },
+        "xiaodong": {
+          "allowFrom": [
+            "ou_dc95eabe8982323faf7e9f3701e61e22",
+            "ou_87bb675cf1a555992cf71df25f860c63"
+          ],
+          "appId": "${FEISHU_XIAODONG_APP_ID}",
+          "appSecret": "${FEISHU_XIAODONG_APP_SECRET}",
+          "botName": "小东",
+          "dmPolicy": "allowlist",
+          "enabled": true,
+          "groupPolicy": "allowlist",
+          "groups": {
+            "oc_660c980239cd01d78c7dfe45d1a2d944": {
+              "allowFrom": [
+                "*"
+              ],
+              "requireMention": true
+            }
+          },
+          "requireMention": true
+        },
+        "xiaoguan": {
+          "allowFrom": [
+            "ou_dc95eabe8982323faf7e9f3701e61e22"
+          ],
+          "appId": "${FEISHU_XIAOGUAN_APP_ID}",
+          "appSecret": "${FEISHU_XIAOGUAN_APP_SECRET}",
+          "botName": "小冠",
+          "dmPolicy": "allowlist",
+          "enabled": true,
+          "groupPolicy": "allowlist",
+          "groups": {
+            "oc_660c980239cd01d78c7dfe45d1a2d944": {
+              "allowFrom": [
+                "*"
+              ],
+              "requireMention": true
+            }
+          },
+          "requireMention": true
+        }
+      },
+      "blockStreaming": false,
+      "defaultAccount": "xiaodong",
+      "enabled": true,
+      "streaming": true,
+      "tools": {
+        "doc": true,
+        "drive": true,
+        "perm": false,
+        "scopes": true,
+        "wiki": true
+      }
+    },
+    "telegram": {
+      "accounts": {
+        "finance": {
+          "allowFrom": [
+            "8294029208"
+          ],
+          "botToken": "${TELEGRAM_FINANCE_BOT_TOKEN}",
+          "dmPolicy": "pairing",
+          "groupAllowFrom": [
+            "8294029208"
+          ],
+          "groupPolicy": "allowlist",
+          "groups": {
+            "*": {
+              "requireMention": true
+            }
+          },
+          "streaming": "partial"
+        },
+        "xiaodong": {
+          "allowFrom": [
+            "8294029208"
+          ],
+          "botToken": "${TELEGRAM_XIAODONG_BOT_TOKEN}",
+          "dmPolicy": "pairing",
+          "groupAllowFrom": [
+            "8294029208"
+          ],
+          "groupPolicy": "allowlist",
+          "groups": {
+            "*": {
+              "requireMention": true
+            }
+          },
+          "streaming": "partial"
+        },
+        "xiaoguan": {
+          "allowFrom": [
+            "8294029208"
+          ],
+          "botToken": "${TELEGRAM_XIAOGUAN_BOT_TOKEN}",
+          "dmPolicy": "pairing",
+          "groupAllowFrom": [
+            "8294029208"
+          ],
+          "groupPolicy": "allowlist",
+          "groups": {
+            "*": {
+              "requireMention": true
+            }
+          },
+          "streaming": "partial"
+        }
+      },
+      "blockStreaming": true,
+      "defaultAccount": "xiaodong",
+      "enabled": true
+    }
   },
   "commands": {
     "native": "auto",
     "nativeSkills": "auto",
-    "ownerDisplay": "raw",
-    "restart": true
+    "ownerDisplay": "raw"
   },
   "env": {
     "CUSTOM_API_KEY": "${CUSTOM_API_KEY}",
-    "YUNYI_API_KEY": "${YUNYI_API_KEY}",
     "FEISHU_ADUAN_APP_ID": "${FEISHU_ADUAN_APP_ID}",
     "FEISHU_ADUAN_APP_SECRET": "${FEISHU_ADUAN_APP_SECRET}",
     "FEISHU_ECHO_APP_ID": "${FEISHU_ECHO_APP_ID}",
@@ -93,15 +886,26 @@
     "FEISHU_XIAOGUAN_APP_ID": "${FEISHU_XIAOGUAN_APP_ID}",
     "FEISHU_XIAOGUAN_APP_SECRET": "${FEISHU_XIAOGUAN_APP_SECRET}",
     "KIMI_API_KEY": "${KIMI_API_KEY}",
+    "KNOWLEDGE_API_TOKEN": "${KNOWLEDGE_API_TOKEN}",
+    "KNOWLEDGE_API_URL": "${KNOWLEDGE_API_URL}",
+    "MEM0_BASE_USER_ID": "${MEM0_BASE_USER_ID}",
+    "MEM0_EMBEDDER_MODEL": "${MEM0_EMBEDDER_MODEL}",
+    "MEM0_HISTORY_DB_PATH": "${MEM0_HISTORY_DB_PATH}",
+    "MEM0_LLM_MODEL": "${MEM0_LLM_MODEL}",
+    "MEM0_OPENAI_API_KEY": "${MEM0_OPENAI_API_KEY}",
+    "MEM0_QDRANT_COLLECTION": "${MEM0_QDRANT_COLLECTION}",
+    "MEM0_TELEMETRY": "${MEM0_TELEMETRY}",
     "MINIMAX_API_KEY": "${MINIMAX_API_KEY}",
     "MOONSHOT_API_KEY": "${MOONSHOT_API_KEY}",
     "OPENCLAW_GATEWAY_TOKEN": "${OPENCLAW_GATEWAY_TOKEN}",
+    "OPENCLAW_REMOTE_TOKEN": "${OPENCLAW_REMOTE_TOKEN}",
+    "QDRANT_API_KEY": "${QDRANT_API_KEY}",
+    "QDRANT_URL": "${QDRANT_URL}",
     "TELEGRAM_FINANCE_BOT_TOKEN": "${TELEGRAM_FINANCE_BOT_TOKEN}",
     "TELEGRAM_XIAODONG_BOT_TOKEN": "${TELEGRAM_XIAODONG_BOT_TOKEN}",
     "TELEGRAM_XIAOGUAN_BOT_TOKEN": "${TELEGRAM_XIAOGUAN_BOT_TOKEN}",
-    "shellEnv": {
-      "enabled": false
-    }
+    "YUNYI_API_KEY": "${YUNYI_API_KEY}",
+    "YUNYI_CLAUDE_API_KEY": "${YUNYI_CLAUDE_API_KEY}"
   },
   "gateway": {
     "auth": {
@@ -114,17 +918,19 @@
       },
       "token": "${OPENCLAW_GATEWAY_TOKEN}"
     },
-    "bind": "lan",
+    "bind": "loopback",
+    "trustedProxies": [
+      "127.0.0.1",
+      "::1"
+    ],
     "controlUi": {
+      "allowInsecureAuth": false,
       "allowedOrigins": [
         "http://localhost:18801",
         "http://127.0.0.1:18801",
         "http://localhost:18789",
-        "http://127.0.0.1:18789",
-        "http://192.168.10.90:18789",
-        "http://kenmini-m4.local:18789"
+        "http://127.0.0.1:18789"
       ],
-      "allowInsecureAuth": true,
       "basePath": "/ui",
       "enabled": true
     },
@@ -135,20 +941,381 @@
         "node": "mac-browser-node"
       }
     },
-    "port": 18789
+    "port": 18789,
+    "remote": {
+      "token": {
+        "id": "OPENCLAW_REMOTE_TOKEN",
+        "provider": "default",
+        "source": "env"
+      }
+    }
   },
   "messages": {
     "ackReactionScope": "group-mentions"
   },
-  "meta": {
-    "lastTouchedAt": "2026-03-13T10:45:00.000Z",
-    "lastTouchedVersion": "2026.3.12"
-  },
   "models": {
-    "$include": "./config/models.json"
+    "mode": "merge",
+    "providers": {
+      "custom": {
+        "api": "openai-responses",
+        "apiKey": {
+          "id": "CUSTOM_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "authHeader": true,
+        "baseUrl": "https://capi.quan2go.com/openai",
+        "models": [
+          {
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 2.5,
+              "output": 15
+            },
+            "id": "gpt-5.4",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "GPT-5.4",
+            "reasoning": true
+          }
+        ]
+      },
+      "deepseek": {
+        "api": "openai-completions",
+        "apiKey": {
+          "id": "DEEPSEEK_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "baseUrl": "https://api.deepseek.com/v1",
+        "models": [
+          {
+            "contextWindow": 128000,
+            "id": "deepseek-chat",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "deepseek-chat",
+            "reasoning": false
+          }
+        ]
+      },
+      "gemini": {
+        "api": "openai-completions",
+        "apiKey": {
+          "id": "GEMINI_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "models": [
+          {
+            "contextWindow": 2097152,
+            "id": "gemini-2.5-pro",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 8192,
+            "name": "gemini-2.5-pro",
+            "reasoning": true
+          }
+        ]
+      },
+      "grok": {
+        "api": "openai-completions",
+        "apiKey": {
+          "id": "GROK_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "baseUrl": "https://api.x.ai/v1",
+        "models": [
+          {
+            "contextWindow": 128000,
+            "id": "grok-2-latest",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 8192,
+            "name": "grok-2-latest",
+            "reasoning": false
+          }
+        ]
+      },
+      "minimax": {
+        "api": "anthropic-messages",
+        "apiKey": {
+          "id": "MINIMAX_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "authHeader": true,
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "models": [
+          {
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0.21,
+              "cacheWrite": 2.625,
+              "input": 2.1,
+              "output": 8.4
+            },
+            "id": "MiniMax-M2.5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "MiniMax MiniMax-M2.5",
+            "reasoning": false
+          }
+        ]
+      },
+      "moonshot": {
+        "api": "openai-completions",
+        "apiKey": {
+          "id": "MOONSHOT_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "baseUrl": "https://api.moonshot.ai/v1",
+        "models": [
+          {
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2.5",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 8192,
+            "name": "Kimi K2.5",
+            "reasoning": false
+          }
+        ]
+      },
+      "yunyi-claude": {
+        "api": "anthropic-messages",
+        "apiKey": {
+          "id": "YUNYI_CLAUDE_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "auth": "api-key",
+        "authHeader": false,
+        "baseUrl": "https://yunyi.rdzhvip.com/claude",
+        "headers": {},
+        "models": [
+          {
+            "contextWindow": 200000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-opus-4-6",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 32000,
+            "name": "Claude Opus 4.6",
+            "reasoning": false
+          },
+          {
+            "contextWindow": 200000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-sonnet-4-6",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16000,
+            "name": "Claude Sonnet 4.6",
+            "reasoning": false
+          }
+        ]
+      },
+      "yunyi-codex": {
+        "api": "openai-responses",
+        "apiKey": {
+          "id": "YUNYI_API_KEY",
+          "provider": "default",
+          "source": "env"
+        },
+        "auth": "api-key",
+        "authHeader": false,
+        "baseUrl": "https://yunyi.cfd/codex",
+        "headers": {},
+        "models": [
+          {
+            "contextWindow": 1050000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gpt-5.4",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 128000,
+            "name": "GPT 5.4",
+            "reasoning": true
+          }
+        ]
+      }
+    }
   },
   "plugins": {
-    "$include": "./config/plugins.json"
+    "allow": [
+      "tavily-search-plugin",
+      "knowledge-search-plugin",
+      "telegram",
+      "openclaw-lark",
+      "browser",
+      "minimax",
+      "openclaw-mem0",
+      "feishu"
+    ],
+    "entries": {
+      "knowledge-search-plugin": {
+        "config": {
+          "apiToken": "${KNOWLEDGE_API_TOKEN}",
+          "apiUrl": "http://127.0.0.1:8002"
+        },
+        "enabled": true
+      },
+      "memory-core": {
+        "enabled": false
+      },
+      "memory-lancedb": {
+        "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": false
+      },
+      "minimax": {
+        "enabled": true
+      },
+      "openclaw-mem0": {
+        "config": {
+          "autoCapture": true,
+          "autoRecall": true,
+          "customPrompt": "你是 OpenClaw 的长期记忆提取器。只保留未来仍然有用、稳定、可复用的信息；不要把临时排障过程塞进长期记忆。\n\n任务要求：\n1. 只提取适合长期保存的稳定事实。\n2. 每条事实都要写成独立、完整、可复用的一句话。\n3. 用第三人称陈述；必要时写清时间边界，例如“截至 2026-04-03”。\n4. 优先合并重复信息，避免碎片化记忆。\n5. 如果信息不够稳定、只是临时排障、一次性测试、权限流程、验证码、演示数据、闲聊、情绪表达、或仅限当前会话，就不要保留。\n6. 上传文件的正文、PDF/PPT/图片材料本身不属于长期记忆，不要提取。\n\n重点保留：\n- 长期偏好与稳定习惯\n- 已确认的技术/业务决策\n- 持续有效的事实与背景\n- 明确的项目目标、约束、交付偏好\n- 持续性的项目上下文与职责关系\n\n你必须只输出一个 JSON 对象，格式固定为：\n{\"facts\": [\"fact 1\", \"fact 2\"]}\n\n规则：\n- 除 JSON 外不要输出任何解释、标题、markdown、代码块或额外字段。\n- facts 必须是字符串数组。\n- 如果没有值得长期保存的信息，返回 {\"facts\": []}。",
+          "mode": "open-source",
+          "oss": {
+            "disableHistory": true,
+            "embedder": {
+              "config": {
+                "apiKey": "${MEM0_OPENAI_API_KEY}",
+                "baseURL": "http://127.0.0.1:8002/openai/v1",
+                "model": "${MEM0_EMBEDDER_MODEL}"
+              },
+              "provider": "openai"
+            },
+            "historyDbPath": "${MEM0_HISTORY_DB_PATH}",
+            "llm": {
+              "config": {
+                "apiKey": "${MEM0_OPENAI_API_KEY}",
+                "baseURL": "http://127.0.0.1:8002/openai/v1",
+                "model": "${MEM0_LLM_MODEL}"
+              },
+              "provider": "openai"
+            },
+            "vectorStore": {
+              "config": {
+                "apiKey": "${QDRANT_API_KEY}",
+                "checkCompatibility": false,
+                "collectionName": "${MEM0_QDRANT_COLLECTION}",
+                "dimension": 1536,
+                "embeddingModelDims": 1536,
+                "host": "qdrant.99uwen.com",
+                "https": true,
+                "port": 443
+              },
+              "provider": "qdrant"
+            }
+          },
+          "searchThreshold": 0.3,
+          "topK": 8,
+          "userId": "${MEM0_BASE_USER_ID}"
+        },
+        "enabled": true,
+        "hooks": {
+          "allowPromptInjection": false
+        }
+      }
+    },
+    "installs": {
+      "knowledge-search-plugin": {
+        "installPath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/knowledge-search-plugin",
+        "installedAt": "2026-03-12T14:50:00.000Z",
+        "source": "path",
+        "sourcePath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/knowledge-search-plugin",
+        "version": "1.0.0"
+      },
+      "openclaw-lark": {
+        "installPath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/openclaw-lark",
+        "installedAt": "2026-04-03T07:08:25.146Z",
+        "integrity": "sha512-IUZ5CajR7UTSVYYDyyU/P/I+DeWDcVnbM2WTLo747gED225uKQ4/jBu5hQt8oz3GUq3FqT+RDRYelE8fIqUPag==",
+        "resolvedAt": "2026-04-03T07:07:54.292Z",
+        "resolvedName": "@larksuite/openclaw-lark",
+        "resolvedSpec": "@larksuite/openclaw-lark@2026.4.1",
+        "resolvedVersion": "2026.4.1",
+        "shasum": "471ecfb5a9163b644af757f41626368c0ef9c262",
+        "source": "npm",
+        "spec": "@larksuite/openclaw-lark@2026.4.1",
+        "version": "2026.4.1"
+      },
+      "tavily-search-plugin": {
+        "installPath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/tavily-search-plugin",
+        "installedAt": "2026-03-12T18:30:00.000Z",
+        "source": "path",
+        "sourcePath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/tavily-search-plugin",
+        "version": "1.0.0"
+      },
+      "openclaw-mem0": {
+        "source": "npm",
+        "spec": "@mem0/openclaw-mem0@1.0.3",
+        "installPath": "/Volumes/KenDisk/Coding/openclaw-runtime/extensions/openclaw-mem0",
+        "version": "1.0.3",
+        "resolvedName": "@mem0/openclaw-mem0",
+        "resolvedVersion": "1.0.3",
+        "resolvedSpec": "@mem0/openclaw-mem0@1.0.3",
+        "integrity": "sha512-/63Hjw3wFlDhxfPXL5ZHDAPggOtb3wAxvzowZFslpcYhWaxKBZv9Sxl1kdQs4wHyPHolkw+1pW/TnfDAtyMQVg==",
+        "shasum": "b87c2fa80e9271a1fc5aca2b6d9451b355c03a7c",
+        "resolvedAt": "2026-04-03T07:06:35.900Z",
+        "installedAt": "2026-04-03T07:07:30.006Z"
+      }
+    },
+    "slots": {
+      "memory": "openclaw-mem0"
+    }
   },
   "secrets": {
     "defaults": {
@@ -161,6 +1328,7 @@
     }
   },
   "session": {
+    "dmScope": "per-channel-peer",
     "maintenance": {
       "mode": "enforce",
       "pruneAfter": "30d",
@@ -168,18 +1336,41 @@
     }
   },
   "tools": {
+    "agentToAgent": {
+      "allow": [
+        "aduan",
+        "aduan_reflector"
+      ],
+      "enabled": true
+    },
     "deny": [],
     "elevated": {
       "enabled": false
     },
     "fs": {
       "workspaceOnly": true
+    },
+    "profile": "messaging",
+    "media": {
+      "image": {
+        "enabled": true,
+        "maxBytes": 10485760,
+        "maxChars": 800,
+        "models": [
+          {
+            "model": "claude-sonnet-4-6",
+            "provider": "yunyi-claude"
+          },
+          {
+            "model": "gemini-2.5-pro",
+            "provider": "gemini"
+          }
+        ],
+        "prompt": "你是销售与客户管理助手的小冠的图片理解模块。优先做三件事：1. 识别截图中的对话双方、昵称、备注名、群名、时间、金额、平台、客户线索；2. 尽可能完整 OCR 可见文字；3. 如果是聊天截图，明确区分左侧/右侧消息分别是谁说的，并推断当前用户与客户的对应关系。输出要短、准、结构化，优先保留后续录入 CRM/意向/成交表所需字段。"
+      }
+    },
+    "sessions": {
+      "visibility": "all"
     }
-  },
-  "wizard": {
-    "lastRunAt": "2026-03-02T11:18:50.516Z",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local",
-    "lastRunVersion": "2026.2.26"
   }
 }

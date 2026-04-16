@@ -259,6 +259,25 @@ for span in text_spans:
         print(f"  ✓ 供电服务单位")
         break
 
+# 5.10.1 电能表编号行（左侧橙色框）
+for span in text_spans:
+    if "电能表编号：" in span.text and "电价：" in span.text:
+        # 提取原始的电表编号和电价信息
+        original_text = span.text
+        # 构建新文本：电能表编号 + 电价地区
+        new_text = f"电能表编号：{meter_number},电价：{province_short}-用电户-220至380伏-居民"
+        changes.append(FieldChange(
+            field_name="电能表编号行",
+            original_value=original_text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 电能表编号行")
+        break
+
 # 5.11 右上角本期电量
 for span in text_spans:
     if span.text.strip() == "762":
@@ -506,6 +525,82 @@ for span in text_spans:
             color=span.color
         ))
         print(f"  ✓ 电价地区")
+
+# 5.27 翻译表格标题和列标题
+from translator import BillTranslator
+temp_translator = BillTranslator()
+
+label_mappings = [
+    "账单详情",
+    "用能分析",
+    "电费明细",
+    "上期示数",
+    "本期示数",
+    "倍率抄见电量加减变损",
+    "计费电量",
+    "计费标准",
+    "合计",
+    "费用组成",
+]
+
+for label in label_mappings:
+    found = False
+    for span in text_spans:
+        if span.text.strip() == label and not found:
+            changes.append(FieldChange(
+                field_name=f"标签-{label}",
+                original_value=label,
+                new_value=label,  # 保持中文，翻译时会转换
+                bbox=span.bbox,
+                font=span.font,
+                font_size=span.font_size,
+                color=span.color
+            ))
+            print(f"  ✓ 标签-{label}")
+            found = True
+            break
+
+# 5.28 翻译费用项目行
+fee_items = [
+    "电-居民生活-居民丰水期谷段0.175(峰)",
+    "电-居民生活-居民丰水期谷段0.175(平)",
+    "电-居民生活-居民丰水期谷段0.175(谷)",
+]
+for item in fee_items:
+    for span in text_spans:
+        if item in span.text:
+            changes.append(FieldChange(
+                field_name=f"费用项目-{item[:10]}",
+                original_value=span.text,
+                new_value=span.text,  # 保持原文，翻译时处理
+                bbox=span.bbox,
+                font=span.font,
+                font_size=span.font_size,
+                color=span.color
+            ))
+            print(f"  ✓ 费用项目-{item[:10]}")
+            break
+
+# 5.29 翻译说明文字
+description_texts = [
+    ("1.本期电量", "1.本期电量"),
+    ("2.峰谷阶梯", "2.峰谷阶梯"),
+    ("3.平均电价", "3.平均电价"),
+]
+for original, label in description_texts:
+    for span in text_spans:
+        if span.text.strip() == original:
+            changes.append(FieldChange(
+                field_name=f"说明-{label}",
+                original_value=original,
+                new_value=original,
+                bbox=span.bbox,
+                font=span.font,
+                font_size=span.font_size,
+                color=span.color
+            ))
+            print(f"  ✓ 说明-{label}")
+            break
 
 print(f"  共 {len(changes)} 个字段")
 print()

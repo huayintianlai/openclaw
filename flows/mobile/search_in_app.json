@@ -1,0 +1,42 @@
+{
+  "id": "search_in_app",
+  "description": "Open an app, enter search mode, type the query, and capture a post-search snapshot.",
+  "risk_level": "safe",
+  "steps": [
+    {
+      "kind": "open_app",
+      "app": "$app"
+    },
+    {
+      "kind": "wait_for",
+      "timeout_ms": 3000
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "anyOf": [
+          { "resourceId": "com.xingin.xhs:id/search_tv" },
+          { "descriptionContains": "搜索" },
+          { "textContains": "搜索" }
+        ]
+      }
+    },
+    {
+      "kind": "wait_for",
+      "timeout_ms": 1500
+    },
+    {
+      "kind": "input_text",
+      "selector": {
+        "anyOf": [
+          { "className": "android.widget.EditText" },
+          { "resourceId": "android:id/search_src_text" }
+        ]
+      },
+      "text": "$query"
+    },
+    {
+      "kind": "snapshot"
+    }
+  ]
+}

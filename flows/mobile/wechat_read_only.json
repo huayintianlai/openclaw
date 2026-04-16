@@ -1,0 +1,40 @@
+{
+  "id": "wechat_read_only",
+  "description": "Open WeChat, optionally search for a conversation, enter it, and capture a read-only snapshot.",
+  "risk_level": "safe",
+  "steps": [
+    {
+      "kind": "open_app",
+      "app": "wechat"
+    },
+    {
+      "kind": "wait_for",
+      "timeout_ms": 3000
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "anyOf": [
+          { "descriptionContains": "搜索" },
+          { "textContains": "搜索" }
+        ]
+      }
+    },
+    {
+      "kind": "input_text",
+      "selector": {
+        "className": "android.widget.EditText"
+      },
+      "text": "$chat_name"
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "textContains": "$chat_name"
+      }
+    },
+    {
+      "kind": "snapshot"
+    }
+  ]
+}

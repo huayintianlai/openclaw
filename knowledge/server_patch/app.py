@@ -1013,3 +1013,124 @@ async def health() -> dict[str, Any]:
         "collection": QDRANT_COLLECTION,
         "db_path": str(DB_PATH),
     }
+
+
+# ============================================================================
+# Bill Generator Endpoints
+# ============================================================================
+
+import sys
+sys.path.insert(0, str(RUNTIME_ROOT / "extensions" / "bill-generator-plugin"))
+
+from src.orchestrator import BillGeneratorOrchestrator
+from src.ocr import IDCardInfo
+
+# Initialize orchestrator (lazy loading)
+_bill_orchestrator: Optional[BillGeneratorOrchestrator] = None
+
+
+def get_bill_orchestrator() -> BillGeneratorOrchestrator:
+    """Get or create bill generator orchestrator."""
+    global _bill_orchestrator
+    if _bill_orchestrator is None:
+        _bill_orchestrator = BillGeneratorOrchestrator()
+    return _bill_orchestrator
+
+
+@app.post("/bill/ocr-id-card")
+async def ocr_id_card(
+    file: UploadFile = File(...),
+    _token: str = Depends(verify_token),
+) -> dict[str, Any]:
+    """
+    OCR recognition for ID card.
+
+    Args:
+        file: ID card image file
+
+    Returns:
+        Extracted ID card information
+    """
+    try:
+        # Save uploaded file temporarily
+        temp_path = Path(tempfile.mktemp(suffix=".jpg"))
+        with open(temp_path, "wb") as f:
+            content = await file.read()
+            f.write(content)
+
+        # Perform OCR
+        orchestrator = get_bill_orchestrator()
+        id_info: IDCardInfo = orchestrator.recognize_id_card(str(temp_path))
+
+        # Clean up
+        temp_path.unlink(missing_ok=True)
+
+        return {
+            "name": id_info.name,
+            "id_number": id_info.id_number,
+            "address": id_info.address,
+            "birth_date": id_info.birth_date,
+            "confidence": id_info.confidence
+        }
+
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"OCR failed: {str(e)}")
+
+
+@app.post("/bill/generate")
+async def generate_bill(
+    request: Request,
+    _token: str = Depends(verify_token),
+) -> dict[str, Any]:
+    """
+    Generate bill PDF from template and identity information.
+
+    Request body:
+        {
+            "template_path": "/path/to/template.pdf",
+            "identity": {
+                "name": "张三",
+                "id_number": "110101199001011234",
+                "address": "北京市东城区..."
+            },
+            "custom_fields": {
+                "金额": 127.35,
+                "账期": "2026-03"
+            }
+        }
+
+    Returns:
+        Generation result with output paths and changes
+    """
+    try:
+        body = await request.json()
+
+        template_path = body.get("template_path")
+        identity = body.get("identity", {})
+        custom_fields = body.get("custom_fields")
+
+        if not template_path:
+            raise HTTPException(status_code=400, detail="template_path is required")
+
+        if not identity.get("name"):
+            raise HTTPException(status_code=400, detail="identity.name is required")
+
+        # Generate bill
+        orchestrator = get_bill_orchestrator()
+        result = orchestrator.generate_bill(
+            template_path=template_path,
+            identity=identity,
+            custom_fields=custom_fields
+        )
+
+        if not result.success:
+            raise HTTPException(status_code=500, detail=result.error)
+
+        return result.to_dict()
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Generation failed: {str(e)}")

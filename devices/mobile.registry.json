@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "defaults": {
+    "platform": "android",
+    "default_backend": "mac-proxy",
+    "fallback_backend": "mac-proxy"
+  },
+  "appPackages": {
+    "wechat": "com.tencent.mm",
+    "xhs": "com.xingin.xhs",
+    "xiaohongshu": "com.xingin.xhs",
+    "settings": "com.android.settings",
+    "chrome": "com.android.chrome"
+  },
+  "devices": [
+    {
+      "id": "mobile:xiaodong-main",
+      "alias": "xiaodong-main",
+      "display_name": "M2002J9E",
+      "platform": "android",
+      "preferred_backend": "android-node",
+      "fallback_backend": "mac-proxy",
+      "adbSerial": "a7b24c15",
+      "nodeId": "c4b6d84939efd96e07624dc11559381eb4c640e8e20a62be6bd8bc4489f0f0c2",
+      "autoglm_device_number": 1,
+      "labels": [
+        "android",
+        "shared",
+        "xiaodong",
+        "orchestration"
+      ],
+      "capabilities": [
+        "observe",
+        "semantic-actions",
+        "ui-tree",
+        "screenshot",
+        "vlm-fallback"
+      ],
+      "risk_profile": "standard"
+    },
+    {
+      "id": "mobile:xiaodong-backup",
+      "alias": "xiaodong-backup",
+      "display_name": "M2002J9E",
+      "platform": "android",
+      "preferred_backend": "mac-proxy",
+      "fallback_backend": "mac-proxy",
+      "adbSerial": "ac7b4cb9",
+      "autoglm_device_number": 2,
+      "labels": [
+        "android",
+        "shared",
+        "xiaodong",
+        "orchestration",
+        "backup"
+      ],
+      "capabilities": [
+        "observe",
+        "semantic-actions",
+        "ui-tree",
+        "screenshot",
+        "vlm-fallback"
+      ],
+      "risk_profile": "standard"
+    },
+    {
+      "id": "mobile:echo-xhs-1",
+      "alias": "echo-xhs-1",
+      "display_name": "Redmi K30",
+      "platform": "android",
+      "preferred_backend": "android-node",
+      "fallback_backend": "mac-proxy",
+      "adbSerial": "e2879f39",
+      "nodeId": "e6fbb1587ad906685e9137469ea2c43507817bfd3fb2c614fbab50228c616321",
+      "autoglm_device_number": 3,
+      "labels": [
+        "android",
+        "shared",
+        "echo",
+        "xhs",
+        "acquisition"
+      ],
+      "capabilities": [
+        "observe",
+        "semantic-actions",
+        "ui-tree",
+        "screenshot",
+        "vlm-fallback"
+      ],
+      "risk_profile": "write-guarded"
+    },
+    {
+      "id": "mobile:echo-xhs-2",
+      "alias": "echo-xhs-2",
+      "display_name": "Redmi K30 5G",
+      "platform": "android",
+      "preferred_backend": "android-node",
+      "fallback_backend": "mac-proxy",
+      "adbSerial": "e2d6f5c3",
+      "nodeId": "56fc92fe5f730c258139adc56443ce516574acafefc90e8a61d335402c72459d",
+      "autoglm_device_number": 4,
+      "labels": [
+        "android",
+        "shared",
+        "echo",
+        "xhs",
+        "acquisition",
+        "backup"
+      ],
+      "capabilities": [
+        "observe",
+        "semantic-actions",
+        "ui-tree",
+        "screenshot",
+        "vlm-fallback"
+      ],
+      "risk_profile": "write-guarded"
+    }
+  ]
+}

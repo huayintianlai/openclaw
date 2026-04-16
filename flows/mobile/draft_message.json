@@ -1,0 +1,53 @@
+{
+  "id": "draft_message",
+  "description": "Open WeChat, navigate to a conversation, and type a draft message without sending it.",
+  "risk_level": "danger",
+  "steps": [
+    {
+      "kind": "open_app",
+      "app": "wechat"
+    },
+    {
+      "kind": "wait_for",
+      "timeout_ms": 3000
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "anyOf": [
+          { "descriptionContains": "搜索" },
+          { "textContains": "搜索" }
+        ]
+      }
+    },
+    {
+      "kind": "input_text",
+      "selector": {
+        "className": "android.widget.EditText"
+      },
+      "text": "$chat_name"
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "textContains": "$chat_name"
+      }
+    },
+    {
+      "kind": "tap_element",
+      "selector": {
+        "className": "android.widget.EditText"
+      }
+    },
+    {
+      "kind": "input_text",
+      "selector": {
+        "className": "android.widget.EditText"
+      },
+      "text": "$message"
+    },
+    {
+      "kind": "snapshot"
+    }
+  ]
+}

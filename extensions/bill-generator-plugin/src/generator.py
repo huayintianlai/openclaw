@@ -95,10 +95,23 @@ class PDFGenerator:
             except:
                 pass
 
-        # Step 1: Redact old text - use transparent background
+        # Step 1: Redact old text - use appropriate background colors
         for change in changes:
             rect = fitz.Rect(change.bbox)
-            page.add_redact_annot(rect)
+
+            # 根据字段名称使用对应的背景色
+            if '本期电量' in change.field_name:
+                # 浅灰色背景 RGB(238, 238, 238)
+                page.add_redact_annot(rect, fill=(238/255, 238/255, 238/255))
+            elif '本期电费' in change.field_name:
+                # 浅青色背景 RGB(219, 253, 255)
+                page.add_redact_annot(rect, fill=(219/255, 253/255, 255/255))
+            elif '抄表日期' in change.field_name:
+                # 浅灰色背景 RGB(245, 245, 245)
+                page.add_redact_annot(rect, fill=(245/255, 245/255, 245/255))
+            else:
+                # 其他字段使用透明背景
+                page.add_redact_annot(rect)
         page.apply_redactions()
 
         # Step 2: Re-register Microsoft YaHei after redaction
@@ -139,15 +152,31 @@ class PDFGenerator:
             # 电价地区、账单周期、账单打印日期使用华文仿宋（排除抄表日期）
             elif any(keyword in change.field_name for keyword in ['电价地区', '电价', '账单周期', '账单打印日期']):
                 fontname = 'fangsong' if fangsong_registered else 'china-s'
-            # 纯数字、日期、货币金额使用helv（数字间距正常）
-            elif is_pure_number_or_date or is_currency_amount:
+            # 纯数字、日期使用helv（数字间距正常）
+            elif is_pure_number_or_date:
                 fontname = 'helv'
+            # 货币金额：使用china-s（支持￥符号）
+            elif is_currency_amount:
+                fontname = 'china-s'
             # 其他中文内容使用china-s
             else:
                 fontname = 'china-s'
 
+            # 计算插入位置
+            x_pos = change.bbox[0]
+            y_pos = change.bbox[3]
+
+            # 合计金额需要居中对齐
+            if '合计' in change.field_name and is_currency_amount:
+                # 计算列的中心位置
+                column_center = (change.bbox[0] + change.bbox[2]) / 2
+                # 估算文本宽度（每个字符约5.2点）
+                text_width = len(text) * 5.2
+                # 居中起始位置
+                x_pos = column_center - text_width / 2
+
             page.insert_text(
-                (change.bbox[0], change.bbox[3]),
+                (x_pos, y_pos),
                 change.new_value,
                 fontname=fontname,
                 fontsize=change.font_size,

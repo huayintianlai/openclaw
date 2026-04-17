@@ -25,7 +25,7 @@ try {
             font: "TimesNewRomanPSMT",
             size: 44.0,
             color: {r: 35, g: 35, b: 35},
-            fauxBold: true,
+            fauxBold: false,
             tracking: companyName.length > 15 ? 0 : (companyName.length > 10 ? 30 : 75),  // 根据长度动态调整
             justification: Justification.LEFT
         },
@@ -34,7 +34,7 @@ try {
             font: "TimesNewRomanPSMT",
             size: 47.0,
             color: {r: 25, g: 25, b: 25},
-            fauxBold: true,
+            fauxBold: false,
             tracking: 33
         },
         "资本存款时间": {
@@ -42,7 +42,7 @@ try {
             font: "TimesNewRomanPSMT",
             size: 44.0,
             color: {r: 35, g: 35, b: 35},
-            fauxBold: true,
+            fauxBold: false,
             tracking: 45
         },
         "落款时间": {
@@ -50,7 +50,7 @@ try {
             font: "TimesNewRomanPSMT",
             size: 44.0,
             color: {r: 35, g: 35, b: 35},
-            fauxBold: true,
+            fauxBold: false,
             tracking: 0
         }
     };

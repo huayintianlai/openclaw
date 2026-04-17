@@ -16,7 +16,7 @@ if [ -z "$COMPANY_NAME" ] || [ -z "$COMPANY_ADDRESS" ] || [ -z "$DEPOSIT_DATE" ]
     exit 1
 fi
 
-# 日期转换函数：YYYY-MM-DD → "10 mars 2026"
+# 日期转换函数：YYYY-MM-DD → "10 mars 2026"（不带Le）
 convert_to_french_date() {
     local date_str="$1"
     local year=$(echo "$date_str" | cut -d'-' -f1)
@@ -43,12 +43,19 @@ convert_to_french_date() {
         *) echo "❌ 无效月份: $month"; exit 1 ;;
     esac
 
-    echo "Le $day $month_fr $year"
+    echo "$day $month_fr $year"
+}
+
+# 日期转换函数：YYYY-MM-DD → "Le 10 mars 2026"（带Le）
+convert_to_french_date_with_le() {
+    local date_str="$1"
+    local base_date=$(convert_to_french_date "$date_str")
+    echo "Le $base_date"
 }
 
 # 转换日期
-DEPOSIT_DATE_FR=$(convert_to_french_date "$DEPOSIT_DATE")
-SIGN_DATE_FR=$(convert_to_french_date "$SIGN_DATE")
+DEPOSIT_DATE_FR=$(convert_to_french_date "$DEPOSIT_DATE")  # 资本存款时间：模板已有"le"
+SIGN_DATE_FR=$(convert_to_french_date_with_le "$SIGN_DATE")  # 落款时间：需要"Le"
 
 echo "📝 公证文件编辑参数："
 echo "   公司名称: $COMPANY_NAME"

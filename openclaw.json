@@ -501,11 +501,22 @@
         "agentDir": "/Volumes/KenDisk/Coding/openclaw-runtime/agents/afeng/agent",
         "id": "afeng",
         "name": "阿峰",
+        "identity": {
+          "name": "阿峰",
+          "emoji": "🌍"
+        },
+        "model": {
+          "primary": "custom/claude",
+          "fallbacks": [
+            "custom/gpt-5.4"
+          ]
+        },
         "sandbox": {
           "mode": "off"
         },
         "tools": {
           "allow": [
+            "bash",
             "browser",
             "feishu_im_user_message",
             "feishu_im_user_get_messages",
@@ -529,8 +540,6 @@
             "knowledge_search"
           ],
           "deny": [
-            "exec",
-            "process",
             "apply_patch"
           ],
           "profile": "full"
@@ -773,6 +782,13 @@
       "agentId": "laojin",
       "match": {
         "accountId": "laojin",
+        "channel": "feishu"
+      }
+    },
+    {
+      "agentId": "afeng",
+      "match": {
+        "accountId": "afeng",
         "channel": "feishu"
       }
     }
@@ -1383,9 +1399,6 @@
         "version": "2026.4.1",
         "installedAt": "2026-04-04T17:30:43.256Z"
       }
-    },
-    "slots": {
-      "memory": "openclaw-mem0"
     }
   },
   "secrets": {

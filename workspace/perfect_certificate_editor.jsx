@@ -24,34 +24,34 @@ try {
             content: companyName,
             font: "TimesNewRomanPSMT",
             size: 44.0,
-            color: {r: 35, g: 35, b: 35},
-            fauxBold: false,
-            tracking: companyName.length > 15 ? 0 : (companyName.length > 10 ? 30 : 75),  // 根据长度动态调整
+            color: {r: 36, g: 36, b: 36},
+            fauxBold: true,
+            tracking: 0,
             justification: Justification.LEFT
         },
         "公司地址": {
             content: companyAddress,
             font: "TimesNewRomanPSMT",
-            size: 47.0,
-            color: {r: 25, g: 25, b: 25},
-            fauxBold: false,
+            size: 44.0,
+            color: {r: 26, g: 26, b: 26},
+            fauxBold: true,
             tracking: 33
         },
         "资本存款时间": {
             content: depositDate,
             font: "TimesNewRomanPSMT",
-            size: 44.0,
-            color: {r: 35, g: 35, b: 35},
-            fauxBold: false,
-            tracking: 45
+            size: 45.0,
+            color: {r: 36, g: 36, b: 36},
+            fauxBold: true,
+            tracking: 40
         },
         "落款时间": {
             content: signDate,
             font: "TimesNewRomanPSMT",
             size: 44.0,
-            color: {r: 35, g: 35, b: 35},
-            fauxBold: false,
-            tracking: 0
+            color: {r: 33, g: 33, b: 33},
+            fauxBold: true,
+            tracking: 45
         }
     };
 

@@ -155,9 +155,6 @@ class PDFGenerator:
             # 纯数字、日期使用helv（数字间距正常）
             elif is_pure_number_or_date:
                 fontname = 'helv'
-            # 货币金额：使用china-s（支持￥符号）
-            elif is_currency_amount:
-                fontname = 'china-s'
             # 其他中文内容使用china-s
             else:
                 fontname = 'china-s'
@@ -166,22 +163,48 @@ class PDFGenerator:
             x_pos = change.bbox[0]
             y_pos = change.bbox[3]
 
-            # 合计金额需要居中对齐
-            if '合计' in change.field_name and is_currency_amount:
-                # 计算列的中心位置
-                column_center = (change.bbox[0] + change.bbox[2]) / 2
-                # 估算文本宽度（每个字符约5.2点）
-                text_width = len(text) * 5.2
-                # 居中起始位置
-                x_pos = column_center - text_width / 2
+            # 货币金额需要特殊处理：分开插入￥和数字
+            if is_currency_amount:
+                # 提取￥符号和数字部分
+                amount_text = text.replace('￥', '')
 
-            page.insert_text(
-                (x_pos, y_pos),
-                change.new_value,
-                fontname=fontname,
-                fontsize=change.font_size,
-                color=change.color
-            )
+                # 合计金额需要居中对齐
+                if '合计' in change.field_name:
+                    # 计算列的中心位置
+                    column_center = (change.bbox[0] + change.bbox[2]) / 2
+                    # 估算文本宽度（￥用china-s约5.2点，数字用helv约4.5点/字符）
+                    yuan_width = 5.2
+                    number_width = len(amount_text) * 4.5
+                    total_width = yuan_width + number_width
+                    # 居中起始位置
+                    x_pos = column_center - total_width / 2
+
+                # 先插入￥符号（使用china-s）
+                page.insert_text(
+                    (x_pos, y_pos),
+                    '￥',
+                    fontname='china-s',
+                    fontsize=change.font_size,
+                    color=change.color
+                )
+
+                # 再插入数字（使用helv，紧跟￥符号）
+                page.insert_text(
+                    (x_pos + 5.2, y_pos),  # ￥符号宽度约5.2点
+                    amount_text,
+                    fontname='helv',
+                    fontsize=change.font_size,
+                    color=change.color
+                )
+            else:
+                # 普通文本直接插入
+                page.insert_text(
+                    (x_pos, y_pos),
+                    change.new_value,
+                    fontname=fontname,
+                    fontsize=change.font_size,
+                    color=change.color
+                )
 
         # Save without optimization
         doc.save(output_path)

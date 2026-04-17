@@ -26,7 +26,7 @@ try {
             size: 44.0,
             color: {r: 35, g: 35, b: 35},
             fauxBold: true,
-            tracking: 75,  // 适度调整 tracking 使文本宽度接近原始布局
+            tracking: companyName.length > 15 ? 0 : (companyName.length > 10 ? 30 : 75),  // 根据长度动态调整
             justification: Justification.LEFT
         },
         "公司地址": {

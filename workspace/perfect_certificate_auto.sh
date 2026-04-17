@@ -43,7 +43,7 @@ convert_to_french_date() {
         *) echo "❌ 无效月份: $month"; exit 1 ;;
     esac
 
-    echo "$day $month_fr $year"
+    echo "Le $day $month_fr $year"
 }
 
 # 转换日期

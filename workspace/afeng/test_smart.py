@@ -602,6 +602,88 @@ for original, label in description_texts:
             print(f"  ✓ 说明-{label}")
             break
 
+# 5.30 翻译详细说明文字（包含动态数据）
+# 找"本期您的电量为762千瓦时，较上期环比增"
+for span in text_spans:
+    if "本期您的电量为" in span.text and "千瓦时" in span.text:
+        # 构建法语句子
+        new_text = f"Votre consommation est de {elec_data.total_kwh} kWh, croissance"
+        changes.append(FieldChange(
+            field_name="说明详情-电量",
+            original_value=span.text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 说明详情-电量")
+        break
+
+# 找"本期您用电的峰谷分时比例为36.22%、18."
+for span in text_spans:
+    if "本期您用电的峰谷分时比例为" in span.text:
+        new_text = f"Ratio heures de pointe/creuses: {elec_data.peak_percent}%, {elec_data.valley_percent}%"
+        changes.append(FieldChange(
+            field_name="说明详情-峰谷比例1",
+            original_value=span.text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 说明详情-峰谷比例1")
+        break
+
+# 找"本期您的平均电价0.661元/千瓦时，较上期"
+for span in text_spans:
+    if "本期您的平均电价" in span.text and "元/千瓦时" in span.text:
+        new_text = f"Tarif moyen: {elec_data.avg_price} CNY/kWh, augmentation"
+        changes.append(FieldChange(
+            field_name="说明详情-平均电价",
+            original_value=span.text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 说明详情-平均电价")
+        break
+
+# 找"5%，上期峰谷分时比例为32.6%、34.96%"
+for span in text_spans:
+    if "上期峰谷分时比例为" in span.text:
+        new_text = "période précédente: 32.6%, 34.96%"
+        changes.append(FieldChange(
+            field_name="说明详情-峰谷比例2",
+            original_value=span.text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 说明详情-峰谷比例2")
+        break
+
+# 找"增长0.0692元/千瓦时。"
+for span in text_spans:
+    if "增长" in span.text and "元/千瓦时" in span.text and len(span.text) < 30:
+        new_text = f"de {span.text.split('增长')[1]}"
+        changes.append(FieldChange(
+            field_name="说明详情-增长",
+            original_value=span.text,
+            new_value=new_text,
+            bbox=span.bbox,
+            font=span.font,
+            font_size=span.font_size,
+            color=span.color
+        ))
+        print(f"  ✓ 说明详情-增长")
+        break
+
 print(f"  共 {len(changes)} 个字段")
 print()
 

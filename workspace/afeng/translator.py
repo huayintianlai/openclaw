@@ -117,12 +117,65 @@ class BillTranslator:
 
             # 数字和连接词
             "至": " à ",
-            "省": " Province de ",
-            "市": " Ville de ",
-            "镇": " Canton de ",
-            "村": " Village de ",
-            "街道": " Rue ",
-            "路": " Route ",
+            "省": " Province ",  # 修改：去掉"de"，因为在公司名称中不需要
+            "市": " City ",
+            "镇": " Town ",
+            "村": " Village ",
+            "街道": " Street ",
+            "路": " Road ",
+
+            # 新增缺失翻译
+            "电 费 账 单": "FACTURE D'ÉLECTRICITÉ",
+            "用电类": "Type d'utilisation",
+            "别": "",  # 这是"类别"的"别"，单独出现时删除
+            "居民生活用电": "Électricité résidentielle",
+            "电压等级": "Niveau de tension",
+            "交流": "AC",
+            "供电服务单位": "Fournisseur d'électricité",
+            "国网浙江省电力公司": "State Grid Zhejiang Province Electric Power Company",
+            "国网浙江建德供电公司": "State Grid Jiande Electric Power Company",
+            "浙江省电力公司": "Zhejiang Province Electric Power Company",
+            "电力公司": "Electric Power Company",
+            "单位：千瓦时、千伏安（千瓦）、元": "Unité: kWh, kVA (kW), CNY",
+            "示数类型": "Type de relevé",
+            "线损": "Perte en ligne",
+            "退补": "Ajustement",
+            "正向有功": "Énergie active positive",
+            "总/平": "Total/Normal",
+            "三档加价电费": "Supplément 3ème palier",
+            "二档加价电费": "Supplément 2ème palier",
+            "备": "Remarque",
+            "您可以扫描账单右下角二维码，下载登录网上国网App，查询电价公示表、电费账单详情以及用能分析等": "Scannez le QR code en bas à droite pour télécharger l'application State Grid et consulter les tarifs, détails de facture et analyse de consommation",
+            "网站": "Site web",
+            "长": "croissance",
+            "峰谷阶梯": "Paliers heures de pointe/creuses",
+
+            # 新增：四川地区相关
+            "四川": "Sichuan",
+            "浙江": "Zhejiang",
+            "建德": "Jiande",
+            "浙江建德": "Zhejiang Jiande",
+            "四川-用电户-220至380伏-居民生活户表用": "Sichuan-Utilisateur-220 à 380V-Électricité résidentielle",
+            "浙江-用电户-220至380伏-居民生活户表用": "Zhejiang-Utilisateur-220 à 380V-Électricité résidentielle",
+            "浙江-用电户-220至380伏-居民": "Zhejiang-Utilisateur-220 à 380V-Résidentiel",
+            "浙江-用电户-220至380伏-居": "Zhejiang-Utilisateur-220 à 380V-Rés.",
+            "电-居民生活-居民丰水期谷段0.175(峰)": "Électricité-Résidentiel-Période humide creuse 0.175(Pointe)",
+            "电-居民生活-居民丰水期谷段0.175(平)": "Électricité-Résidentiel-Période humide creuse 0.175(Normal)",
+            "电-居民生活-居民丰水期谷段0.175(谷)": "Électricité-Résidentiel-Période humide creuse 0.175(Creuse)",
+
+            # 新增：动态文本片段
+            "本期您的电量为": "Votre consommation est de",
+            "千瓦时，较上期环比增": "kWh, croissance de",
+            "本期您用电的峰谷分时比例为": "Votre ratio heures de pointe/creuses est de",
+            "，上期峰谷分时比例为": ", période précédente:",
+            "本期您的平均电价": "Votre tarif moyen est de",
+            "元/千瓦时，较上期": "CNY/kWh, par rapport à la période précédente",
+            "增长": "augmentation de",
+
+            # 新增：电能表编号和电价组合
+            "电能表编号：": "N° compteur: ",
+            "，电价：": ", Tarif: ",
+            "电力公司": "Electric Power Company",
         }
 
     def translate_field(self, chinese_text: str) -> str:
@@ -146,11 +199,36 @@ class BillTranslator:
         if text in self.translations:
             return self.translations[text]
 
-        # 4. 特殊处理：地址翻译（包含省市镇村的长文本）
-        if any(keyword in text for keyword in ['省', '市', '镇', '村', '街道', '路', '号']):
-            result = self._translate_address(text)
-            # 地址翻译后直接返回，不再检查是否包含中文（因为地名保留中文是正常的）
+        # 3.5 特殊处理：公司名称（优先于地址翻译）
+        if '电力公司' in text or '供电公司' in text:
+            # 这是公司名称，不是地址，走组合文本翻译
+            result = text
+            sorted_items = sorted(self.translations.items(), key=lambda x: len(x[0]), reverse=True)
+            for cn, fr in sorted_items:
+                if cn in result:
+                    result = result.replace(cn, fr)
+            result = ' '.join(result.split())
             return result
+
+        # 4. 特殊处理：地址翻译（包含省市镇村的长文本，但排除"电能表编号"等）
+        # 只有真正的地址才走地址翻译逻辑
+        # 排除包含"电能表编号"、"电价"等非地址关键词的文本
+        if any(keyword in text for keyword in ['电能表编号', '电价', '千瓦时', 'kWh']):
+            # 这不是地址，走组合文本翻译
+            pass
+        else:
+            is_address = any(keyword in text for keyword in ['省', '市', '镇', '村', '街道', '路'])
+            # 如果只包含"号"但不包含其他地址关键词，不当作地址处理
+            if '号' in text and not is_address:
+                # 检查是否是"XX号"这种地址格式（数字+号）
+                import re
+                if re.search(r'\d+号', text):
+                    is_address = True
+
+            if is_address:
+                result = self._translate_address(text)
+                # 地址翻译后直接返回，不再检查是否包含中文（因为地名保留中文是正常的）
+                return result
 
         # 5. 处理组合文本（按长度排序，优先匹配长词组）
         result = text
@@ -175,7 +253,7 @@ class BillTranslator:
     def _translate_address(self, address: str) -> str:
         """
         专门处理地址翻译
-        策略：翻译行政级别（省市镇村），保留地名拼音
+        策略：完全翻译成法语，地名使用拼音
 
         Args:
             address: 中文地址
@@ -185,23 +263,34 @@ class BillTranslator:
         """
         result = address
 
-        # 只翻译行政级别关键词，地名保持原样
+        # 先翻译已知的地名
+        place_names = {
+            "浙江": "Zhejiang",
+            "建德": "Jiande",
+            "乾潭": "Qiantan",
+            "幸福": "Xingfu",
+            "苏圹": "Sukuang",
+        }
+
+        for cn, pinyin in place_names.items():
+            result = result.replace(cn, pinyin)
+
+        # 再翻译行政级别关键词
         admin_keywords = {
-            "省": " Province, ",
-            "市": " City, ",
-            "镇": " Town, ",
-            "村": " Village, ",
-            "街道": " Street, ",
+            "省": " Province ",
+            "市": " City ",
+            "镇": " Town ",
+            "村": " Village ",
+            "街道": " Street ",
             "路": " Road ",
-            "号": " No.",
+            "号": " No. ",
         }
 
         for cn, fr in admin_keywords.items():
             result = result.replace(cn, fr)
 
-        # 清理多余空格和逗号
+        # 清理多余空格
         result = ' '.join(result.split())
-        result = result.replace(' ,', ',')
 
         return result
 

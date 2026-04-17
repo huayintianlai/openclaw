@@ -881,13 +881,10 @@
           "requireMention": true
         },
         "afeng": {
-          "allowFrom": [
-            "ou_8a7c44fa19bac7c9c3b2aeb74ee0a440"
-          ],
           "appId": "cli_a96a6b2526f89cc3",
           "appSecret": "${FEISHU_AFENG_APP_SECRET}",
           "botName": "阿峰",
-          "dmPolicy": "allowlist",
+          "dmPolicy": "allow",
           "enabled": true,
           "groupPolicy": "allow",
           "requireMention": true

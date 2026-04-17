@@ -65,6 +65,21 @@ class PDFGenerator:
         doc = fitz.open(template_path)
         page = doc[0]
 
+        # Step 1: Redact old text - use redaction to completely remove text
+        for change in changes:
+            rect = fitz.Rect(change.bbox)
+            # 扩大redaction区域，确保完全删除原文本
+            rect.x0 -= 0.5
+            rect.y0 -= 0.5
+            rect.x1 += 0.5
+            rect.y1 += 0.5
+            # 使用 redaction 标记要删除的区域
+            page.add_redact_annot(rect)
+
+        # 应用所有 redaction（彻底删除文本，保留背景色）
+        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
+
+        # Step 2: Register fonts AFTER redaction
         # Register Microsoft YaHei font
         msyh_registered = False
         if os.path.exists(self.font_path_msyh):
@@ -95,67 +110,31 @@ class PDFGenerator:
             except:
                 pass
 
-        # Step 1: Redact old text - use appropriate background colors
-        for change in changes:
-            rect = fitz.Rect(change.bbox)
-
-            # 根据字段名称使用对应的背景色
-            if '本期电量' in change.field_name:
-                # 浅灰色背景 RGB(238, 238, 238)
-                page.add_redact_annot(rect, fill=(238/255, 238/255, 238/255))
-            elif '本期电费' in change.field_name:
-                # 浅青色背景 RGB(219, 253, 255)
-                page.add_redact_annot(rect, fill=(219/255, 253/255, 255/255))
-            elif '抄表日期' in change.field_name:
-                # 浅灰色背景 RGB(245, 245, 245)
-                page.add_redact_annot(rect, fill=(245/255, 245/255, 245/255))
-            else:
-                # 其他字段使用透明背景
-                page.add_redact_annot(rect)
-        page.apply_redactions()
-
-        # Step 2: Re-register Microsoft YaHei after redaction
-        if msyh_registered:
-            try:
-                fontbuffer = open(self.font_path_msyh, 'rb').read()
-                page.insert_font(fontbuffer=fontbuffer, fontname='msyh')
-            except:
-                msyh_registered = False
-
-        # Re-register Heiti TC after redaction
-        if heiti_registered:
-            try:
-                fontbuffer = open(self.font_path_heiti, 'rb').read()
-                page.insert_font(fontbuffer=fontbuffer, fontname='heiti')
-            except:
-                heiti_registered = False
-
-        # Re-register STFangsong after redaction
-        if fangsong_registered:
-            try:
-                fontbuffer = open(self.font_path_fangsong, 'rb').read()
-                page.insert_font(fontbuffer=fontbuffer, fontname='fangsong')
-            except:
-                fangsong_registered = False
-
-        # Step 3: Insert new text with correct fonts
+        # Step 2: Insert new text with correct fonts
         for change in changes:
             # 判断内容类型
             text = change.new_value
             is_pure_number_or_date = all(c.isdigit() or c in '-./' for c in text)
             # 检查是否包含货币符号的金额（如￥503.69）
             is_currency_amount = '￥' in text and any(c.isdigit() for c in text)
+            # 检查是否是电表编号字段（检查文本内容而不是字段名）
+            is_meter_number = '电能表编号' in text
+
+            # 账单周期字段的字体大小增加1.5个点
+            font_size = change.font_size
+            if any(keyword in change.field_name for keyword in ['账单周期']):
+                font_size += 1.5
 
             # 户名、用电地址使用微软雅黑
             if '户名' in change.field_name or '用电地址' in change.field_name:
                 fontname = 'msyh' if msyh_registered else 'china-s'
-            # 电价地区、账单周期、账单打印日期使用华文仿宋（排除抄表日期）
-            elif any(keyword in change.field_name for keyword in ['电价地区', '电价', '账单周期', '账单打印日期']):
+            # 账单周期、账单打印日期使用华文仿宋（排除电价地区和抄表日期）
+            elif any(keyword in change.field_name for keyword in ['账单周期', '账单打印日期']):
                 fontname = 'fangsong' if fangsong_registered else 'china-s'
             # 纯数字、日期使用helv（数字间距正常）
             elif is_pure_number_or_date:
                 fontname = 'helv'
-            # 其他中文内容使用china-s
+            # 其他中文内容使用china-s（包括电价地区）
             else:
                 fontname = 'china-s'
 
@@ -163,8 +142,91 @@ class PDFGenerator:
             x_pos = change.bbox[0]
             y_pos = change.bbox[3]
 
+            # 电表编号需要特殊处理：数字部分用helv，其他用china-s
+            if is_meter_number:
+                import re
+                # 匹配格式："电能表编号：[22位数字]，电价：..." (支持半角和全角逗号)
+                match = re.match(r'(电能表编号：)(\d{22})([,，]电价：.+)', text)
+                if match:
+                    prefix = match.group(1)
+                    number = match.group(2)
+                    suffix = match.group(3)
+
+                    # 计算原始文本的总宽度
+                    original_width = change.bbox[2] - change.bbox[0]
+
+                    # 计算前缀理论宽度
+                    prefix_theoretical = fitz.get_text_length(prefix, fontname='china-s', fontsize=font_size)
+                    # 计算数字理论宽度
+                    number_theoretical = fitz.get_text_length(number, fontname='helv', fontsize=font_size)
+
+                    # 计算后缀各段的理论宽度
+                    suffix_segments = re.split(r'(\d+)', suffix)
+                    suffix_theoretical = sum(
+                        fitz.get_text_length(seg, fontname='helv' if seg.isdigit() else 'china-s', fontsize=font_size)
+                        for seg in suffix_segments if seg
+                    )
+
+                    # 计算总理论宽度和缩放比例
+                    total_theoretical = prefix_theoretical + number_theoretical + suffix_theoretical
+                    scale = original_width / total_theoretical if total_theoretical > 0 else 1.0
+
+                    # 插入前缀
+                    page.insert_text((x_pos, y_pos), prefix, fontname='china-s', fontsize=font_size, color=change.color)
+                    current_x = x_pos + prefix_theoretical * scale
+
+                    # 插入数字
+                    page.insert_text((current_x, y_pos), number, fontname='helv', fontsize=font_size, color=change.color)
+                    current_x += number_theoretical * scale
+
+                    # 插入后缀各段
+                    for segment in suffix_segments:
+                        if not segment:
+                            continue
+                        fontname_seg = 'helv' if segment.isdigit() else 'china-s'
+                        page.insert_text((current_x, y_pos), segment, fontname=fontname_seg, fontsize=font_size, color=change.color)
+                        seg_width = fitz.get_text_length(segment, fontname=fontname_seg, fontsize=font_size)
+                        current_x += seg_width * scale
+                else:
+                    # 如果格式不匹配，直接插入
+                    page.insert_text((x_pos, y_pos), text, fontname='china-s', fontsize=font_size, color=change.color)
+            # 电价地区字段包含数字时，需要分段渲染
+            elif '电价地区' in change.field_name and any(c.isdigit() for c in text):
+                import re
+                # 将文本分段：中文、数字、中文...
+                segments = re.split(r'(\d+)', text)
+
+                # 计算原始文本的总宽度
+                original_width = change.bbox[2] - change.bbox[0]
+                # 计算所有段的理论宽度总和
+                total_theoretical_width = sum(
+                    fitz.get_text_length(seg, fontname='helv' if seg.isdigit() else 'china-s', fontsize=font_size)
+                    for seg in segments if seg
+                )
+                # 计算缩放比例，使新文本适应原始宽度
+                scale = original_width / total_theoretical_width if total_theoretical_width > 0 else 1.0
+
+                current_x = x_pos
+                for segment in segments:
+                    if not segment:
+                        continue
+                    if segment.isdigit():
+                        fontname_seg = 'helv'
+                    else:
+                        fontname_seg = 'china-s'
+
+                    page.insert_text(
+                        (current_x, y_pos),
+                        segment,
+                        fontname=fontname_seg,
+                        fontsize=font_size,
+                        color=change.color
+                    )
+                    # 使用缩放后的宽度
+                    text_width = fitz.get_text_length(segment, fontname=fontname_seg, fontsize=font_size)
+                    current_x += text_width * scale
             # 货币金额需要特殊处理：分开插入￥和数字
-            if is_currency_amount:
+            elif is_currency_amount:
                 # 提取￥符号和数字部分
                 amount_text = text.replace('￥', '')
 
@@ -184,16 +246,16 @@ class PDFGenerator:
                     (x_pos, y_pos),
                     '￥',
                     fontname='china-s',
-                    fontsize=change.font_size,
+                    fontsize=font_size,
                     color=change.color
                 )
 
-                # 再插入数字（使用helv，紧跟￥符号）
+                # 再插入数字（使用helv，留半个字符的间距）
                 page.insert_text(
-                    (x_pos + 5.2, y_pos),  # ￥符号宽度约5.2点
+                    (x_pos + 7.5, y_pos),  # ￥符号宽度约5.2点，加2.3点间距（半个字符）
                     amount_text,
                     fontname='helv',
-                    fontsize=change.font_size,
+                    fontsize=font_size,
                     color=change.color
                 )
             else:
@@ -202,7 +264,7 @@ class PDFGenerator:
                     (x_pos, y_pos),
                     change.new_value,
                     fontname=fontname,
-                    fontsize=change.font_size,
+                    fontsize=font_size,
                     color=change.color
                 )
 

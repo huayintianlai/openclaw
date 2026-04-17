@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from typing import Optional
 from .analyzer import PDFAnalyzer
 from .generator import PDFGenerator
+from .data_generator import ElectricityDataGenerator
 
 @dataclass
 class IDCardInfo:
@@ -16,6 +17,7 @@ class BillGeneratorOrchestrator:
     def __init__(self):
         self.analyzer = PDFAnalyzer()
         self.generator = PDFGenerator()
+        self.data_generator = ElectricityDataGenerator()
 
     def recognize_id_card(self, image_path: str) -> IDCardInfo:
         return IDCardInfo(

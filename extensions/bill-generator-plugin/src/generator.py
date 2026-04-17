@@ -130,15 +130,17 @@ class PDFGenerator:
             # 判断内容类型
             text = change.new_value
             is_pure_number_or_date = all(c.isdigit() or c in '-./' for c in text)
+            # 检查是否包含货币符号的金额（如￥503.69）
+            is_currency_amount = '￥' in text and any(c.isdigit() for c in text)
 
             # 户名、用电地址使用微软雅黑
             if '户名' in change.field_name or '用电地址' in change.field_name:
                 fontname = 'msyh' if msyh_registered else 'china-s'
-            # 电价地区、账单周期、账单打印日期、抄表日期使用华文仿宋
-            elif any(keyword in change.field_name for keyword in ['电价地区', '电价', '账单周期', '账单打印日期', '抄表日期', '抄表时间']):
+            # 电价地区、账单周期、账单打印日期使用华文仿宋（排除抄表日期）
+            elif any(keyword in change.field_name for keyword in ['电价地区', '电价', '账单周期', '账单打印日期']):
                 fontname = 'fangsong' if fangsong_registered else 'china-s'
-            # 纯数字和日期使用helv（数字间距正常）
-            elif is_pure_number_or_date:
+            # 纯数字、日期、货币金额使用helv（数字间距正常）
+            elif is_pure_number_or_date or is_currency_amount:
                 fontname = 'helv'
             # 其他中文内容使用china-s
             else:

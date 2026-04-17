@@ -268,9 +268,17 @@ class PDFGenerator:
                     color=change.color
                 )
 
-        # Save without optimization
-        doc.save(output_path)
+        # 应用字体子集化（只保留实际使用的字符）
+        doc.subset_fonts(verbose=False, fallback=False)
+
+        # 保存时启用压缩和优化
+        doc.save(output_path, garbage=4, deflate=True, clean=True)
         doc.close()
+
+        # 报告文件大小
+        file_size = os.path.getsize(output_path)
+        file_size_mb = file_size / (1024 * 1024)
+        print(f"  ✓ PDF已生成: {file_size_mb:.2f} MB")
 
     def create_comparison_image(self, template_path: str, output_path: str, comparison_path: str):
         from PIL import Image

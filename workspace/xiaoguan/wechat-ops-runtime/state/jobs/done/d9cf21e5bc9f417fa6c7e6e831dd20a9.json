@@ -1,0 +1,91 @@
+{
+  "job_id": "d9cf21e5bc9f417fa6c7e6e831dd20a9",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T08:04:55.990363+00:00",
+  "cursor": 461,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［236条］AA:\\\\运昌总部.这\", \"preview_text\": \"［236条］AA:\\\\运昌总部.这\", \"time\": \"16:02\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 16:00\", \"preview\": \"［69条］.:他说真人过，不…\", \"preview_text\": \"［69条］.:他说真人过，不…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［11条］Carlota LI（未回请语..这\", \"preview_text\": \"［11条］Carlota LI（未回请语..这\", \"time\": \"16:04\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"然区， ［@所有人］［999+条］\\\"19.\", \"preview_text\": \"然区， ［@所有人］［999+条］\\\"19.\", \"time\": \"16:00\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［11条］众发跨境:uk个人本…B\", \"preview_text\": \"［11条］众发跨境:uk个人本…B\", \"time\": \"15:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯15:43\", \"preview\": \"［75条］ JaneCcc:卖的少，…B\", \"preview_text\": \"［75条］ JaneCcc:卖的少，…B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "MI",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［236条］AA:\\运昌总部.这",
+        "preview_text": "［236条］AA:\\运昌总部.这",
+        "time": "16:02"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 16:00",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［69条］.:他说真人过，不…",
+        "preview_text": "［69条］.:他说真人过，不…",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［11条］Carlota LI（未回请语..这",
+        "preview_text": "［11条］Carlota LI（未回请语..这",
+        "time": "16:04"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "然区， ［@所有人］［999+条］\"19.",
+        "preview_text": "然区， ［@所有人］［999+条］\"19.",
+        "time": "16:00"
+      },
+      {
+        "name": "跨境电商同行",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［11条］众发跨境:uk个人本…B",
+        "preview_text": "［11条］众发跨境:uk个人本…B",
+        "time": "15:52"
+      },
+      {
+        "name": "速卖通纯商家运营交⋯15:43",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［75条］ JaneCcc:卖的少，…B",
+        "preview_text": "［75条］ JaneCcc:卖的少，…B",
+        "time": ""
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "MI",
+        "东南亚虾皮 tk lazad... 16:00",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "跨境电商同行",
+        "速卖通纯商家运营交⋯15:43"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T08:05:03.631584+00:00",
+  "worker_pid": 55256
+}

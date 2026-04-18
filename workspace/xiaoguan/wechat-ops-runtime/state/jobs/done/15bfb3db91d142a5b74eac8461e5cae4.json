@@ -1,0 +1,81 @@
+{
+  "job_id": "15bfb3db91d142a5b74eac8461e5cae4",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T07:34:34.620540+00:00",
+  "cursor": 429,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交..\", \"preview\": \"［227条］汽车出口＋内贸1⋯\", \"preview_text\": \"［227条］汽车出口＋内贸1⋯\", \"time\": \"15:30\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"PR8\", \"preview\": \"［58条］Loess:违反什么政..这\", \"preview_text\": \"［58条］Loess:违反什么政..这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［8条］希音 temu一手源头.这\", \"preview_text\": \"［8条］希音 temu一手源头.这\", \"time\": \"15:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张…\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张…\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的\", \"preview_text\": \"［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［227条］汽车出口＋内贸1⋯",
+        "preview_text": "［227条］汽车出口＋内贸1⋯",
+        "time": "15:30"
+      },
+      {
+        "name": "PR8",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［58条］Loess:违反什么政..这",
+        "preview_text": "［58条］Loess:违反什么政..这",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［8条］希音 temu一手源头.这",
+        "preview_text": "［8条］希音 temu一手源头.这",
+        "time": "15:33"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］中国驻俄罗斯大使馆:张…",
+        "preview_text": "［4条］中国驻俄罗斯大使馆:张…",
+        "time": "14:33"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［70条］可可西里:好的",
+        "preview_text": "［70条］可可西里:好的",
+        "time": "15:14"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 5,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交..",
+        "PR8",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T07:34:38.982234+00:00",
+  "worker_pid": 55256
+}

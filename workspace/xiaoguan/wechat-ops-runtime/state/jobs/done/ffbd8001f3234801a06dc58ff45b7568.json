@@ -1,0 +1,81 @@
+{
+  "job_id": "ffbd8001f3234801a06dc58ff45b7568",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T04:28:26.360865+00:00",
+  "cursor": 311,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \".肉強\", \"preview\": \"2FR ［31条】卷丘:【动画表情］\", \"preview_text\": \"2FR ［31条】卷丘:【动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［163条】顾遂无忧:心出口…\", \"preview_text\": \"［163条】顾遂无忧:心出口…\", \"time\": \"12:28\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［14条］恺谷子跨境:25年.\", \"preview_text\": \"［14条］恺谷子跨境:25年.\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱...\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": ".肉強",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "2FR ［31条】卷丘:【动画表情］",
+        "preview_text": "2FR ［31条】卷丘:【动画表情］",
+        "time": ""
+      },
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［163条】顾遂无忧:心出口…",
+        "preview_text": "［163条】顾遂无忧:心出口…",
+        "time": "12:28"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］恺谷子跨境:25年.",
+        "preview_text": "［14条］恺谷子跨境:25年.",
+        "time": "12:03"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱...",
+        "preview_text": "［14条］悟:出谷歌个人邮箱...",
+        "time": "11:41."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［65条］ Jason huang: 豪宅",
+        "preview_text": "［65条］ Jason huang: 豪宅",
+        "time": "11:39"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 5,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        ".肉強",
+        "AA汽车出口资源交⋯",
+        "优质跨境服务群2",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T04:28:30.463318+00:00",
+  "worker_pid": 55256
+}

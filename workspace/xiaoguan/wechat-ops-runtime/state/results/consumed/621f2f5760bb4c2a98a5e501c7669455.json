@@ -1,0 +1,94 @@
+{
+  "result_id": "621f2f5760bb4c2a98a5e501c7669455",
+  "job_id": "60954a411998465ca486207f2afc307f",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T04:10:18.734695+00:00",
+  "source": "watcher:unread",
+  "cursor": 301,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"11:41|\", \"preview\": \"［14条］悟:出谷歌个人邮箱…\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"M1\", \"preview\": \"［157条］A奥迪宝马弃驰凯⋯\", \"preview_text\": \"［157条］A奥迪宝马弃驰凯⋯\", \"time\": \"12:06\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:21\", \"preview\": \"［28条］虾皮越南魚:给你举…这\", \"preview_text\": \"［28条］虾皮越南魚:给你举…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［14条］ 恺谷子跨境:25年.\", \"preview_text\": \"［14条］ 恺谷子跨境:25年.\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"［65条］ Jason huang:豪宅|\", \"preview_text\": \"［65条］ Jason huang:豪宅|\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 5,
+      "visible_unread_session_count": 5,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "11:41|",
+        "M1",
+        "东南亚虾皮 tk lazad... 11:21",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "11:41|",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱…",
+          "preview_text": "［14条］悟:出谷歌个人邮箱…",
+          "time": ""
+        },
+        {
+          "name": "M1",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［157条］A奥迪宝马弃驰凯⋯",
+          "preview_text": "［157条］A奥迪宝马弃驰凯⋯",
+          "time": "12:06"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 11:21",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［28条］虾皮越南魚:给你举…这",
+          "preview_text": "［28条］虾皮越南魚:给你举…这",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］ 恺谷子跨境:25年.",
+          "preview_text": "［14条］ 恺谷子跨境:25年.",
+          "time": "12:03"
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［65条］ Jason huang:豪宅|",
+          "preview_text": "［65条］ Jason huang:豪宅|",
+          "time": "11:39"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 5,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "11:41|",
+          "M1",
+          "东南亚虾皮 tk lazad... 11:21",
+          "优质跨境服务群2",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

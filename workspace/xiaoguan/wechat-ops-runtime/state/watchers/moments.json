@@ -1,0 +1,27 @@
+{
+  "watcher": "moments",
+  "enabled": true,
+  "healthy": false,
+  "available": false,
+  "phase": "moments_snapshot",
+  "last_checked_at": "2026-04-03T16:00:16.972441+00:00",
+  "last_success_at": null,
+  "last_error_at": "2026-04-03T16:00:16.972441+00:00",
+  "last_error_code": "window_not_found",
+  "consecutive_failures": 45641,
+  "cursor": 0,
+  "signature": "",
+  "recommended_next_step": "run_health",
+  "payload": {
+    "ok": true,
+    "phase": "moments_snapshot",
+    "current_view": "chat_detail",
+    "current_contact": "优质跨境服务群2（494）",
+    "recommended_next_step": null,
+    "view": "chat_detail",
+    "available": false,
+    "items": [],
+    "feed_signature": "",
+    "signature": ""
+  }
+}

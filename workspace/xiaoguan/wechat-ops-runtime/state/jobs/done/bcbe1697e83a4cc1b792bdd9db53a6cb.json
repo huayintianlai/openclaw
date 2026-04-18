@@ -1,0 +1,101 @@
+{
+  "job_id": "bcbe1697e83a4cc1b792bdd9db53a6cb",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T08:16:36.189691+00:00",
+  "cursor": 471,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"176条］再版小树:pop卖的.这\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"\", \"unread_badge_count\": 192, \"unread_count\": 192}, {\"has_unread_badge\": true, \"name\": \"M1\", \"preview\": \"［242条］沃尔沃，雷克 红…\", \"preview_text\": \"［242条］沃尔沃，雷克 红…\", \"time\": \"16:16\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 16:00\", \"preview\": \"［69条］.:他说真人过，不…\", \"preview_text\": \"［69条］.:他说真人过，不…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［13条］Lucy:低价出一个加..\", \"preview_text\": \"［13条］Lucy:低价出一个加..\", \"time\": \"16:06\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"然区: ［@所有人］［999+条］Qin..\", \"preview_text\": \"然区: ［@所有人］［999+条］Qin..\", \"time\": \"16:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［11条］众发跨境:uk个人本…这\", \"preview_text\": \"［11条］众发跨境:uk个人本…这\", \"time\": \"15:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"176条］再版小树:pop卖的.这\", \"preview_text\": \"176条］再版小树:pop卖的.这\", \"time\": \"16:11\", \"unread_badge_count\": 192, \"unread_count\": 192}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "176条］再版小树:pop卖的.这",
+        "unread_count": 192,
+        "unread_badge_count": 192,
+        "has_unread_badge": true,
+        "preview": "",
+        "preview_text": "",
+        "time": ""
+      },
+      {
+        "name": "M1",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［242条］沃尔沃，雷克 红…",
+        "preview_text": "［242条］沃尔沃，雷克 红…",
+        "time": "16:16"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 16:00",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［69条］.:他说真人过，不…",
+        "preview_text": "［69条］.:他说真人过，不…",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［13条］Lucy:低价出一个加..",
+        "preview_text": "［13条］Lucy:低价出一个加..",
+        "time": "16:06"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "然区: ［@所有人］［999+条］Qin..",
+        "preview_text": "然区: ［@所有人］［999+条］Qin..",
+        "time": "16:12"
+      },
+      {
+        "name": "跨境电商同行",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［11条］众发跨境:uk个人本…这",
+        "preview_text": "［11条］众发跨境:uk个人本…这",
+        "time": "15:52"
+      },
+      {
+        "name": "速卖通纯商家运营交.",
+        "unread_count": 192,
+        "unread_badge_count": 192,
+        "has_unread_badge": true,
+        "preview": "176条］再版小树:pop卖的.这",
+        "preview_text": "176条］再版小树:pop卖的.这",
+        "time": "16:11"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 13,
+      "visible_unread_session_count": 7,
+      "visible_unread_sessions_with_numeric_badge": 2,
+      "visible_unread_message_badge_total": 384,
+      "visible_unread_names": [
+        "176条］再版小树:pop卖的.这",
+        "M1",
+        "东南亚虾皮 tk lazad... 16:00",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "跨境电商同行",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T08:16:39.642487+00:00",
+  "worker_pid": 55256
+}

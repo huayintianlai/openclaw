@@ -1,0 +1,39 @@
+{
+  "job_id": "7c031d5c9d774d24aecb2302f1703e3a",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-28T05:21:35.050985+00:00",
+  "cursor": 45,
+  "signature": "[{\"speaker\": \"张三李四\", \"text\": \"一二两个方案感觉都可以。 张三李四 实施起来难度也不高。 张三李四 就是很多细节得调试。\", \"time\": null}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "小九九•交付&售后 （4）",
+    "messages": [
+      {
+        "speaker": "张三李四",
+        "time": null,
+        "text": "一二两个方案感觉都可以。 张三李四 实施起来难度也不高。 张三李四 就是很多细节得调试。"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "张三李四",
+        "time": null,
+        "text": "一二两个方案感觉都可以。 张三李四 实施起来难度也不高。 张三李四 就是很多细节得调试。"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "张三李四",
+        "time": null,
+        "text": "一二两个方案感觉都可以。 张三李四 实施起来难度也不高。 张三李四 就是很多细节得调试。 GS口8、"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:21:35.779900+00:00",
+  "worker_pid": 55256
+}

@@ -1,0 +1,141 @@
+{
+  "job_id": "49fdbb255a53411e8140c6c3e481e08e",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-29T06:27:13.728766+00:00",
+  "cursor": 623,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"14:11|\", \"preview\": \"［75条］美客多彩象 erp免.\", \"preview_text\": \"［75条］美客多彩象 erp免.\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［414条］方程豹 睿蓝国际.\", \"preview_text\": \"［414条］方程豹 睿蓝国际.\", \"time\": \"14:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:06\", \"preview\": \"［126条］卷丘的大弟子:@…\", \"preview_text\": \"［126条］卷丘的大弟子:@…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"亚马逊卖家交流群（1）\", \"preview\": \"［6条］亚马逊-美国-Gavin...\", \"preview_text\": \"［6条］亚马逊-美国-Gavin...\", \"time\": \"10:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［50条］不上进的薛火火（跨..\", \"preview_text\": \"［50条］不上进的薛火火（跨..\", \"time\": \"13:56\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［5条］中国签证网:美国/加拿大⋯\", \"preview_text\": \"［5条］中国签证网:美国/加拿大⋯\", \"time\": \"10:59\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"【@所有人］［999+条」Max•\", \"preview_text\": \"【@所有人］［999+条」Max•\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"昨天 16:21|\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［15条」悟:出谷歇个人邮箱⋯.\", \"preview_text\": \"［15条」悟:出谷歇个人邮箱⋯.\", \"time\": \"12:11.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运.\", \"preview\": \"178条］JaneCcc:半托罚的.B\", \"preview_text\": \"178条］JaneCcc:半托罚的.B\", \"time\": \"昨天 16:42\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"頭登\", \"preview\": \"［12条］小白猫跨境～未回复...这\", \"preview_text\": \"［12条］小白猫跨境～未回复...这\", \"time\": \"昨天 16:49\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "14:11|",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［75条］美客多彩象 erp免.",
+        "preview_text": "［75条］美客多彩象 erp免.",
+        "time": ""
+      },
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［414条］方程豹 睿蓝国际.",
+        "preview_text": "［414条］方程豹 睿蓝国际.",
+        "time": "14:26"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 11:06",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［126条］卷丘的大弟子:@…",
+        "preview_text": "［126条］卷丘的大弟子:@…",
+        "time": ""
+      },
+      {
+        "name": "亚马逊卖家交流群（1）",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［6条］亚马逊-美国-Gavin...",
+        "preview_text": "［6条］亚马逊-美国-Gavin...",
+        "time": "10:52"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［50条］不上进的薛火火（跨..",
+        "preview_text": "［50条］不上进的薛火火（跨..",
+        "time": "13:56"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［5条］中国签证网:美国/加拿大⋯",
+        "preview_text": "［5条］中国签证网:美国/加拿大⋯",
+        "time": "10:59"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "【@所有人］［999+条」Max•",
+        "preview_text": "【@所有人］［999+条」Max•",
+        "time": "12:03"
+      },
+      {
+        "name": "昨天 16:21|",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "昂",
+        "preview_text": "昂",
+        "time": ""
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［15条」悟:出谷歇个人邮箱⋯.",
+        "preview_text": "［15条」悟:出谷歇个人邮箱⋯.",
+        "time": "12:11."
+      },
+      {
+        "name": "速卖通纯商家运.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "178条］JaneCcc:半托罚的.B",
+        "preview_text": "178条］JaneCcc:半托罚的.B",
+        "time": "昨天 16:42"
+      },
+      {
+        "name": "頭登",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［12条］小白猫跨境～未回复...这",
+        "preview_text": "［12条］小白猫跨境～未回复...这",
+        "time": "昨天 16:49"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 13,
+      "visible_unread_session_count": 11,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 1,
+      "visible_unread_names": [
+        "14:11|",
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad... 11:06",
+        "亚马逊卖家交流群（1）",
+        "优质跨境服务群2",
+        "公众号",
+        "希音卖家群",
+        "昨天 16:21|",
+        "跨境电商交流乙群",
+        "速卖通纯商家运.",
+        "頭登"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T06:27:15.434070+00:00",
+  "worker_pid": 55256
+}

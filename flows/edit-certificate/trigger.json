@@ -1,0 +1,93 @@
+{
+  "workflow_id": "edit-certificate",
+  "name": "法国公证文件编辑",
+  "version": "2.0.0",
+  "enabled": true,
+  "triggers": {
+    "keywords": [
+      "编辑公证文件",
+      "修改资本存款证明",
+      "生成公证文件",
+      "公证文件",
+      "资本存款",
+      "edit certificate",
+      "certificate"
+    ],
+    "patterns": [
+      ".*公证.*文件.*",
+      ".*资本.*存款.*",
+      ".*certificate.*"
+    ]
+  },
+  "interaction": {
+    "mode": "guided",
+    "prompts": [
+      {
+        "field": "company_name",
+        "message": "📌 请输入公司名称（例如：FinalTest SARL）",
+        "required": true,
+        "validation": {
+          "min_length": 1,
+          "max_length": 100
+        }
+      },
+      {
+        "field": "address",
+        "message": "📍 请输入公司地址（例如：123 Rue de Paris, 75001 Paris）",
+        "required": true,
+        "validation": {
+          "min_length": 1,
+          "max_length": 200
+        }
+      },
+      {
+        "field": "deposit_date",
+        "message": "📅 请输入资本存款日期（YYYY-MM-DD 格式，留空默认为两天后）",
+        "required": false,
+        "default": "+2d",
+        "validation": {
+          "format": "YYYY-MM-DD"
+        }
+      },
+      {
+        "field": "sign_date",
+        "message": "✍️  请输入落款日期（YYYY-MM-DD 格式，留空默认为两天后）",
+        "required": false,
+        "default": "+2d",
+        "validation": {
+          "format": "YYYY-MM-DD"
+        }
+      }
+    ],
+    "confirmation": {
+      "enabled": true,
+      "message": "确认以上信息无误后，将开始生成 PDF 文件"
+    }
+  },
+  "execution": {
+    "type": "python",
+    "script": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/certificate_workflow.py",
+    "timeout": 120000,
+    "retry": {
+      "enabled": false
+    }
+  },
+  "output": {
+    "type": "file",
+    "format": "pdf",
+    "return_to_chat": true,
+    "preview": true,
+    "download_link": true
+  },
+  "notifications": {
+    "on_start": "⏳ 正在生成公证文件...",
+    "on_success": "✅ 公证文件生成成功！",
+    "on_error": "❌ 生成失败，请检查输入参数"
+  },
+  "metadata": {
+    "author": "OpenClaw",
+    "created": "2026-04-17",
+    "category": "document-processing",
+    "tags": ["公证文件", "PDF", "法国", "Photoshop", "自动化"]
+  }
+}

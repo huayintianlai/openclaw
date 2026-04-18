@@ -1,0 +1,61 @@
+{
+  "job_id": "11be323dbc774e4186d5c293d5654501",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-29T11:27:54.805984+00:00",
+  "cursor": 659,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"宋瑞阳°\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"昨天 16:21\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"巴西◎美客多本...\", \"preview\": \"［34条］大鱼:［链接］DD+7..•込\", \"preview_text\": \"［34条］大鱼:［链接］DD+7..•込\", \"time\": \"昨天 09:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多自发货..\", \"preview\": \"［193条］竖琴:急需巴西本.. 凶\", \"preview_text\": \"［193条］竖琴:急需巴西本.. 凶\", \"time\": \"昨天 13:16\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "宋瑞阳°",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "昂",
+        "preview_text": "昂",
+        "time": "昨天 16:21"
+      },
+      {
+        "name": "巴西◎美客多本...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［34条］大鱼:［链接］DD+7..•込",
+        "preview_text": "［34条］大鱼:［链接］DD+7..•込",
+        "time": "昨天 09:37"
+      },
+      {
+        "name": "美客多自发货..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［193条］竖琴:急需巴西本.. 凶",
+        "preview_text": "［193条］竖琴:急需巴西本.. 凶",
+        "time": "昨天 13:16"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 3,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 1,
+      "visible_unread_names": [
+        "宋瑞阳°",
+        "巴西◎美客多本...",
+        "美客多自发货.."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T11:27:55.676369+00:00",
+  "worker_pid": 55256
+}

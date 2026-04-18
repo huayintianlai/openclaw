@@ -1,0 +1,61 @@
+{
+  "job_id": "a2cbf3a272554119863fa990e7b3cf5e",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:04:44.425829+00:00",
+  "cursor": 251,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交..\", \"preview\": \"［121条］栗子大众捷达汽车…\", \"preview_text\": \"［121条］栗子大众捷达汽车…\", \"time\": \"11:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 10:46\", \"preview\": \"［24条］阿撒:［动画表情］\", \"preview_text\": \"［24条］阿撒:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［3条］跨境阿龙（没回打电..\", \"preview_text\": \"［3条］跨境阿龙（没回打电..\", \"time\": \"11:04\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［121条］栗子大众捷达汽车…",
+        "preview_text": "［121条］栗子大众捷达汽车…",
+        "time": "11:03"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 10:46",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［24条］阿撒:［动画表情］",
+        "preview_text": "［24条］阿撒:［动画表情］",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［3条］跨境阿龙（没回打电..",
+        "preview_text": "［3条］跨境阿龙（没回打电..",
+        "time": "11:04"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 3,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交..",
+        "东南亚虾皮 tk lazad... 10:46",
+        "优质跨境服务群2"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:04:48.637678+00:00",
+  "worker_pid": 55256
+}

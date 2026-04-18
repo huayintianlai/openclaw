@@ -1,0 +1,61 @@
+{
+  "job_id": "d8b9cd1fa5614508822ad81e84111561",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:26:14.293322+00:00",
+  "cursor": 267,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \".肉強\", \"preview\": \"2FR ［28条］ 虾皮越南魚:给你样..\", \"preview_text\": \"2FR ［28条］ 虾皮越南魚:给你样..\", \"time\": \"11:21\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［137条］A.崔-大众 捷达出⋯.\", \"preview_text\": \"［137条］A.崔-大众 捷达出⋯.\", \"time\": \"11:25\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［4条］A ErQiao:出三个T.• 这|\", \"preview_text\": \"［4条］A ErQiao:出三个T.• 这|\", \"time\": \"11:10\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": ".肉強",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "2FR ［28条］ 虾皮越南魚:给你样..",
+        "preview_text": "2FR ［28条］ 虾皮越南魚:给你样..",
+        "time": "11:21"
+      },
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［137条］A.崔-大众 捷达出⋯.",
+        "preview_text": "［137条］A.崔-大众 捷达出⋯.",
+        "time": "11:25"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］A ErQiao:出三个T.• 这|",
+        "preview_text": "［4条］A ErQiao:出三个T.• 这|",
+        "time": "11:10"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 3,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        ".肉強",
+        "AA汽车出口资源交⋯",
+        "优质跨境服务群2"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:26:17.115942+00:00",
+  "worker_pid": 55256
+}

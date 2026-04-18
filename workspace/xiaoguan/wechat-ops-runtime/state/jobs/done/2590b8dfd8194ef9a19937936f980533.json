@@ -1,0 +1,111 @@
+{
+  "job_id": "2590b8dfd8194ef9a19937936f980533",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T07:12:51.273147+00:00",
+  "cursor": 406,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［225条］广汽传祺新车授权⋯B|\", \"preview_text\": \"［225条］广汽传祺新车授权⋯B|\", \"time\": \"15:08\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Q 13:16\", \"preview\": \"倒效留 ［193条］竖琴:急需巴西本…这\", \"preview_text\": \"倒效留 ［193条］竖琴:急需巴西本…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 15:09\", \"preview\": \"［53条］卷丘的大弟子:@...\", \"preview_text\": \"［53条］卷丘的大弟子:@...\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［2条］安静:收总大利本士⋯\", \"preview_text\": \"［2条］安静:收总大利本士⋯\", \"time\": \"14:57\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"（4条］中国驻俄罗斯大使馆:张…\", \"preview_text\": \"（4条］中国驻俄罗斯大使馆:张…\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［66条］可可西里:有巴西货⋯这\", \"preview_text\": \"［66条］可可西里:有巴西货⋯这\", \"time\": \"15:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱…\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱…\", \"time\": \"11:41\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.13:58\", \"preview\": \"15: ［73条］1688运营:［动画表⋯这\", \"preview_text\": \"15: ［73条］1688运营:［动画表⋯这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［225条］广汽传祺新车授权⋯B|",
+        "preview_text": "［225条］广汽传祺新车授权⋯B|",
+        "time": "15:08"
+      },
+      {
+        "name": "Q 13:16",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "倒效留 ［193条］竖琴:急需巴西本…这",
+        "preview_text": "倒效留 ［193条］竖琴:急需巴西本…这",
+        "time": ""
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 15:09",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［53条］卷丘的大弟子:@...",
+        "preview_text": "［53条］卷丘的大弟子:@...",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［2条］安静:收总大利本士⋯",
+        "preview_text": "［2条］安静:收总大利本士⋯",
+        "time": "14:57"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "（4条］中国驻俄罗斯大使馆:张…",
+        "preview_text": "（4条］中国驻俄罗斯大使馆:张…",
+        "time": "14:33"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［66条］可可西里:有巴西货⋯这",
+        "preview_text": "［66条］可可西里:有巴西货⋯这",
+        "time": "15:12"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱…",
+        "preview_text": "［14条］悟:出谷歌个人邮箱…",
+        "time": "11:41"
+      },
+      {
+        "name": "速卖通纯商家运营交.13:58",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "15: ［73条］1688运营:［动画表⋯这",
+        "preview_text": "15: ［73条］1688运营:［动画表⋯这",
+        "time": ""
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 13,
+      "visible_unread_session_count": 8,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "Q 13:16",
+        "东南亚虾皮 tk lazad... 15:09",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交.13:58"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T07:12:56.681633+00:00",
+  "worker_pid": 55256
+}

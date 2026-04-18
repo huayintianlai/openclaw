@@ -1,0 +1,39 @@
+{
+  "result_id": "1f06c629b5be4a5dab3f9841e64904c3",
+  "job_id": "03153163dcc84d35a70af30e04ec02d9",
+  "type": "chat.visible.delta",
+  "created_at": "2026-03-28T05:05:42.406992+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 43,
+  "signature": "[{\"speaker\": \"帐号密码 麻烦发一下 谢谢\", \"text\": \"2120220092533852 这是我万里汇 ID 刘汉林\", \"time\": \"11:00\"}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "added_count": 1,
+      "speakers": [
+        "帐号密码 麻烦发一下 谢谢"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "view": "chat_detail",
+      "current_contact": "Cd|刘汉林",
+      "messages": [
+        {
+          "speaker": "帐号密码 麻烦发一下 谢谢",
+          "time": "11:00",
+          "text": "2120220092533852 这是我万里汇 ID 刘汉林"
+        }
+      ],
+      "added_messages": [
+        {
+          "speaker": "帐号密码 麻烦发一下 谢谢",
+          "time": "11:00",
+          "text": "2120220092533852 这是我万里汇 ID 刘汉林"
+        }
+      ],
+      "removed_messages": [],
+      "window_shift": false
+    }
+  }
+}

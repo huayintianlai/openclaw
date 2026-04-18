@@ -1,0 +1,105 @@
+{
+  "result_id": "4698a662e8d44a9ebd179079a246d59c",
+  "job_id": "d699fd6fdf4c4c7d9be354fa721ab764",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:32:36.642905+00:00",
+  "source": "watcher:unread",
+  "cursor": 216,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［107条」焦焦-改装通道-V…\", \"preview_text\": \"［107条」焦焦-改装通道-V…\", \"time\": \"10:31\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"~豪哥\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"10:31\", \"unread_badge_count\": 2, \"unread_count\": 2}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...10:32\", \"preview\": \"印尼本土海外仓＋电商真人⋯\", \"preview_text\": \"印尼本土海外仓＋电商真人⋯\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］一只…\", \"preview_text\": \"［@所有人］［999+条］一只…\", \"time\": \"10:05\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［59条］III:教教小弟\", \"preview_text\": \"［59条］III:教教小弟\", \"time\": \"10:09\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 2,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "~豪哥",
+        "东南亚虾皮 tk lazad...10:32",
+        "希音卖家群",
+        "跨境电商同行",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［107条」焦焦-改装通道-V…",
+          "preview_text": "［107条」焦焦-改装通道-V…",
+          "time": "10:31"
+        },
+        {
+          "name": "~豪哥",
+          "unread_count": 2,
+          "unread_badge_count": 2,
+          "has_unread_badge": true,
+          "preview": "",
+          "preview_text": "",
+          "time": "10:31"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...10:32",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "印尼本土海外仓＋电商真人⋯",
+          "preview_text": "印尼本土海外仓＋电商真人⋯",
+          "time": ""
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "［@所有人］［999+条］一只…",
+          "preview_text": "［@所有人］［999+条］一只…",
+          "time": "10:05"
+        },
+        {
+          "name": "跨境电商同行",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "",
+          "preview_text": "",
+          "time": ""
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［59条］III:教教小弟",
+          "preview_text": "［59条］III:教教小弟",
+          "time": "10:09"
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 2,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 2,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 3,
+        "visible_unread_message_badge_total": 46,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "~豪哥",
+          "东南亚虾皮 tk lazad...10:32",
+          "希音卖家群",
+          "跨境电商同行",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

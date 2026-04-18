@@ -1,0 +1,121 @@
+{
+  "job_id": "58157a3685704a749015f1fa91cb4e46",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T07:15:03.088614+00:00",
+  "cursor": 408,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［225条］广汽传祺新车授权. 凶\", \"preview_text\": \"［225条］广汽传祺新车授权. 凶\", \"time\": \"15:08\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"CdI刘汉林\", \"preview\": \"方便\", \"preview_text\": \"方便\", \"time\": \"\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"2FR ［53条］卷丘的大弟子:@... 凶\", \"preview_text\": \"2FR ［53条］卷丘的大弟子:@... 凶\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［2条］安静:收意大利本土⋯ 凶\", \"preview_text\": \"［2条］安静:收意大利本土⋯ 凶\", \"time\": \"14:57\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张….\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张….\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的 凶\", \"preview_text\": \"［70条］可可西里:好的 凶\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多自发货交⋯\", \"preview\": \"［193条］竖琴:急需巴西本.\", \"preview_text\": \"［193条］竖琴:急需巴西本.\", \"time\": \"13:16\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱...\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［73条］1688运營:［动画表.\", \"preview_text\": \"［73条］1688运營:［动画表.\", \"time\": \"13:58\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［225条］广汽传祺新车授权. 凶",
+        "preview_text": "［225条］广汽传祺新车授权. 凶",
+        "time": "15:08"
+      },
+      {
+        "name": "CdI刘汉林",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "方便",
+        "preview_text": "方便",
+        "time": ""
+      },
+      {
+        "name": "东南亚虾皮 tk lazad...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "2FR ［53条］卷丘的大弟子:@... 凶",
+        "preview_text": "2FR ［53条］卷丘的大弟子:@... 凶",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［2条］安静:收意大利本土⋯ 凶",
+        "preview_text": "［2条］安静:收意大利本土⋯ 凶",
+        "time": "14:57"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］中国驻俄罗斯大使馆:张….",
+        "preview_text": "［4条］中国驻俄罗斯大使馆:张….",
+        "time": "14:33"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［70条］可可西里:好的 凶",
+        "preview_text": "［70条］可可西里:好的 凶",
+        "time": ""
+      },
+      {
+        "name": "美客多自发货交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［193条］竖琴:急需巴西本.",
+        "preview_text": "［193条］竖琴:急需巴西本.",
+        "time": "13:16"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱...",
+        "preview_text": "［14条］悟:出谷歌个人邮箱...",
+        "time": "11:41."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［73条］1688运營:［动画表.",
+        "preview_text": "［73条］1688运營:［动画表.",
+        "time": "13:58"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 13,
+      "visible_unread_session_count": 9,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 1,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "CdI刘汉林",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群",
+        "美客多自发货交⋯",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T07:15:06.361810+00:00",
+  "worker_pid": 55256
+}

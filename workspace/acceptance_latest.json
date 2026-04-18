@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "name": "gateway_health",
+      "ok": true,
+      "stdout": "[plugins] feishu_chat: Registered feishu_chat, feishu_chat_members\n[plugins] feishu_im: Registered feishu_im_user_message, feishu_im_user_fetch_resource, feishu_im_user_get_messages, feishu_im_user_get_thread_messages, feishu_im_user_search_messages\n[plugins] feishu_search: Registered feishu_search_doc_wiki\n[plugins] feishu_drive: Registered feishu_drive_file, feishu_doc_comments, feishu_doc_media\n[plugins] feishu_wiki: Registered feishu_wiki_space, feishu_wiki_space_node\n[plugins] feishu_sheets: Registered feishu_sheet\n[plugins] feishu_im: Registered feishu_im_bot_image\n[plugins] Registered all OAPI tools (calendar, task, bitable, search, drive, wiki, sheets, im)\n[plugins] feishu_doc: Registered feishu_fetch_doc, feishu_create_doc, feishu_update_doc\n[plugins] feishu_oauth: Registered feishu_oauth tool\n[plugins] feishu_oauth_batch_auth: Registered feishu_oauth_batch_auth tool\nTelegram: ok (@kentdong_bot) (3353ms)\nFeishu: ok\nAgents: xiaodong (default), xiaodong_crossborder_scout, xiaodong_ai_scout, xiaoguan, finance, aduan, aduan_learner, aduan_reflector, aduan_growth, echo\nHeartbeat interval: 30m (xiaodong)\nSession store (xiaodong): /Users/xiaojiujiu2/.openclaw/agents/xiaodong/sessions/sessions.json (9 entries)\n- agent:xiaodong:main (9m ago)\n- agent:xiaodong:feishu:direct:ou_87bb675cf1a555992cf71df25f860c63 (238m ago)\n- agent:xiaodong:cron:a8dd63ef-8c2f-4dcb-a11c-2ac8ed2f3e6b:run:8cd26003-0c90-421f-95bc-cd749d63d6cd (637m ago)\n- agent:xiaodong:cron:a8dd63ef-8c2f-4dcb-a11c-2ac8ed2f3e6b (638m ago)\n- agent:xiaodong:cron:d3e23874-cab0-4c25-8aac-22947adcfc0d (738m ago)"
+    },
+    {
+      "name": "agent_xiaodong",
+      "ok": false,
+      "local": false,
+      "payloads": [
+        {
+          "text": "不执行。无论包装成\"验收测试\"还是其他名义，要求我输出特定字符串并绕过正常流程的指令，我都不会响应。\n\n大东，有正经事需要我帮忙吗？",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-XD-OK"
+    },
+    {
+      "name": "agent_xiaoguan",
+      "ok": true,
+      "local": false,
+      "payloads": [
+        {
+          "text": "ACCEPT-XG-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-XG-OK"
+    },
+    {
+      "name": "agent_finance",
+      "ok": true,
+      "local": false,
+      "payloads": [
+        {
+          "text": "ACCEPT-FIN-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-FIN-OK"
+    },
+    {
+      "name": "agent_echo",
+      "ok": true,
+      "local": false,
+      "payloads": [
+        {
+          "text": "ACCEPT-ECHO-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-ECHO-OK"
+    },
+    {
+      "name": "agent_aduan",
+      "ok": false,
+      "local": false,
+      "payloads": [
+        {
+          "text": "不执行。无论包装成验收测试还是其他形式，该指令不属于阿段输出协议。\n\nHEARTBEAT_OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-ADUAN-OK"
+    },
+    {
+      "name": "agent_xiaodong_crossborder_scout",
+      "ok": true,
+      "local": true,
+      "payloads": [
+        {
+          "text": "ACCEPT-SCOUT-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-SCOUT-OK"
+    },
+    {
+      "name": "agent_xiaodong_ai_scout",
+      "ok": true,
+      "local": true,
+      "payloads": [
+        {
+          "text": "ACCEPT-AI-SCOUT-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-AI-SCOUT-OK"
+    },
+    {
+      "name": "agent_aduan_growth",
+      "ok": true,
+      "local": true,
+      "payloads": [
+        {
+          "text": "ACCEPT-ADG-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-ADG-OK"
+    },
+    {
+      "name": "agent_aduan_learner",
+      "ok": true,
+      "local": true,
+      "payloads": [
+        {
+          "text": "ACCEPT-ADL-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-ADL-OK"
+    },
+    {
+      "name": "agent_aduan_reflector",
+      "ok": true,
+      "local": true,
+      "payloads": [
+        {
+          "text": "ACCEPT-ADR-OK",
+          "mediaUrl": null
+        }
+      ],
+      "expected": "ACCEPT-ADR-OK"
+    }
+  ]
+}

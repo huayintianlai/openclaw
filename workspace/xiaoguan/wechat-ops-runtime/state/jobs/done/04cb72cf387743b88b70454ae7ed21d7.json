@@ -1,0 +1,61 @@
+{
+  "job_id": "04cb72cf387743b88b70454ae7ed21d7",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:22:36.873641+00:00",
+  "cursor": 263,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"M1\", \"preview\": \"［129条］鸿运寄卖（裸车）⋯白\", \"preview_text\": \"［129条］鸿运寄卖（裸车）⋯白\", \"time\": \"11:22\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:21\", \"preview\": \"［28条］虾皮越南魚:给你举…这\", \"preview_text\": \"［28条］虾皮越南魚:给你举…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"（4条］A ErQiao:出三个T..这\", \"preview_text\": \"（4条］A ErQiao:出三个T..这\", \"time\": \"11:10\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "M1",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［129条］鸿运寄卖（裸车）⋯白",
+        "preview_text": "［129条］鸿运寄卖（裸车）⋯白",
+        "time": "11:22"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 11:21",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［28条］虾皮越南魚:给你举…这",
+        "preview_text": "［28条］虾皮越南魚:给你举…这",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "（4条］A ErQiao:出三个T..这",
+        "preview_text": "（4条］A ErQiao:出三个T..这",
+        "time": "11:10"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 3,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "M1",
+        "东南亚虾皮 tk lazad... 11:21",
+        "优质跨境服务群2"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:22:37.653785+00:00",
+  "worker_pid": 55256
+}

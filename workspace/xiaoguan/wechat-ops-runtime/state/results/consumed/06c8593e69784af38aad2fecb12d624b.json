@@ -1,0 +1,83 @@
+{
+  "result_id": "06c8593e69784af38aad2fecb12d624b",
+  "job_id": "710aa55397d648929612b1a939ef6851",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:50:05.549357+00:00",
+  "source": "watcher:unread",
+  "cursor": 237,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"Fyndiq | Venus.\", \"preview\": \"老板\", \"preview_text\": \"老板\", \"time\": \"10:49\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［116条】理想长安阿维塔方⋯.\", \"preview_text\": \"［116条】理想长安阿维塔方⋯.\", \"time\": \"10:49\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 10:46\", \"preview\": \"［24条］阿撒:［动画表情］\", \"preview_text\": \"［24条］阿撒:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"希音美客多一手源头-跨境.\", \"preview_text\": \"希音美客多一手源头-跨境.\", \"time\": \"10:41\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 4,
+      "visible_unread_session_count": 4,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "Fyndiq | Venus.",
+        "MI",
+        "东南亚虾皮 tk lazad... 10:46",
+        "优质跨境服务群2"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "Fyndiq | Venus.",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "老板",
+          "preview_text": "老板",
+          "time": "10:49"
+        },
+        {
+          "name": "MI",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［116条】理想长安阿维塔方⋯.",
+          "preview_text": "［116条】理想长安阿维塔方⋯.",
+          "time": "10:49"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 10:46",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［24条］阿撒:［动画表情］",
+          "preview_text": "［24条］阿撒:［动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "希音美客多一手源头-跨境.",
+          "preview_text": "希音美客多一手源头-跨境.",
+          "time": "10:41"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 4,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "Fyndiq | Venus.",
+          "MI",
+          "东南亚虾皮 tk lazad... 10:46",
+          "优质跨境服务群2"
+        ]
+      },
+      "available": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "微信销售编排"
+  short_description: "在通用微信底座上叠加小冠的私有销售流程。"
+  default_prompt: "Use $wechat-sales-orchestrator to turn the local WeChat runtime into a sales follow-up workflow while keeping customer rules and prompts private."
+
+policy:
+  allow_implicit_invocation: true

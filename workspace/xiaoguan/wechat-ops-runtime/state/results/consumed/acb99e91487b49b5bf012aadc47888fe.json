@@ -1,0 +1,116 @@
+{
+  "result_id": "acb99e91487b49b5bf012aadc47888fe",
+  "job_id": "652dd4c2eeda44589fb9d7d0e016508c",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:31:16.156664+00:00",
+  "source": "watcher:unread",
+  "cursor": 214,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［106条］Amy 大众 捷达出⋯\", \"preview_text\": \"［106条］Amy 大众 捷达出⋯\", \"time\": \"10:26\", \"unread_badge_count\": 31, \"unread_count\": 31}, {\"has_unread_badge\": true, \"name\": \"Benjamin\", \"preview\": \"1.4万老板\", \"preview_text\": \"1.4万老板\", \"time\": \"昨天 23:20\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 10:30\", \"preview\": \"［46条］蠡口:今天上班的有…\", \"preview_text\": \"［46条］蠡口:今天上班的有…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［30条」肯草池塘:收美国希⋯\", \"preview_text\": \"［30条」肯草池塘:收美国希⋯\", \"time\": \"10:28\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］一只…\", \"preview_text\": \"［@所有人］［999+条］一只…\", \"time\": \"10:05\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［59条］III:教教小弟\", \"preview_text\": \"［59条］III:教教小弟\", \"time\": \"10:09\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 7,
+      "visible_unread_session_count": 7,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "Benjamin",
+        "东南亚虾皮 tk lazad... 10:30",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "跨境电商同行",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": 31,
+          "unread_badge_count": 31,
+          "has_unread_badge": true,
+          "preview": "［106条］Amy 大众 捷达出⋯",
+          "preview_text": "［106条］Amy 大众 捷达出⋯",
+          "time": "10:26"
+        },
+        {
+          "name": "Benjamin",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "1.4万老板",
+          "preview_text": "1.4万老板",
+          "time": "昨天 23:20"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 10:30",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［46条］蠡口:今天上班的有…",
+          "preview_text": "［46条］蠡口:今天上班的有…",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［30条」肯草池塘:收美国希⋯",
+          "preview_text": "［30条」肯草池塘:收美国希⋯",
+          "time": "10:28"
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "［@所有人］［999+条］一只…",
+          "preview_text": "［@所有人］［999+条］一只…",
+          "time": "10:05"
+        },
+        {
+          "name": "跨境电商同行",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "",
+          "preview_text": "",
+          "time": ""
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［59条］III:教教小弟",
+          "preview_text": "［59条］III:教教小弟",
+          "time": "10:09"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 7,
+        "visible_unread_sessions_with_numeric_badge": 3,
+        "visible_unread_message_badge_total": 75,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "Benjamin",
+          "东南亚虾皮 tk lazad... 10:30",
+          "优质跨境服务群2",
+          "希音卖家群",
+          "跨境电商同行",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

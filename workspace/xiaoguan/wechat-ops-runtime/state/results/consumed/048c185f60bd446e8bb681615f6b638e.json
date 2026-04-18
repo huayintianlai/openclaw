@@ -1,0 +1,39 @@
+{
+  "result_id": "048c185f60bd446e8bb681615f6b638e",
+  "job_id": "541f41ad03624add9e7ce41d30e3afb6",
+  "type": "chat.visible.delta",
+  "created_at": "2026-03-29T07:55:15.503006+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 54,
+  "signature": "[{\"speaker\": \"爆单\", \"text\": \"算入局，大概率遇到过这些头疼事： L却查无音讯；好不容易出单了，头程货代找不到靠谱的，双清出关卡半天， 1，第二天可能就收到封店预警；甚至货品运输中丢失、回款周期拉长，每一\", \"time\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "added_count": 1,
+      "speakers": [
+        "爆单"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "view": "chat_detail",
+      "current_contact": "~ 有一个群想邀请你",
+      "messages": [
+        {
+          "speaker": "爆单",
+          "time": null,
+          "text": "算入局，大概率遇到过这些头疼事： L却查无音讯；好不容易出单了，头程货代找不到靠谱的，双清出关卡半天， 1，第二天可能就收到封店预警；甚至货品运输中丢失、回款周期拉长，每一"
+        }
+      ],
+      "added_messages": [
+        {
+          "speaker": "爆单",
+          "time": null,
+          "text": "算入局，大概率遇到过这些头疼事： L却查无音讯；好不容易出单了，头程货代找不到靠谱的，双清出关卡半天， 1，第二天可能就收到封店预警；甚至货品运输中丢失、回款周期拉长，每一"
+        }
+      ],
+      "removed_messages": [],
+      "window_shift": false
+    }
+  }
+}

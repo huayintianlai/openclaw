@@ -1,0 +1,56 @@
+{
+  "version": "2026-03-09",
+  "description": "KEN-5 private knowledge chain baseline",
+  "globalReadTool": "feishu_fetch_doc",
+  "templateFields": [
+    "Owner",
+    "Status",
+    "Last Update",
+    "Source",
+    "Next Action"
+  ],
+  "chains": [
+    {
+      "id": "xiaodong_ai_scout",
+      "name": "小东 AI 资讯调研",
+      "agentId": "xiaodong_ai_scout",
+      "writerScope": "xiaodong_ai_scout",
+      "targetNodeToken": "${FEISHU_XIAODONG_AI_SCOUT_ROOT_NODE_TOKEN}",
+      "templateFile": "instances/kentclaw/data/knowledge/templates/xiaodong_ai_scout.md",
+      "heartbeatEvery": "48h",
+      "owner": "xiaodong_ai_scout",
+      "sourceFilters": {
+        "allowTypes": [
+          "official_release",
+          "research_paper",
+          "major_media"
+        ],
+        "excludeTypes": [
+          "rumor",
+          "marketing_repost",
+          "no_primary_source"
+        ]
+      },
+      "docTemplate": {
+        "requiredSections": [
+          "TL;DR",
+          "关键证据",
+          "影响分析",
+          "风险与不确定性",
+          "下步建议"
+        ],
+        "sourceMinLinks": 3
+      },
+      "automation": {
+        "retryPolicy": "on_error_retry_once_after_15m",
+        "expectedWriteMode": "create_or_append"
+      },
+      "feishu": {
+        "accountId": "xiaodong",
+        "appIdEnvKey": "FEISHU_XIAODONG_APP_ID",
+        "appSecretEnvKey": "FEISHU_XIAODONG_APP_SECRET",
+        "requireBinding": false
+      }
+    }
+  ]
+}

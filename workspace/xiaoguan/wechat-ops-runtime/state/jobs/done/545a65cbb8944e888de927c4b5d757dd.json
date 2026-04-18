@@ -1,0 +1,101 @@
+{
+  "job_id": "545a65cbb8944e888de927c4b5d757dd",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T05:06:37.810110+00:00",
+  "cursor": 340,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"KentZ\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"13:05\", \"unread_badge_count\": 15814012779, \"unread_count\": 15814012779}, {\"has_unread_badge\": true, \"name\": \"Rg\", \"preview\": \"［189条］山东腾展1856113..込\", \"preview_text\": \"［189条］山东腾展1856113..込\", \"time\": \"13:02\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 12:13\", \"preview\": \"［31条］卷丘:［动画表情］\", \"preview_text\": \"［31条］卷丘:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［17 条］ AA跨境服务:ebay...\", \"preview_text\": \"［17 条］ AA跨境服务:ebay...\", \"time\": \"13:04\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱..\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱..\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "KentZ",
+        "unread_count": 15814012779,
+        "unread_badge_count": 15814012779,
+        "has_unread_badge": true,
+        "preview": "",
+        "preview_text": "",
+        "time": "13:05"
+      },
+      {
+        "name": "Rg",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［189条］山东腾展1856113..込",
+        "preview_text": "［189条］山东腾展1856113..込",
+        "time": "13:02"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 12:13",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［31条］卷丘:［动画表情］",
+        "preview_text": "［31条］卷丘:［动画表情］",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［17 条］ AA跨境服务:ebay...",
+        "preview_text": "［17 条］ AA跨境服务:ebay...",
+        "time": "13:04"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［3条］深港出海:一枚戒指卖出⋯.",
+        "preview_text": "［3条］深港出海:一枚戒指卖出⋯.",
+        "time": "12:54"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱..",
+        "preview_text": "［14条］悟:出谷歌个人邮箱..",
+        "time": "11:41."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［65条］ Jason huang: 豪宅",
+        "preview_text": "［65条］ Jason huang: 豪宅",
+        "time": "11:39"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 7,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 15814012779,
+      "visible_unread_names": [
+        "KentZ",
+        "Rg",
+        "东南亚虾皮 tk lazad... 12:13",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:06:38.721504+00:00",
+  "worker_pid": 55256
+}

@@ -1,0 +1,63 @@
+{
+  "job_id": "3ceaa45cbef34e8c8e381b4a94c7f195",
+  "type": "watcher.health.changed",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-29T13:45:03.769102+00:00",
+  "cursor": 64,
+  "signature": "[{\"speaker\": \"罚的比temu 还重\", \"text\": \"卖的少，\", \"time\": \"昨天 15:42\"}, {\"speaker\": \"JaneCcc\", \"text\": \"都不多。。\", \"time\": \"昨天 16:42\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "status": "degraded",
+    "previous_healthy": true,
+    "current_healthy": false,
+    "state": {
+      "watcher": "chat_visible",
+      "enabled": true,
+      "healthy": false,
+      "available": false,
+      "phase": "chat_visible_snapshot",
+      "last_checked_at": "2026-03-29T13:45:03.769043+00:00",
+      "last_success_at": "2026-03-29T11:33:34.376737+00:00",
+      "last_error_at": "2026-03-29T13:45:03.769043+00:00",
+      "last_error_code": "window_not_found",
+      "consecutive_failures": 3,
+      "cursor": 64,
+      "signature": "[{\"speaker\": \"罚的比temu 还重\", \"text\": \"卖的少，\", \"time\": \"昨天 15:42\"}, {\"speaker\": \"JaneCcc\", \"text\": \"都不多。。\", \"time\": \"昨天 16:42\"}]",
+      "recommended_next_step": "run_health",
+      "payload": {
+        "ok": true,
+        "phase": "chat_visible_snapshot",
+        "current_view": "chat_detail",
+        "current_contact": "速卖通纯商家运营交流群（148）",
+        "recommended_next_step": null,
+        "view": "chat_detail",
+        "chat_kind": "group_chat",
+        "available": true,
+        "messages": [
+          {
+            "speaker": "罚的比temu 还重",
+            "time": "昨天 15:42",
+            "text": "卖的少，"
+          },
+          {
+            "speaker": "JaneCcc",
+            "time": "昨天 16:42",
+            "text": "都不多。。"
+          }
+        ],
+        "signature": "[{\"speaker\": \"罚的比temu 还重\", \"text\": \"卖的少，\", \"time\": \"昨天 15:42\"}, {\"speaker\": \"JaneCcc\", \"text\": \"都不多。。\", \"time\": \"昨天 16:42\"}]",
+        "artifact_path": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime/artifacts/tmp/content.png",
+        "ocr_text": "1688运营\\n你没有错\\n昨天 15:42\\nJaneCcc\\n速卖通半托太坑了\\nJaneCcc\\n卖的少，\\n罚的比temu 还重\\n昨天 16:11\\n再版小树\\npop卖的更少吧\\n昨天 16:42\\nJaneCcc\\n都不多。。\\nJaneCcc\\n半托罚的太重，退店了\\n©\\n|",
+        "stability": {
+          "sample_attempts": 2,
+          "winning_observations": 2,
+          "stable": true
+        }
+      }
+    }
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T13:45:05.965479+00:00",
+  "worker_pid": 55256
+}

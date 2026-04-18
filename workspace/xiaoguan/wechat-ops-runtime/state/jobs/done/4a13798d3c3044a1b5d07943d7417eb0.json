@@ -1,0 +1,59 @@
+{
+  "job_id": "4a13798d3c3044a1b5d07943d7417eb0",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-29T15:26:41.328618+00:00",
+  "cursor": 71,
+  "signature": "[{\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"一样的，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本士\", \"text\": \"有啥区别呢，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"我给你推个人。\", \"time\": null}, {\"speaker\": \"跨境招财猫\", \"text\": \"墨西哥本土个人自营店 服装类目 50skc\", \"time\": \"23:02\"}, {\"speaker\": \"多少呀\", \"text\": \"跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\", \"time\": \"23:02\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "优质跨境服务群2（494）",
+    "messages": [
+      {
+        "speaker": "美客多沃尔玛跨境本土",
+        "time": null,
+        "text": "一样的，"
+      },
+      {
+        "speaker": "美客多沃尔玛跨境本士",
+        "time": null,
+        "text": "有啥区别呢，"
+      },
+      {
+        "speaker": "美客多沃尔玛跨境本土",
+        "time": null,
+        "text": "我给你推个人。"
+      },
+      {
+        "speaker": "跨境招财猫",
+        "time": "23:02",
+        "text": "墨西哥本土个人自营店 服装类目 50skc"
+      },
+      {
+        "speaker": "多少呀",
+        "time": "23:02",
+        "text": "跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "多少呀",
+        "time": "23:02",
+        "text": "跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "多少呀",
+        "time": "23:02",
+        "text": "跨境招财猫：墨西哥本土个人自营店 服装类目 50skc满"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T15:26:47.846632+00:00",
+  "worker_pid": 55256
+}

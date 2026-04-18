@@ -1,0 +1,127 @@
+{
+  "result_id": "b235881e56e9400687e1f9d0f073777f",
+  "job_id": "09261957a32642399bb8370f46e456f3",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:12:56.786146+00:00",
+  "source": "watcher:unread",
+  "cursor": 210,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［97条］小刘卖车 出口内销…\", \"preview_text\": \"［97条］小刘卖车 出口内销…\", \"time\": \"10:09\", \"unread_badge_count\": 310, \"unread_count\": 310}, {\"has_unread_badge\": true, \"name\": \"Benjamin\", \"preview\": \"1.4 万老板\", \"preview_text\": \"1.4 万老板\", \"time\": \"昨天 23:20\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"［33条］卷丘的大弟子:大家…\", \"preview_text\": \"［33条］卷丘的大弟子:大家…\", \"time\": \"10:11\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［29条］a阿宇跨境\", \"preview_text\": \"［29条］a阿宇跨境\", \"time\": \"10:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"函2\", \"preview\": \"［10条］希音美客多一手源.\", \"preview_text\": \"［10条］希音美客多一手源.\", \"time\": \"09:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"巴西◎美客多本土.\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"09:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］一只…\", \"preview_text\": \"［@所有人］［999+条］一只…\", \"time\": \"10:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"［59条］IIIl:教教小弟\", \"preview_text\": \"［59条］IIIl:教教小弟\", \"time\": \"10:09\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 8,
+      "visible_unread_session_count": 8,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "Benjamin",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "函2",
+        "巴西◎美客多本土.",
+        "希音卖家群",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": 310,
+          "unread_badge_count": 310,
+          "has_unread_badge": true,
+          "preview": "［97条］小刘卖车 出口内销…",
+          "preview_text": "［97条］小刘卖车 出口内销…",
+          "time": "10:09"
+        },
+        {
+          "name": "Benjamin",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "1.4 万老板",
+          "preview_text": "1.4 万老板",
+          "time": "昨天 23:20"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［33条］卷丘的大弟子:大家…",
+          "preview_text": "［33条］卷丘的大弟子:大家…",
+          "time": "10:11"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［29条］a阿宇跨境",
+          "preview_text": "［29条］a阿宇跨境",
+          "time": "10:05"
+        },
+        {
+          "name": "函2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［10条］希音美客多一手源.",
+          "preview_text": "［10条］希音美客多一手源.",
+          "time": "09:52"
+        },
+        {
+          "name": "巴西◎美客多本土.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "",
+          "preview_text": "",
+          "time": "09:37"
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［@所有人］［999+条］一只…",
+          "preview_text": "［@所有人］［999+条］一只…",
+          "time": "10:05"
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［59条］IIIl:教教小弟",
+          "preview_text": "［59条］IIIl:教教小弟",
+          "time": "10:09"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 8,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 310,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "Benjamin",
+          "东南亚虾皮 tk lazad...",
+          "优质跨境服务群2",
+          "函2",
+          "巴西◎美客多本土.",
+          "希音卖家群",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

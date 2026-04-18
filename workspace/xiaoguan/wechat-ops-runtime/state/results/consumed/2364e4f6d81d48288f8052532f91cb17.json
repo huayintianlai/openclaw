@@ -1,0 +1,127 @@
+{
+  "result_id": "2364e4f6d81d48288f8052532f91cb17",
+  "job_id": "922ff2aa8de6454294dd0e19afe301eb",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-29T11:31:09.335188+00:00",
+  "source": "watcher:unread",
+  "cursor": 661,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群票.\", \"preview\": \"［62条］五星闪耀:——打破….1\", \"preview_text\": \"［62条］五星闪耀:——打破….1\", \"time\": \"19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"［126条］卷丘的大弟子:@.\", \"preview_text\": \"［126条］卷丘的大弟子:@.\", \"time\": \"11:06\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"亚马逊卖家交流群（1）\", \"preview\": \"［6条］亚马逊-美国-Gavin..\", \"preview_text\": \"［6条］亚马逊-美国-Gavin..\", \"time\": \"10:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［5条］中国签证网:美国/加拿大..\", \"preview_text\": \"［5条］中国签证网:美国/加拿大..\", \"time\": \"10:59\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"宋瑞阳。\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"昨天 16:21\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"3区 ［@所有人］［999+条］Max..• 凶\", \"preview_text\": \"3区 ［@所有人］［999+条］Max..• 凶\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"176条］宋:想进墨西哥，沙…\", \"preview_text\": \"176条］宋:想进墨西哥，沙…\", \"time\": \"14:28\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［15系」悟:出谷歌个人邮箱..\", \"preview_text\": \"［15系」悟:出谷歌个人邮箱..\", \"time\": \"12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 8,
+      "visible_unread_session_count": 8,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "Tk 东南亚交流群票.",
+        "东南亚虾皮 tk lazad...",
+        "亚马逊卖家交流群（1）",
+        "公众号",
+        "宋瑞阳。",
+        "希音卖家群",
+        "美客多卖家交流探讨群",
+        "跨境电商交流乙群"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "Tk 东南亚交流群票.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［62条］五星闪耀:——打破….1",
+          "preview_text": "［62条］五星闪耀:——打破….1",
+          "time": "19:29"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［126条］卷丘的大弟子:@.",
+          "preview_text": "［126条］卷丘的大弟子:@.",
+          "time": "11:06"
+        },
+        {
+          "name": "亚马逊卖家交流群（1）",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［6条］亚马逊-美国-Gavin..",
+          "preview_text": "［6条］亚马逊-美国-Gavin..",
+          "time": "10:52"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［5条］中国签证网:美国/加拿大..",
+          "preview_text": "［5条］中国签证网:美国/加拿大..",
+          "time": "10:59"
+        },
+        {
+          "name": "宋瑞阳。",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "昂",
+          "preview_text": "昂",
+          "time": "昨天 16:21"
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "3区 ［@所有人］［999+条］Max..• 凶",
+          "preview_text": "3区 ［@所有人］［999+条］Max..• 凶",
+          "time": "12:03"
+        },
+        {
+          "name": "美客多卖家交流探讨群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "176条］宋:想进墨西哥，沙…",
+          "preview_text": "176条］宋:想进墨西哥，沙…",
+          "time": "14:28"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［15系」悟:出谷歌个人邮箱..",
+          "preview_text": "［15系」悟:出谷歌个人邮箱..",
+          "time": "12:11"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 13,
+        "visible_unread_session_count": 8,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "Tk 东南亚交流群票.",
+          "东南亚虾皮 tk lazad...",
+          "亚马逊卖家交流群（1）",
+          "公众号",
+          "宋瑞阳。",
+          "希音卖家群",
+          "美客多卖家交流探讨群",
+          "跨境电商交流乙群"
+        ]
+      },
+      "available": true
+    }
+  }
+}

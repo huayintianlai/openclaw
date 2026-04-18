@@ -1,0 +1,83 @@
+{
+  "result_id": "e1a12ae1e6c844d69efdc1d41521d7fa",
+  "job_id": "51ae4d394a4f449698fe763e3648584f",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:37:02.802795+00:00",
+  "source": "watcher:unread",
+  "cursor": 277,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"m？\", \"preview\": \"［142条］ A小雨＆全品牌汽⋯.\", \"preview_text\": \"［142条］ A小雨＆全品牌汽⋯.\", \"time\": \"11:35\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad....\", \"preview\": \"FR ［28条］ 虾皮越南魚:给你举….\", \"preview_text\": \"FR ［28条］ 虾皮越南魚:给你举….\", \"time\": \"11:21\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［8条］服务商|遗憾.:低价..\", \"preview_text\": \"［8条］服务商|遗憾.:低价..\", \"time\": \"11:36\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯..\", \"preview\": \"［64条］06:00:有钱人\", \"preview_text\": \"［64条］06:00:有钱人\", \"time\": \"11:30\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 4,
+      "visible_unread_session_count": 4,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "m？",
+        "东南亚虾皮 tk lazad....",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交⋯.."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "m？",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［142条］ A小雨＆全品牌汽⋯.",
+          "preview_text": "［142条］ A小雨＆全品牌汽⋯.",
+          "time": "11:35"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad....",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "FR ［28条］ 虾皮越南魚:给你举….",
+          "preview_text": "FR ［28条］ 虾皮越南魚:给你举….",
+          "time": "11:21"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［8条］服务商|遗憾.:低价..",
+          "preview_text": "［8条］服务商|遗憾.:低价..",
+          "time": "11:36"
+        },
+        {
+          "name": "速卖通纯商家运营交⋯..",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［64条］06:00:有钱人",
+          "preview_text": "［64条］06:00:有钱人",
+          "time": "11:30"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 4,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "m？",
+          "东南亚虾皮 tk lazad....",
+          "优质跨境服务群2",
+          "速卖通纯商家运营交⋯.."
+        ]
+      },
+      "available": true
+    }
+  }
+}

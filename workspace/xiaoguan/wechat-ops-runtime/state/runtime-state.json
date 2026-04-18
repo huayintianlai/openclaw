@@ -1,0 +1,481 @@
+{
+  "checked_at": "2026-04-03T16:00:16.971513+00:00",
+  "session": null,
+  "jobs_enqueued": [],
+  "unread": {
+    "ok": false,
+    "error_code": "window_not_found",
+    "phase": "unread_snapshot",
+    "current_view": "unknown_view",
+    "current_contact": "__UNKNOWN__",
+    "recommended_next_step": "run_health",
+    "available": false,
+    "watcher": "unread"
+  },
+  "chat_visible": {
+    "ok": false,
+    "error_code": "window_not_found",
+    "phase": "chat_visible_snapshot",
+    "current_view": "unknown_view",
+    "current_contact": "__UNKNOWN__",
+    "recommended_next_step": "run_health",
+    "available": false,
+    "watcher": "chat_visible"
+  },
+  "moments": {
+    "ok": false,
+    "error_code": "window_not_found",
+    "phase": "moments_snapshot",
+    "current_view": "unknown_view",
+    "current_contact": "__UNKNOWN__",
+    "recommended_next_step": "run_health",
+    "available": false,
+    "watcher": "moments"
+  },
+  "watchers": {
+    "unread": {
+      "watcher": "unread",
+      "enabled": true,
+      "healthy": false,
+      "available": false,
+      "phase": "unread_snapshot",
+      "last_checked_at": "2026-04-03T16:00:16.971634+00:00",
+      "last_success_at": "2026-03-29T17:28:41.304566+00:00",
+      "last_error_at": "2026-04-03T16:00:16.971634+00:00",
+      "last_error_code": "window_not_found",
+      "consecutive_failures": 45641,
+      "cursor": 671,
+      "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"preview_text\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"time\": \"01:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群\", \"preview\": \"［62条］五星闪耀:——打破.. 凶\", \"preview_text\": \"［62条］五星闪耀:——打破.. 凶\", \"time\": \"昨天 19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"蓝星小队Merca\", \"preview\": \"AK:有没有需要f代投的老... 凶\", \"preview_text\": \"AK:有没有需要f代投的老... 凶\", \"time\": \"昨天 23:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流7群\", \"preview\": \"［15条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［15条］悟:出谷歌个人邮箱...\", \"time\": \"昨天 12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+      "recommended_next_step": "run_health",
+      "payload": {
+        "ok": true,
+        "phase": "unread_snapshot",
+        "current_view": "chat_list",
+        "current_contact": "优质跨境服务群2（494）",
+        "recommended_next_step": null,
+        "view": "chat_list",
+        "available": true,
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "items": [
+          {
+            "name": "AA汽车出口资源交.",
+            "unread_count": null,
+            "unread_badge_count": null,
+            "has_unread_badge": true,
+            "preview": "［18条］A奥迪宝马奔驰凯迪⋯..",
+            "preview_text": "［18条］A奥迪宝马奔驰凯迪⋯..",
+            "time": "01:05"
+          },
+          {
+            "name": "Tk 东南亚交流群",
+            "unread_count": null,
+            "unread_badge_count": null,
+            "has_unread_badge": true,
+            "preview": "［62条］五星闪耀:——打破.. 凶",
+            "preview_text": "［62条］五星闪耀:——打破.. 凶",
+            "time": "昨天 19:29"
+          },
+          {
+            "name": "蓝星小队Merca",
+            "unread_count": null,
+            "unread_badge_count": null,
+            "has_unread_badge": true,
+            "preview": "AK:有没有需要f代投的老... 凶",
+            "preview_text": "AK:有没有需要f代投的老... 凶",
+            "time": "昨天 23:05"
+          },
+          {
+            "name": "跨境电商交流7群",
+            "unread_count": null,
+            "unread_badge_count": null,
+            "has_unread_badge": true,
+            "preview": "［15条］悟:出谷歌个人邮箱...",
+            "preview_text": "［15条］悟:出谷歌个人邮箱...",
+            "time": "昨天 12:11"
+          }
+        ],
+        "summary": {
+          "app_has_unread_badge": true,
+          "app_unread_badge_count": 1,
+          "visible_session_count": 12,
+          "visible_unread_session_count": 4,
+          "visible_unread_sessions_with_numeric_badge": 0,
+          "visible_unread_message_badge_total": 0,
+          "visible_unread_names": [
+            "AA汽车出口资源交.",
+            "Tk 东南亚交流群",
+            "蓝星小队Merca",
+            "跨境电商交流7群"
+          ]
+        },
+        "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"preview_text\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"time\": \"01:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群\", \"preview\": \"［62条］五星闪耀:——打破.. 凶\", \"preview_text\": \"［62条］五星闪耀:——打破.. 凶\", \"time\": \"昨天 19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"蓝星小队Merca\", \"preview\": \"AK:有没有需要f代投的老... 凶\", \"preview_text\": \"AK:有没有需要f代投的老... 凶\", \"time\": \"昨天 23:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流7群\", \"preview\": \"［15条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［15条］悟:出谷歌个人邮箱...\", \"time\": \"昨天 12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+        "fallback_source": "vision_ocr",
+        "stability": {
+          "sample_attempts": 2,
+          "winning_observations": 2,
+          "stable": true
+        }
+      }
+    },
+    "chat_visible": {
+      "watcher": "chat_visible",
+      "enabled": true,
+      "healthy": false,
+      "available": false,
+      "phase": "chat_visible_snapshot",
+      "last_checked_at": "2026-04-03T16:00:16.972162+00:00",
+      "last_success_at": "2026-03-29T17:28:43.347859+00:00",
+      "last_error_at": "2026-04-03T16:00:16.972162+00:00",
+      "last_error_code": "window_not_found",
+      "consecutive_failures": 45641,
+      "cursor": 74,
+      "signature": "[{\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"一样的，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本士\", \"text\": \"有啥区别呢，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"我给你推个人。\", \"time\": null}, {\"speaker\": \"跨境招财猫\", \"text\": \"墨西哥本土个人自营店 服装类目 50skc\", \"time\": \"昨天 23:02\"}, {\"speaker\": \"多少呀\", \"text\": \"跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\", \"time\": \"昨天 23:02\"}]",
+      "recommended_next_step": "run_health",
+      "payload": {
+        "ok": true,
+        "phase": "chat_visible_snapshot",
+        "current_view": "chat_detail",
+        "current_contact": "优质跨境服务群2（494）",
+        "recommended_next_step": null,
+        "view": "chat_detail",
+        "chat_kind": "group_chat",
+        "available": true,
+        "messages": [
+          {
+            "speaker": "美客多沃尔玛跨境本土",
+            "time": null,
+            "text": "一样的，"
+          },
+          {
+            "speaker": "美客多沃尔玛跨境本士",
+            "time": null,
+            "text": "有啥区别呢，"
+          },
+          {
+            "speaker": "美客多沃尔玛跨境本土",
+            "time": null,
+            "text": "我给你推个人。"
+          },
+          {
+            "speaker": "跨境招财猫",
+            "time": "昨天 23:02",
+            "text": "墨西哥本土个人自营店 服装类目 50skc"
+          },
+          {
+            "speaker": "多少呀",
+            "time": "昨天 23:02",
+            "text": "跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满"
+          }
+        ],
+        "signature": "[{\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"一样的，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本士\", \"text\": \"有啥区别呢，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"我给你推个人。\", \"time\": null}, {\"speaker\": \"跨境招财猫\", \"text\": \"墨西哥本土个人自营店 服装类目 50skc\", \"time\": \"昨天 23:02\"}, {\"speaker\": \"多少呀\", \"text\": \"跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\", \"time\": \"昨天 23:02\"}]",
+        "artifact_path": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime/artifacts/tmp/content.png",
+        "ocr_text": "侣途跨境\\n@美客多沃尔玛跨境本土 他要现成的\\n美客多沃尔玛跨境本土\\n一样的，\\n美客多沃尔玛跨境本士\\n有啥区别呢，\\n美客多沃尔玛跨境本土\\n我给你推个人。\\n昨天 22:14\\n万能小张\\n美区女装无运补sku1000收吗\\n昨天 23:02\\n跨境招财猫\\n墨西哥本土个人自营店 服装类目 50skc\\n满佣期 低价出20个\\nGin\\n多少呀\\n跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\\n佣期 低价出20个\\n©",
+        "stability": {
+          "sample_attempts": 2,
+          "winning_observations": 2,
+          "stable": true
+        }
+      }
+    },
+    "moments": {
+      "watcher": "moments",
+      "enabled": true,
+      "healthy": false,
+      "available": false,
+      "phase": "moments_snapshot",
+      "last_checked_at": "2026-04-03T16:00:16.972441+00:00",
+      "last_success_at": null,
+      "last_error_at": "2026-04-03T16:00:16.972441+00:00",
+      "last_error_code": "window_not_found",
+      "consecutive_failures": 45641,
+      "cursor": 0,
+      "signature": "",
+      "recommended_next_step": "run_health",
+      "payload": {
+        "ok": true,
+        "phase": "moments_snapshot",
+        "current_view": "chat_detail",
+        "current_contact": "优质跨境服务群2（494）",
+        "recommended_next_step": null,
+        "view": "chat_detail",
+        "available": false,
+        "items": [],
+        "feed_signature": "",
+        "signature": ""
+      }
+    }
+  },
+  "queues": {
+    "jobs": {
+      "pending": 0,
+      "processing": 0,
+      "done": 519,
+      "stale_processing": 0
+    },
+    "results": {
+      "pending": 172,
+      "consumed": 347,
+      "failed": 0
+    }
+  },
+  "daemon": {
+    "healthy": true,
+    "status": "running",
+    "pid": 28167,
+    "watches": [
+      "chat_visible",
+      "moments",
+      "unread"
+    ],
+    "last_heartbeat_at": "2026-04-03T16:00:16.971025+00:00"
+  },
+  "worker": {
+    "healthy": false,
+    "status": "idle",
+    "pid": 55256,
+    "last_heartbeat_at": "2026-04-03T04:57:58.285436+00:00",
+    "current_job_id": null,
+    "processed_jobs": 748
+  },
+  "health": {
+    "ok": false,
+    "overall_healthy": false,
+    "error_code": "window_not_found",
+    "phase": "health_check",
+    "current_view": "unknown_view",
+    "current_contact": "__UNKNOWN__",
+    "recommended_next_step": "run_health",
+    "checked_at": "2026-04-03T16:00:17.122100+00:00",
+    "account_id": "xiaoguan-default",
+    "permissions": {
+      "source": "local runtime",
+      "screen_recording": true,
+      "accessibility": true,
+      "healthy": true
+    },
+    "window": null,
+    "peekaboo_bin": "/opt/homebrew/bin/peekaboo",
+    "runtime": {
+      "ok": false,
+      "error_code": "window_not_found",
+      "phase": "health_check",
+      "checked_at": "2026-04-03T16:00:17.122100+00:00",
+      "account_id": "xiaoguan-default",
+      "permissions": {
+        "source": "local runtime",
+        "screen_recording": true,
+        "accessibility": true,
+        "healthy": true
+      },
+      "window": null,
+      "peekaboo_bin": "/opt/homebrew/bin/peekaboo"
+    },
+    "daemon": {
+      "healthy": true,
+      "status": "running",
+      "pid": 28167,
+      "watches": [
+        "chat_visible",
+        "moments",
+        "unread"
+      ],
+      "last_heartbeat_at": "2026-04-03T16:00:16.971025+00:00"
+    },
+    "worker": {
+      "healthy": false,
+      "status": "idle",
+      "pid": 55256,
+      "last_heartbeat_at": "2026-04-03T04:57:58.285436+00:00",
+      "current_job_id": null,
+      "processed_jobs": 748
+    },
+    "watchers": {
+      "unread": {
+        "watcher": "unread",
+        "enabled": true,
+        "healthy": false,
+        "available": false,
+        "phase": "unread_snapshot",
+        "last_checked_at": "2026-04-03T16:00:16.971634+00:00",
+        "last_success_at": "2026-03-29T17:28:41.304566+00:00",
+        "last_error_at": "2026-04-03T16:00:16.971634+00:00",
+        "last_error_code": "window_not_found",
+        "consecutive_failures": 45641,
+        "cursor": 671,
+        "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"preview_text\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"time\": \"01:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群\", \"preview\": \"［62条］五星闪耀:——打破.. 凶\", \"preview_text\": \"［62条］五星闪耀:——打破.. 凶\", \"time\": \"昨天 19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"蓝星小队Merca\", \"preview\": \"AK:有没有需要f代投的老... 凶\", \"preview_text\": \"AK:有没有需要f代投的老... 凶\", \"time\": \"昨天 23:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流7群\", \"preview\": \"［15条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［15条］悟:出谷歌个人邮箱...\", \"time\": \"昨天 12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+        "recommended_next_step": "run_health",
+        "payload": {
+          "ok": true,
+          "phase": "unread_snapshot",
+          "current_view": "chat_list",
+          "current_contact": "优质跨境服务群2（494）",
+          "recommended_next_step": null,
+          "view": "chat_list",
+          "available": true,
+          "app_has_unread_badge": true,
+          "app_unread_badge_count": 1,
+          "items": [
+            {
+              "name": "AA汽车出口资源交.",
+              "unread_count": null,
+              "unread_badge_count": null,
+              "has_unread_badge": true,
+              "preview": "［18条］A奥迪宝马奔驰凯迪⋯..",
+              "preview_text": "［18条］A奥迪宝马奔驰凯迪⋯..",
+              "time": "01:05"
+            },
+            {
+              "name": "Tk 东南亚交流群",
+              "unread_count": null,
+              "unread_badge_count": null,
+              "has_unread_badge": true,
+              "preview": "［62条］五星闪耀:——打破.. 凶",
+              "preview_text": "［62条］五星闪耀:——打破.. 凶",
+              "time": "昨天 19:29"
+            },
+            {
+              "name": "蓝星小队Merca",
+              "unread_count": null,
+              "unread_badge_count": null,
+              "has_unread_badge": true,
+              "preview": "AK:有没有需要f代投的老... 凶",
+              "preview_text": "AK:有没有需要f代投的老... 凶",
+              "time": "昨天 23:05"
+            },
+            {
+              "name": "跨境电商交流7群",
+              "unread_count": null,
+              "unread_badge_count": null,
+              "has_unread_badge": true,
+              "preview": "［15条］悟:出谷歌个人邮箱...",
+              "preview_text": "［15条］悟:出谷歌个人邮箱...",
+              "time": "昨天 12:11"
+            }
+          ],
+          "summary": {
+            "app_has_unread_badge": true,
+            "app_unread_badge_count": 1,
+            "visible_session_count": 12,
+            "visible_unread_session_count": 4,
+            "visible_unread_sessions_with_numeric_badge": 0,
+            "visible_unread_message_badge_total": 0,
+            "visible_unread_names": [
+              "AA汽车出口资源交.",
+              "Tk 东南亚交流群",
+              "蓝星小队Merca",
+              "跨境电商交流7群"
+            ]
+          },
+          "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"preview_text\": \"［18条］A奥迪宝马奔驰凯迪⋯..\", \"time\": \"01:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群\", \"preview\": \"［62条］五星闪耀:——打破.. 凶\", \"preview_text\": \"［62条］五星闪耀:——打破.. 凶\", \"time\": \"昨天 19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"蓝星小队Merca\", \"preview\": \"AK:有没有需要f代投的老... 凶\", \"preview_text\": \"AK:有没有需要f代投的老... 凶\", \"time\": \"昨天 23:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流7群\", \"preview\": \"［15条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［15条］悟:出谷歌个人邮箱...\", \"time\": \"昨天 12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+          "fallback_source": "vision_ocr",
+          "stability": {
+            "sample_attempts": 2,
+            "winning_observations": 2,
+            "stable": true
+          }
+        }
+      },
+      "chat_visible": {
+        "watcher": "chat_visible",
+        "enabled": true,
+        "healthy": false,
+        "available": false,
+        "phase": "chat_visible_snapshot",
+        "last_checked_at": "2026-04-03T16:00:16.972162+00:00",
+        "last_success_at": "2026-03-29T17:28:43.347859+00:00",
+        "last_error_at": "2026-04-03T16:00:16.972162+00:00",
+        "last_error_code": "window_not_found",
+        "consecutive_failures": 45641,
+        "cursor": 74,
+        "signature": "[{\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"一样的，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本士\", \"text\": \"有啥区别呢，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"我给你推个人。\", \"time\": null}, {\"speaker\": \"跨境招财猫\", \"text\": \"墨西哥本土个人自营店 服装类目 50skc\", \"time\": \"昨天 23:02\"}, {\"speaker\": \"多少呀\", \"text\": \"跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\", \"time\": \"昨天 23:02\"}]",
+        "recommended_next_step": "run_health",
+        "payload": {
+          "ok": true,
+          "phase": "chat_visible_snapshot",
+          "current_view": "chat_detail",
+          "current_contact": "优质跨境服务群2（494）",
+          "recommended_next_step": null,
+          "view": "chat_detail",
+          "chat_kind": "group_chat",
+          "available": true,
+          "messages": [
+            {
+              "speaker": "美客多沃尔玛跨境本土",
+              "time": null,
+              "text": "一样的，"
+            },
+            {
+              "speaker": "美客多沃尔玛跨境本士",
+              "time": null,
+              "text": "有啥区别呢，"
+            },
+            {
+              "speaker": "美客多沃尔玛跨境本土",
+              "time": null,
+              "text": "我给你推个人。"
+            },
+            {
+              "speaker": "跨境招财猫",
+              "time": "昨天 23:02",
+              "text": "墨西哥本土个人自营店 服装类目 50skc"
+            },
+            {
+              "speaker": "多少呀",
+              "time": "昨天 23:02",
+              "text": "跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满"
+            }
+          ],
+          "signature": "[{\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"一样的，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本士\", \"text\": \"有啥区别呢，\", \"time\": null}, {\"speaker\": \"美客多沃尔玛跨境本土\", \"text\": \"我给你推个人。\", \"time\": null}, {\"speaker\": \"跨境招财猫\", \"text\": \"墨西哥本土个人自营店 服装类目 50skc\", \"time\": \"昨天 23:02\"}, {\"speaker\": \"多少呀\", \"text\": \"跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\", \"time\": \"昨天 23:02\"}]",
+          "artifact_path": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime/artifacts/tmp/content.png",
+          "ocr_text": "侣途跨境\\n@美客多沃尔玛跨境本土 他要现成的\\n美客多沃尔玛跨境本土\\n一样的，\\n美客多沃尔玛跨境本士\\n有啥区别呢，\\n美客多沃尔玛跨境本土\\n我给你推个人。\\n昨天 22:14\\n万能小张\\n美区女装无运补sku1000收吗\\n昨天 23:02\\n跨境招财猫\\n墨西哥本土个人自营店 服装类目 50skc\\n满佣期 低价出20个\\nGin\\n多少呀\\n跨境招财猫：墨西哥本土个人自营店 服装类目 50skc 满\\n佣期 低价出20个\\n©",
+          "stability": {
+            "sample_attempts": 2,
+            "winning_observations": 2,
+            "stable": true
+          }
+        }
+      },
+      "moments": {
+        "watcher": "moments",
+        "enabled": true,
+        "healthy": false,
+        "available": false,
+        "phase": "moments_snapshot",
+        "last_checked_at": "2026-04-03T16:00:16.972441+00:00",
+        "last_success_at": null,
+        "last_error_at": "2026-04-03T16:00:16.972441+00:00",
+        "last_error_code": "window_not_found",
+        "consecutive_failures": 45641,
+        "cursor": 0,
+        "signature": "",
+        "recommended_next_step": "run_health",
+        "payload": {
+          "ok": true,
+          "phase": "moments_snapshot",
+          "current_view": "chat_detail",
+          "current_contact": "优质跨境服务群2（494）",
+          "recommended_next_step": null,
+          "view": "chat_detail",
+          "available": false,
+          "items": [],
+          "feed_signature": "",
+          "signature": ""
+        }
+      }
+    },
+    "queues": {
+      "jobs": {
+        "pending": 0,
+        "processing": 0,
+        "done": 519,
+        "stale_processing": 0
+      },
+      "results": {
+        "pending": 172,
+        "consumed": 347,
+        "failed": 0
+      }
+    }
+  }
+}

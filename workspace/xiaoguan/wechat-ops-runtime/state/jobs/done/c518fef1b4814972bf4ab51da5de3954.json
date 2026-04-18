@@ -1,0 +1,54 @@
+{
+  "job_id": "c518fef1b4814972bf4ab51da5de3954",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-28T06:35:41.974777+00:00",
+  "cursor": 51,
+  "signature": "[{\"speaker\": \"后跟你说\", \"text\": \"或者你帮我改一下 我的邮箱 也可以啊 Cd| 刘汉林：15814012779 532989100@qq.com\", \"time\": \"14:34\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "优质跨境服务群2（494）",
+    "messages": [
+      {
+        "speaker": "后跟你说",
+        "time": "14:34",
+        "text": "或者你帮我改一下 我的邮箱 也可以啊 Cd| 刘汉林：15814012779 532989100@qq.com"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "后跟你说",
+        "time": "14:34",
+        "text": "或者你帮我改一下 我的邮箱 也可以啊 Cd| 刘汉林：15814012779 532989100@qq.com"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "A跨境-十号君",
+        "time": "13:54",
+        "text": "出希音加拿大全类目5家，男装一家， 女装一家"
+      },
+      {
+        "speaker": "青草池塘",
+        "time": "14:02",
+        "text": "收日本希音全类目，女装类目， 2000skc或3000skc，有的来报价"
+      },
+      {
+        "speaker": "香菜跨境（小前）",
+        "time": "14:02",
+        "text": "出一家希音新下美区跨境半拖全类目/— 家一件定制男装 价低！ A. 出几个加拿大沃尔玛 公司正常 美国站正"
+      },
+      {
+        "speaker": "Anni",
+        "time": "14:11",
+        "text": "美国速卖通pop现号一组 真实法人配"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T06:35:47.645787+00:00",
+  "worker_pid": 55256
+}

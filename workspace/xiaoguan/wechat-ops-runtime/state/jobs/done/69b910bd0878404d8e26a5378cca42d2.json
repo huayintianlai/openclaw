@@ -1,0 +1,69 @@
+{
+  "job_id": "69b910bd0878404d8e26a5378cca42d2",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-28T05:01:14.917158+00:00",
+  "cursor": 40,
+  "signature": "[{\"speaker\": \"验证你的邮箱\", \"text\": \"我们会向 ccwwsx@163ccm 发送验证码。为了验证这 是恕的电子邮件地址，请在下方的入。\", \"time\": \"12:50\"}, {\"speaker\": \"您好 我在修改 密码跟备用邮箱\", \"text\": \"请问163邮箱账号是多少 我需要接收验 证码\", \"time\": \"12:50\"}, {\"speaker\": \"好的 下午弄吧\", \"text\": \"嗯嗯，\", \"time\": \"13:00\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "问题烦请开 Case问经理，我们的运营",
+    "messages": [
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会向 ccwwsx@163ccm 发送验证码。为了验证这 是恕的电子邮件地址，请在下方的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "请问163邮箱账号是多少 我需要接收验 证码"
+      },
+      {
+        "speaker": "好的 下午弄吧",
+        "time": "13:00",
+        "text": "嗯嗯，"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会向 ccwwsx@163ccm 发送验证码。为了验证这 是恕的电子邮件地址，请在下方的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "请问163邮箱账号是多少 我需要接收验 证码"
+      },
+      {
+        "speaker": "好的 下午弄吧",
+        "time": "13:00",
+        "text": "嗯嗯，"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "E： Microsoft",
+        "time": "12:50",
+        "text": "•- iskymcpndghq@hotmail.com"
+      },
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会向 ccwism@163ccm 发送验证码。为了验证这 是慰的电子部件抱生，请在下力给入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "请问163邮箱账号是多少 我需要接收验 证码 GS口8、"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:01:16.806737+00:00",
+  "worker_pid": 55256
+}

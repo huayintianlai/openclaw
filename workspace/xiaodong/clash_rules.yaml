@@ -1,0 +1,91 @@
+prepend:
+  # =========================================
+  # 🏢 跨境电商与直连业务 (白名单)
+  # =========================================
+  - 'DOMAIN-SUFFIX,pingpongx.com,DIRECT'
+  - 'DOMAIN-SUFFIX,love.99uwen.com,DIRECT'
+  - 'DOMAIN-SUFFIX,99uwen.com,DIRECT'
+  - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+
+  # =========================================
+  # 🍏 Apple 系统级进程代理
+  # =========================================
+  - 'PROCESS-NAME,com.apple.Safari,速连-射手座'
+  - 'PROCESS-NAME,Safari,速连-射手座'
+  - 'PROCESS-NAME,com.apple.WebKit.Networking,速连-射手座'
+  - 'PROCESS-NAME,apple.WebKit.WebContent,速连-射手座'
+
+  # =========================================
+  # 🤖 核心 AI 大模型 (包含底层依赖)
+  # =========================================
+  # --- OpenAI / ChatGPT / Codex ---
+  - 'DOMAIN-SUFFIX,openai.com,速连-射手座' # 已涵盖 api 和 platform
+  - 'DOMAIN-SUFFIX,chatgpt.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,ai.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,oaistatic.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,oaiusercontent.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,featuregates.org,速连-射手座'
+  - 'DOMAIN-SUFFIX,featureassets.org,速连-射手座'
+  - 'DOMAIN-SUFFIX,statsig.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,statsigapi.net,速连-射手座'
+  - 'DOMAIN-SUFFIX,auth0.openai.com,速连-射手座'
+
+  # --- Anthropic / Claude ---
+  - 'DOMAIN-SUFFIX,anthropic.com,速连-射手座' # 已涵盖 console
+  - 'DOMAIN-SUFFIX,claude.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,claudeusercontent.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,platform.claude.com,速连-射手座'
+
+  # --- Google AI / Gemini ---
+  - 'DOMAIN-SUFFIX,gemini.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,bard.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,ai.google.dev,速连-射手座'
+  - 'DOMAIN-SUFFIX,aistudio.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,generativeai.google,速连-射手座'
+  - 'DOMAIN-SUFFIX,deepmind.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,apis.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,clients4.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,googleapis.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,googleusercontent.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,gstatic.com,速连-射手座' # 已涵盖 www.gstatic.com
+  - 'DOMAIN-SUFFIX,antigravity.google,速连-射手座'
+
+  # =========================================
+  # 🎨 图像、视频与生产力 AI 工具 (你的新增补充)
+  # =========================================
+  - 'DOMAIN-SUFFIX,cohere.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,perplexity.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,midjourney.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,stability.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,leonardo.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,runwayml.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,replicate.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,dreamstudio.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,huggingface.co,速连-射手座'
+  - 'DOMAIN-SUFFIX,huggingface.space,速连-射手座'
+  - 'DOMAIN-SUFFIX,notion.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,quillbot.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,grammarly.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,copy.ai,速连-射手座'
+  - 'DOMAIN-SUFFIX,jasper.ai,速连-射手座'
+
+  # =========================================
+  # 🛠️ 基础云服务与特定跨境业务
+  # =========================================
+  - 'DOMAIN-SUFFIX,analytics.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,play.google.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,challenges.cloudflare.com,速连-射手座' # 极重要：防止验证码加载不出
+  - 'DOMAIN-SUFFIX,live.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,outlook.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,xauth.coupang.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,octopia.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,tradera.com,速连-射手座'
+  - 'DOMAIN-SUFFIX,sms-activate.io,速连-射手座'
+
+  # =========================================
+  # 🏁 兜底规则
+  # =========================================
+  - 'GEOIP,CN,DIRECT'
+  - 'MATCH,速连-射手座'
+append: []
+delete: []

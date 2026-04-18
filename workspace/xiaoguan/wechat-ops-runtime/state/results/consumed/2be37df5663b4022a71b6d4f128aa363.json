@@ -1,0 +1,83 @@
+{
+  "result_id": "2be37df5663b4022a71b6d4f128aa363",
+  "job_id": "99affa20c5b1433aa2cf58baea0cec1b",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:40:09.584385+00:00",
+  "source": "watcher:unread",
+  "cursor": 280,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯.\", \"preview\": \"［145条】邵邵全品牌汽车销..\", \"preview_text\": \"［145条】邵邵全品牌汽车销..\", \"time\": \"11:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［8条］服务商|遗憾.:低价..\", \"preview_text\": \"［8条］服务商|遗憾.:低价..\", \"time\": \"11:36\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"四肉強\", \"preview\": \"［28条］ 虾皮越南魚:给你举…\", \"preview_text\": \"［28条］ 虾皮越南魚:给你举…\", \"time\": \"11:21\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 4,
+      "visible_unread_session_count": 4,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯.",
+        "优质跨境服务群2",
+        "四肉強",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［145条】邵邵全品牌汽车销..",
+          "preview_text": "［145条】邵邵全品牌汽车销..",
+          "time": "11:37"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［8条］服务商|遗憾.:低价..",
+          "preview_text": "［8条］服务商|遗憾.:低价..",
+          "time": "11:36"
+        },
+        {
+          "name": "四肉強",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［28条］ 虾皮越南魚:给你举…",
+          "preview_text": "［28条］ 虾皮越南魚:给你举…",
+          "time": "11:21"
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［65条］ Jason huang: 豪宅",
+          "preview_text": "［65条］ Jason huang: 豪宅",
+          "time": "11:39"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 4,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯.",
+          "优质跨境服务群2",
+          "四肉強",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

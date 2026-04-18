@@ -1,0 +1,49 @@
+{
+  "job_id": "23e390df4da04ef5bddef6247e46a05f",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-28T04:51:48.810292+00:00",
+  "cursor": 32,
+  "signature": "[{\"speaker\": \"验证你的邮箱\", \"text\": \"我们会向 ccwssm@163ccm 发送验证码。为了验证这 是划的子谢件地址，请在下力的入。\", \"time\": \"12:50\"}, {\"speaker\": \"您好 我在修改 密码跟备用邮箱\", \"text\": \"请问163邮箱账号是多少 我需要接收验 证码\", \"time\": \"12:50\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "密无法登录或其他明显的问题），没法",
+    "messages": [
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会向 ccwssm@163ccm 发送验证码。为了验证这 是划的子谢件地址，请在下力的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "请问163邮箱账号是多少 我需要接收验 证码"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会向 ccwssm@163ccm 发送验证码。为了验证这 是划的子谢件地址，请在下力的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "请问163邮箱账号是多少 我需要接收验 证码"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "链接到浏览器打开",
+        "time": "11:48",
+        "text": "交付说明： 1账号拿到手后，优先换绑邮箱的辅助 邮箱或绑定手机号！！！当天内操作 完，部分邮箱是买来的，绑定好辅助咖R 箱才代表邮箱真正属于你，"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T04:51:51.593677+00:00",
+  "worker_pid": 55256
+}

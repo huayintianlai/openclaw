@@ -1,0 +1,83 @@
+{
+  "result_id": "999b475e45724ab9b3a55b20f2cf57fd",
+  "job_id": "4bbab66c67c740d38df38c069359f70f",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:30:51.285544+00:00",
+  "source": "watcher:unread",
+  "cursor": 271,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"m？\", \"preview\": \"［138条］宝马五蔓新能源出..\", \"preview_text\": \"［138条］宝马五蔓新能源出..\", \"time\": \"11:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:21\", \"preview\": \"2科R ［28条］ 虾皮越南魚:给你举…\", \"preview_text\": \"2科R ［28条］ 虾皮越南魚:给你举…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［4条］A ErQiao:出三个T.\", \"preview_text\": \"［4条］A ErQiao:出三个T.\", \"time\": \"11:10.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯11:30\", \"preview\": \"［63条］玩具类目-郑郑:［动⋯B\", \"preview_text\": \"［63条］玩具类目-郑郑:［动⋯B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 4,
+      "visible_unread_session_count": 4,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "m？",
+        "东南亚虾皮 tk lazad... 11:21",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交⋯11:30"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "m？",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［138条］宝马五蔓新能源出..",
+          "preview_text": "［138条］宝马五蔓新能源出..",
+          "time": "11:26"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 11:21",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "2科R ［28条］ 虾皮越南魚:给你举…",
+          "preview_text": "2科R ［28条］ 虾皮越南魚:给你举…",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［4条］A ErQiao:出三个T.",
+          "preview_text": "［4条］A ErQiao:出三个T.",
+          "time": "11:10."
+        },
+        {
+          "name": "速卖通纯商家运营交⋯11:30",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［63条］玩具类目-郑郑:［动⋯B",
+          "preview_text": "［63条］玩具类目-郑郑:［动⋯B",
+          "time": ""
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 4,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "m？",
+          "东南亚虾皮 tk lazad... 11:21",
+          "优质跨境服务群2",
+          "速卖通纯商家运营交⋯11:30"
+        ]
+      },
+      "available": true
+    }
+  }
+}

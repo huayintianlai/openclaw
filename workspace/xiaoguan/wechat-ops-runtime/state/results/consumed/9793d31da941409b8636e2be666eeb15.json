@@ -1,0 +1,105 @@
+{
+  "result_id": "9793d31da941409b8636e2be666eeb15",
+  "job_id": "fb07eec77afe43bda0aa3423dcf1d302",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T05:46:49.804447+00:00",
+  "source": "watcher:unread",
+  "cursor": 361,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［193条］A奥迪宝马奔驰即.这\", \"preview_text\": \"［193条］A奥迪宝马奔驰即.这\", \"time\": \"13:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...13:32\", \"preview\": \"［33条］卷丘:他说的游戏=…B\", \"preview_text\": \"［33条］卷丘:他说的游戏=…B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"乡口\", \"preview\": \"倒红留 ［193条］竖琴:急需巴西本….\", \"preview_text\": \"倒红留 ［193条］竖琴:急需巴西本….\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［23条］Zero跨境（坚持初.白\", \"preview_text\": \"［23条］Zero跨境（坚持初.白\", \"time\": \"13:46\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群 13:35\", \"preview\": \"［64条］可乐:巴西本土短期.这\", \"preview_text\": \"［64条］可乐:巴西本土短期.这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "MI",
+        "东南亚虾皮 tk lazad...13:32",
+        "乡口",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群 13:35"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "MI",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［193条］A奥迪宝马奔驰即.这",
+          "preview_text": "［193条］A奥迪宝马奔驰即.这",
+          "time": "13:37"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...13:32",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［33条］卷丘:他说的游戏=…B",
+          "preview_text": "［33条］卷丘:他说的游戏=…B",
+          "time": ""
+        },
+        {
+          "name": "乡口",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "倒红留 ［193条］竖琴:急需巴西本….",
+          "preview_text": "倒红留 ［193条］竖琴:急需巴西本….",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［23条］Zero跨境（坚持初.白",
+          "preview_text": "［23条］Zero跨境（坚持初.白",
+          "time": "13:46"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［3条］深港出海:一枚戒指卖出⋯.",
+          "preview_text": "［3条］深港出海:一枚戒指卖出⋯.",
+          "time": "12:54"
+        },
+        {
+          "name": "美客多卖家交流探讨群 13:35",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［64条］可乐:巴西本土短期.这",
+          "preview_text": "［64条］可乐:巴西本土短期.这",
+          "time": ""
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "MI",
+          "东南亚虾皮 tk lazad...13:32",
+          "乡口",
+          "优质跨境服务群2",
+          "公众号",
+          "美客多卖家交流探讨群 13:35"
+        ]
+      },
+      "available": true
+    }
+  }
+}

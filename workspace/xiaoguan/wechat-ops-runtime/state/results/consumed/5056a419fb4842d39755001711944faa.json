@@ -1,0 +1,105 @@
+{
+  "result_id": "5056a419fb4842d39755001711944faa",
+  "job_id": "2d34c0985dca42d199003b49559a1b4c",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T05:51:01.138930+00:00",
+  "source": "watcher:unread",
+  "cursor": 366,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"M1\", \"preview\": \"［195条］沃尔沃，雷克 红旗⋯白\", \"preview_text\": \"［195条］沃尔沃，雷克 红旗⋯白\", \"time\": \"13:49\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 13:32\", \"preview\": \"［33条］卷丘:他说的游戏=…这\", \"preview_text\": \"［33条］卷丘:他说的游戏=…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"乡口\", \"preview\": \"倒红留 ［193条］竖琴:急需巴西本.\", \"preview_text\": \"倒红留 ［193条］竖琴:急需巴西本.\", \"time\": \"• 13:16\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［23条］Zero跨境（坚持初⋯.\", \"preview_text\": \"［23条］Zero跨境（坚持初⋯.\", \"time\": \"13:46\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群 13:35\", \"preview\": \"［64条］可乐:巴西本土短期..B\", \"preview_text\": \"［64条］可乐:巴西本土短期..B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"［67条］ Ami:\", \"preview_text\": \"［67条］ Ami:\", \"time\": \"13:48\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "M1",
+        "东南亚虾皮 tk lazad... 13:32",
+        "乡口",
+        "优质跨境服务群2",
+        "美客多卖家交流探讨群 13:35",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "M1",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［195条］沃尔沃，雷克 红旗⋯白",
+          "preview_text": "［195条］沃尔沃，雷克 红旗⋯白",
+          "time": "13:49"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 13:32",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［33条］卷丘:他说的游戏=…这",
+          "preview_text": "［33条］卷丘:他说的游戏=…这",
+          "time": ""
+        },
+        {
+          "name": "乡口",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "倒红留 ［193条］竖琴:急需巴西本.",
+          "preview_text": "倒红留 ［193条］竖琴:急需巴西本.",
+          "time": "• 13:16"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［23条］Zero跨境（坚持初⋯.",
+          "preview_text": "［23条］Zero跨境（坚持初⋯.",
+          "time": "13:46"
+        },
+        {
+          "name": "美客多卖家交流探讨群 13:35",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［64条］可乐:巴西本土短期..B",
+          "preview_text": "［64条］可乐:巴西本土短期..B",
+          "time": ""
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［67条］ Ami:",
+          "preview_text": "［67条］ Ami:",
+          "time": "13:48"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "M1",
+          "东南亚虾皮 tk lazad... 13:32",
+          "乡口",
+          "优质跨境服务群2",
+          "美客多卖家交流探讨群 13:35",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

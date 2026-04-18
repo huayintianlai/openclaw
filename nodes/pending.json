@@ -1,0 +1,21 @@
+{
+  "471a0bc4-d7ef-4437-bf50-cef66d34c1b4": {
+    "requestId": "471a0bc4-d7ef-4437-bf50-cef66d34c1b4",
+    "nodeId": "7c5c804f9d3bd823b23e79836e7e2cb71aaaf4fb3ae34087fc52c9afdf2960ef",
+    "displayName": "mac-browser-node",
+    "platform": "darwin",
+    "version": "2026.4.7",
+    "caps": [
+      "system",
+      "browser"
+    ],
+    "commands": [
+      "system.run.prepare",
+      "system.run",
+      "system.which",
+      "browser.proxy"
+    ],
+    "silent": false,
+    "ts": 1776404556127
+  }
+}

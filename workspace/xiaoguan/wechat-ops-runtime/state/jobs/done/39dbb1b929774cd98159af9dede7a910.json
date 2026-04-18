@@ -1,0 +1,71 @@
+{
+  "job_id": "39dbb1b929774cd98159af9dede7a910",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:29:45.704320+00:00",
+  "cursor": 270,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"m？\", \"preview\": \"［138条］宝马五蔓新能源出..\", \"preview_text\": \"［138条］宝马五蔓新能源出..\", \"time\": \"11:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:21\", \"preview\": \"2科R ［28条］ 虾皮越南魚:给你举…\", \"preview_text\": \"2科R ［28条］ 虾皮越南魚:给你举…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［4条］A ErQiao:出三个T..\", \"preview_text\": \"［4条］A ErQiao:出三个T..\", \"time\": \"11:10.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［61条］06:00:大佬们，请..\", \"preview_text\": \"［61条］06:00:大佬们，请..\", \"time\": \"11:29\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "m？",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［138条］宝马五蔓新能源出..",
+        "preview_text": "［138条］宝马五蔓新能源出..",
+        "time": "11:26"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 11:21",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "2科R ［28条］ 虾皮越南魚:给你举…",
+        "preview_text": "2科R ［28条］ 虾皮越南魚:给你举…",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］A ErQiao:出三个T..",
+        "preview_text": "［4条］A ErQiao:出三个T..",
+        "time": "11:10."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［61条］06:00:大佬们，请..",
+        "preview_text": "［61条］06:00:大佬们，请..",
+        "time": "11:29"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 4,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "m？",
+        "东南亚虾皮 tk lazad... 11:21",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:29:46.751488+00:00",
+  "worker_pid": 55256
+}

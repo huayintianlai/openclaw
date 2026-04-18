@@ -1,0 +1,22 @@
+{
+    "description": "存储订单预定金与交付状态",
+    "data": [
+        {
+            "id": "SKY-20260228-001",
+            "customer": "SKY",
+            "source": "KentZ",
+            "payment": {
+                "method": "alipay",
+                "deposit": 1000,
+                "status": "paid"
+            },
+            "demand": "2个 Shopify",
+            "delivery": {
+                "deadline": "本周内",
+                "status": "pending"
+            },
+            "created_at": "2026-02-28",
+            "updated_at": "2026-02-28"
+        }
+    ]
+}

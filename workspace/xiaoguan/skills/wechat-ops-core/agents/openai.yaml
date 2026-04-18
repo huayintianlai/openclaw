@@ -1,0 +1,7 @@
+interface:
+  display_name: "微信自动化底座"
+  short_description: "通用微信观察与操作底座，面向本地 runtime。"
+  default_prompt: "Use $wechat-ops-core to inspect WeChat runtime health, read the current session, or run unread/moments watcher flows through the local wechat-ops runtime."
+
+policy:
+  allow_implicit_invocation: true

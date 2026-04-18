@@ -1,0 +1,105 @@
+{
+  "result_id": "1f00fe7d1b944f8ebdf084bf8eeec6e0",
+  "job_id": "65d1005bea0c45f693d3e35dcfd130c4",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:27:06.520403+00:00",
+  "source": "watcher:unread",
+  "cursor": 212,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［106条」Amy 大众 捷达出…\", \"preview_text\": \"［106条」Amy 大众 捷达出…\", \"time\": \"10:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Benjamin\", \"preview\": \"1.4 万老板\", \"preview_text\": \"1.4 万老板\", \"time\": \"昨天 23:20\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad..10:25\", \"preview\": \"［45条」阿撒:［动画表情］\", \"preview_text\": \"［45条」阿撒:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［29条］a阿宇跨境\", \"preview_text\": \"［29条］a阿宇跨境\", \"time\": \"10:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］一只…\", \"preview_text\": \"［@所有人］［999+条］一只…\", \"time\": \"10:05\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"［59条］III:教教小弟\", \"preview_text\": \"［59条］III:教教小弟\", \"time\": \"10:09\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "Benjamin",
+        "东南亚虾皮 tk lazad..10:25",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［106条」Amy 大众 捷达出…",
+          "preview_text": "［106条」Amy 大众 捷达出…",
+          "time": "10:26"
+        },
+        {
+          "name": "Benjamin",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "1.4 万老板",
+          "preview_text": "1.4 万老板",
+          "time": "昨天 23:20"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad..10:25",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［45条」阿撒:［动画表情］",
+          "preview_text": "［45条」阿撒:［动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［29条］a阿宇跨境",
+          "preview_text": "［29条］a阿宇跨境",
+          "time": "10:05"
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［@所有人］［999+条］一只…",
+          "preview_text": "［@所有人］［999+条］一只…",
+          "time": "10:05"
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［59条］III:教教小弟",
+          "preview_text": "［59条］III:教教小弟",
+          "time": "10:09"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 11,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "Benjamin",
+          "东南亚虾皮 tk lazad..10:25",
+          "优质跨境服务群2",
+          "希音卖家群",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

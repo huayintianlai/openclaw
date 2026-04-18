@@ -1,0 +1,7 @@
+interface:
+  display_name: "智工空间治理"
+  short_description: "飞书知识库目录治理与协作中心模板维护"
+  default_prompt: "Use $zhigong-kb-admin to audit the Zhigong Feishu knowledge base in dry-run mode, then apply only after explicit confirmation."
+
+policy:
+  allow_implicit_invocation: true

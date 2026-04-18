@@ -1,0 +1,91 @@
+{
+  "job_id": "fd4480a95bd04950b6d022ddf8988ec9",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T05:58:47.178211+00:00",
+  "cursor": 373,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［197条］沃尔沃 雷克萨斯….\", \"preview_text\": \"［197条］沃尔沃 雷克萨斯….\", \"time\": \"13:55\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 13:32\", \"preview\": \"［33条］卷丘:他说的游戏=…这\", \"preview_text\": \"［33条］卷丘:他说的游戏=…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"乡口\", \"preview\": \"倒红留 ［193条］竖琴:急需巴西本.\", \"preview_text\": \"倒红留 ［193条］竖琴:急需巴西本.\", \"time\": \"• 13:16\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［24条］A跨境-十号君:出….\", \"preview_text\": \"［24条］A跨境-十号君:出….\", \"time\": \"13:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群 13:35\", \"preview\": \"［64条］可乐:巴西本土短期..B\", \"preview_text\": \"［64条］可乐:巴西本土短期..B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.13:58\", \"preview\": \"［73条］1688运营:［动画表⋯这\", \"preview_text\": \"［73条］1688运营:［动画表⋯这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［197条］沃尔沃 雷克萨斯….",
+        "preview_text": "［197条］沃尔沃 雷克萨斯….",
+        "time": "13:55"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 13:32",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［33条］卷丘:他说的游戏=…这",
+        "preview_text": "［33条］卷丘:他说的游戏=…这",
+        "time": ""
+      },
+      {
+        "name": "乡口",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "倒红留 ［193条］竖琴:急需巴西本.",
+        "preview_text": "倒红留 ［193条］竖琴:急需巴西本.",
+        "time": "• 13:16"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［24条］A跨境-十号君:出….",
+        "preview_text": "［24条］A跨境-十号君:出….",
+        "time": "13:54"
+      },
+      {
+        "name": "美客多卖家交流探讨群 13:35",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［64条］可乐:巴西本土短期..B",
+        "preview_text": "［64条］可乐:巴西本土短期..B",
+        "time": ""
+      },
+      {
+        "name": "速卖通纯商家运营交.13:58",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［73条］1688运营:［动画表⋯这",
+        "preview_text": "［73条］1688运营:［动画表⋯这",
+        "time": ""
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad... 13:32",
+        "乡口",
+        "优质跨境服务群2",
+        "美客多卖家交流探讨群 13:35",
+        "速卖通纯商家运营交.13:58"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:58:51.167252+00:00",
+  "worker_pid": 55256
+}

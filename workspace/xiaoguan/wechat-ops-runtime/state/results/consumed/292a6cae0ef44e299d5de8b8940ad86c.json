@@ -1,0 +1,94 @@
+{
+  "result_id": "292a6cae0ef44e299d5de8b8940ad86c",
+  "job_id": "6da19b64824141cc8145eb39627e7d1d",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T04:14:37.487107+00:00",
+  "source": "watcher:unread",
+  "cursor": 305,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"M1\", \"preview\": \"［158条］小刘卖车 出口内销..这\", \"preview_text\": \"［158条］小刘卖车 出口内销..这\", \"time\": \"12:14\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad..\", \"preview\": \"［31条］卷丘:［动画表情］\", \"preview_text\": \"［31条］卷丘:［动画表情］\", \"time\": \"12:13\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［14条］恺谷子跨境:25年.\", \"preview_text\": \"［14条］恺谷子跨境:25年.\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱⋯这\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱⋯这\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交…\", \"preview\": \"［65条］ Jason huang: 豪宅|\", \"preview_text\": \"［65条］ Jason huang: 豪宅|\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 5,
+      "visible_unread_session_count": 5,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "M1",
+        "东南亚虾皮 tk lazad..",
+        "优质跨境服务群2",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交…"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "M1",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［158条］小刘卖车 出口内销..这",
+          "preview_text": "［158条］小刘卖车 出口内销..这",
+          "time": "12:14"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad..",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［31条］卷丘:［动画表情］",
+          "preview_text": "［31条］卷丘:［动画表情］",
+          "time": "12:13"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］恺谷子跨境:25年.",
+          "preview_text": "［14条］恺谷子跨境:25年.",
+          "time": "12:03"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱⋯这",
+          "preview_text": "［14条］悟:出谷歌个人邮箱⋯这",
+          "time": "11:41."
+        },
+        {
+          "name": "速卖通纯商家运营交…",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［65条］ Jason huang: 豪宅|",
+          "preview_text": "［65条］ Jason huang: 豪宅|",
+          "time": "11:39"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 5,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "M1",
+          "东南亚虾皮 tk lazad..",
+          "优质跨境服务群2",
+          "跨境电商交流乙群",
+          "速卖通纯商家运营交…"
+        ]
+      },
+      "available": true
+    }
+  }
+}

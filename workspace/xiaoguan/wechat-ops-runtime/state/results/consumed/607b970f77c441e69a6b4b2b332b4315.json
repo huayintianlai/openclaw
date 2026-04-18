@@ -1,0 +1,105 @@
+{
+  "result_id": "607b970f77c441e69a6b4b2b332b4315",
+  "job_id": "03026936d61040ed91ace72fab5577a5",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:36:06.030638+00:00",
+  "source": "watcher:unread",
+  "cursor": 220,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［109条］A奥迪宝马奔驰凯…\", \"preview_text\": \"［109条］A奥迪宝马奔驰凯…\", \"time\": \"10:33\", \"unread_badge_count\": 31, \"unread_count\": 31}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad..10:34\", \"preview\": \"［3条］阿撒:我全年无休，…\", \"preview_text\": \"［3条］阿撒:我全年无休，…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］一只…\", \"preview_text\": \"［@所有人］［999+条］一只…\", \"time\": \"10:05\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"法国cd\", \"preview\": \"e好 下周下来了再和我说\", \"preview_text\": \"e好 下周下来了再和我说\", \"time\": \"10:32\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"\", \"unread_badge_count\": 22, \"unread_count\": 22}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［59条］III:教教小弟\", \"preview_text\": \"［59条］III:教教小弟\", \"time\": \"10:09\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad..10:34",
+        "希音卖家群",
+        "法国cd",
+        "跨境电商同行",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": 31,
+          "unread_badge_count": 31,
+          "has_unread_badge": true,
+          "preview": "［109条］A奥迪宝马奔驰凯…",
+          "preview_text": "［109条］A奥迪宝马奔驰凯…",
+          "time": "10:33"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad..10:34",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［3条］阿撒:我全年无休，…",
+          "preview_text": "［3条］阿撒:我全年无休，…",
+          "time": ""
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "［@所有人］［999+条］一只…",
+          "preview_text": "［@所有人］［999+条］一只…",
+          "time": "10:05"
+        },
+        {
+          "name": "法国cd",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "e好 下周下来了再和我说",
+          "preview_text": "e好 下周下来了再和我说",
+          "time": "10:32"
+        },
+        {
+          "name": "跨境电商同行",
+          "unread_count": 22,
+          "unread_badge_count": 22,
+          "has_unread_badge": true,
+          "preview": "",
+          "preview_text": "",
+          "time": ""
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［59条］III:教教小弟",
+          "preview_text": "［59条］III:教教小弟",
+          "time": "10:09"
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 4,
+        "visible_unread_message_badge_total": 76,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "东南亚虾皮 tk lazad..10:34",
+          "希音卖家群",
+          "法国cd",
+          "跨境电商同行",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

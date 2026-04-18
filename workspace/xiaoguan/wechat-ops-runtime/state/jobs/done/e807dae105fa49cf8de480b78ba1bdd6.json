@@ -1,0 +1,71 @@
+{
+  "job_id": "e807dae105fa49cf8de480b78ba1bdd6",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:00:38.257727+00:00",
+  "cursor": 246,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"Cd| 123\", \"preview\": \"帐号密码 麻烦发一下 谢谢\", \"preview_text\": \"帐号密码 麻烦发一下 谢谢\", \"time\": \"11:00\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"Fg\", \"preview\": \"［119条］孙曼～大众.捷达出..\", \"preview_text\": \"［119条］孙曼～大众.捷达出..\", \"time\": \"10:58\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"［24条］阿撒:［动画表情］\", \"preview_text\": \"［24条］阿撒:［动画表情］\", \"time\": \"10:46\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"希音美窖多一手源头-跨境.\", \"preview_text\": \"希音美窖多一手源头-跨境.\", \"time\": \"10:41\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "Cd| 123",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "帐号密码 麻烦发一下 谢谢",
+        "preview_text": "帐号密码 麻烦发一下 谢谢",
+        "time": "11:00"
+      },
+      {
+        "name": "Fg",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［119条］孙曼～大众.捷达出..",
+        "preview_text": "［119条］孙曼～大众.捷达出..",
+        "time": "10:58"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［24条］阿撒:［动画表情］",
+        "preview_text": "［24条］阿撒:［动画表情］",
+        "time": "10:46"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "希音美窖多一手源头-跨境.",
+        "preview_text": "希音美窖多一手源头-跨境.",
+        "time": "10:41"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 4,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 1,
+      "visible_unread_names": [
+        "Cd| 123",
+        "Fg",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:00:45.619593+00:00",
+  "worker_pid": 55256
+}

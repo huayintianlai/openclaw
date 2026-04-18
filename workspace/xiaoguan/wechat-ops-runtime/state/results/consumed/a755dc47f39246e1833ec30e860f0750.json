@@ -1,0 +1,50 @@
+{
+  "result_id": "a755dc47f39246e1833ec30e860f0750",
+  "job_id": "b815361a41a64f709276072b6c603fd1",
+  "type": "watcher.health.changed",
+  "created_at": "2026-03-29T17:29:16.562235+00:00",
+  "source": "watcher:moments",
+  "cursor": 0,
+  "signature": "",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "watcher": "moments",
+      "status": "degraded",
+      "error_code": "window_not_found"
+    },
+    "watcher_payload": {
+      "watcher": "moments",
+      "status": "degraded",
+      "previous_healthy": true,
+      "current_healthy": false,
+      "state": {
+        "watcher": "moments",
+        "enabled": true,
+        "healthy": false,
+        "available": false,
+        "phase": "moments_snapshot",
+        "last_checked_at": "2026-03-29T17:29:15.912061+00:00",
+        "last_success_at": null,
+        "last_error_at": "2026-03-29T17:29:15.912061+00:00",
+        "last_error_code": "window_not_found",
+        "consecutive_failures": 3,
+        "cursor": 0,
+        "signature": "",
+        "recommended_next_step": "run_health",
+        "payload": {
+          "ok": true,
+          "phase": "moments_snapshot",
+          "current_view": "chat_detail",
+          "current_contact": "优质跨境服务群2（494）",
+          "recommended_next_step": null,
+          "view": "chat_detail",
+          "available": false,
+          "items": [],
+          "feed_signature": "",
+          "signature": ""
+        }
+      }
+    }
+  }
+}

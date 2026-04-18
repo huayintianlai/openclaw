@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-04-17T00:15:44.084056",
+    "source_file": "/Users/xiaojiujiu2/Downloads/资本存款.psd",
+    "company_name": "TechVision SARL",
+    "address": "88 Avenue des Champs-Élysées 75008 Paris",
+    "date": "2026-04-20",
+    "output_file": "/Users/xiaojiujiu2/Downloads/资本存款_TechVision_SARL.pdf"
+  },
+  {
+    "timestamp": "2026-04-17T00:16:12.464099",
+    "source_file": "/Users/xiaojiujiu2/Downloads/资本存款.psd",
+    "company_name": "GreenLeaf Innovations",
+    "address": "25 Rue de la Paix 75002 Paris",
+    "date": "2026-05-15",
+    "output_file": "/Users/xiaojiujiu2/Downloads/资本存款_GreenLeaf.pdf"
+  }
+]

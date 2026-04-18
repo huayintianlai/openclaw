@@ -1,0 +1,116 @@
+{
+  "result_id": "4e6e536102d34bc784c8caae4c289d9a",
+  "job_id": "63719bc957e4417abd3dcd8441238969",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T05:02:29.182617+00:00",
+  "source": "watcher:unread",
+  "cursor": 335,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［177条］小刘卖车 出口内销..这\", \"preview_text\": \"［177条］小刘卖车 出口内销..这\", \"time\": \"13:00\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Cd| 刘汉林\", \"preview\": \"好啊\", \"preview_text\": \"好啊\", \"time\": \"13:01\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"［31条］卷丘:［动画表情］\", \"preview_text\": \"［31条］卷丘:［动画表情］\", \"time\": \"12:13\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［16条］侣途跨境:收美国希⋯这|\", \"preview_text\": \"［16条］侣途跨境:收美国希⋯这|\", \"time\": \"12:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯.\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱..\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱..\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 7,
+      "visible_unread_session_count": 7,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "Cd| 刘汉林",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［177条］小刘卖车 出口内销..这",
+          "preview_text": "［177条］小刘卖车 出口内销..这",
+          "time": "13:00"
+        },
+        {
+          "name": "Cd| 刘汉林",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "好啊",
+          "preview_text": "好啊",
+          "time": "13:01"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［31条］卷丘:［动画表情］",
+          "preview_text": "［31条］卷丘:［动画表情］",
+          "time": "12:13"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［16条］侣途跨境:收美国希⋯这|",
+          "preview_text": "［16条］侣途跨境:收美国希⋯这|",
+          "time": "12:37"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［3条］深港出海:一枚戒指卖出⋯.",
+          "preview_text": "［3条］深港出海:一枚戒指卖出⋯.",
+          "time": "12:54"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱..",
+          "preview_text": "［14条］悟:出谷歌个人邮箱..",
+          "time": "11:41."
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［65条］ Jason huang: 豪宅",
+          "preview_text": "［65条］ Jason huang: 豪宅",
+          "time": "11:39"
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 7,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "Cd| 刘汉林",
+          "东南亚虾皮 tk lazad...",
+          "优质跨境服务群2",
+          "公众号",
+          "跨境电商交流乙群",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

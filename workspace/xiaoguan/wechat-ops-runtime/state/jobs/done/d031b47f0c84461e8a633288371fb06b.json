@@ -1,0 +1,111 @@
+{
+  "job_id": "d031b47f0c84461e8a633288371fb06b",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T16:44:26.552862+00:00",
+  "cursor": 521,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交..\", \"preview\": \"［329条」羊驼讲论语（汽车⋯.\", \"preview_text\": \"［329条」羊驼讲论语（汽车⋯.\", \"time\": \"00:30\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk la...\", \"preview\": \"［121条］Gentle（跨境）:.. 凶\", \"preview_text\": \"［121条］Gentle（跨境）:.. 凶\", \"time\": \"昨天 22:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［38条］锦绣跨境@全笙:收…\", \"preview_text\": \"［38条］锦绣跨境@全笙:收…\", \"time\": \"昨天 23:21\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"宋瑞阳。\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"昨天 16:21\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"昨天 16:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流..\", \"preview\": \"173条］美客多叶思琪:曲\", \"preview_text\": \"173条］美客多叶思琪:曲\", \"time\": \"昨天 19:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［12条］小白猫跨境～未回复..L\", \"preview_text\": \"［12条］小白猫跨境～未回复..L\", \"time\": \"昨天 16:49\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运….\", \"preview\": \"［78条］JaneCcc:半托罚的...\", \"preview_text\": \"［78条］JaneCcc:半托罚的...\", \"time\": \"昨天 16:42\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［329条」羊驼讲论语（汽车⋯.",
+        "preview_text": "［329条」羊驼讲论语（汽车⋯.",
+        "time": "00:30"
+      },
+      {
+        "name": "东南亚虾皮 tk la...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［121条］Gentle（跨境）:.. 凶",
+        "preview_text": "［121条］Gentle（跨境）:.. 凶",
+        "time": "昨天 22:12"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［38条］锦绣跨境@全笙:收…",
+        "preview_text": "［38条］锦绣跨境@全笙:收…",
+        "time": "昨天 23:21"
+      },
+      {
+        "name": "宋瑞阳。",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "昂",
+        "preview_text": "昂",
+        "time": "昨天 16:21"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "",
+        "preview_text": "",
+        "time": "昨天 16:12"
+      },
+      {
+        "name": "美客多卖家交流..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "173条］美客多叶思琪:曲",
+        "preview_text": "173条］美客多叶思琪:曲",
+        "time": "昨天 19:33"
+      },
+      {
+        "name": "跨境电商同行",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［12条］小白猫跨境～未回复..L",
+        "preview_text": "［12条］小白猫跨境～未回复..L",
+        "time": "昨天 16:49"
+      },
+      {
+        "name": "速卖通纯商家运….",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［78条］JaneCcc:半托罚的...",
+        "preview_text": "［78条］JaneCcc:半托罚的...",
+        "time": "昨天 16:42"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 8,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 1,
+      "visible_unread_names": [
+        "AA汽车出口资源交..",
+        "东南亚虾皮 tk la...",
+        "优质跨境服务群2",
+        "宋瑞阳。",
+        "希音卖家群",
+        "美客多卖家交流..",
+        "跨境电商同行",
+        "速卖通纯商家运…."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T16:44:32.940246+00:00",
+  "worker_pid": 55256
+}

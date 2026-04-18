@@ -1,0 +1,91 @@
+{
+  "job_id": "8ca31aa5bea6483ba41798700f4a40fd",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T07:16:14.767211+00:00",
+  "cursor": 410,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［225条］广汽传祺新车授权⋯\", \"preview_text\": \"［225条］广汽传祺新车授权⋯\", \"time\": \"15:08\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Cd|刘汉林\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"15:15\", \"unread_badge_count\": 112274, \"unread_count\": 112274}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"2FR ［55条］:虾皮吗\", \"preview_text\": \"2FR ［55条］:虾皮吗\", \"time\": \"15:15\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［2条］安静:收意大利本土⋯\", \"preview_text\": \"［2条］安静:收意大利本土⋯\", \"time\": \"14:57\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张⋯\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张⋯\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"民以的 ［70条］可可西里:好的\", \"preview_text\": \"民以的 ［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［225条］广汽传祺新车授权⋯",
+        "preview_text": "［225条］广汽传祺新车授权⋯",
+        "time": "15:08"
+      },
+      {
+        "name": "Cd|刘汉林",
+        "unread_count": 112274,
+        "unread_badge_count": 112274,
+        "has_unread_badge": true,
+        "preview": "",
+        "preview_text": "",
+        "time": "15:15"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "2FR ［55条］:虾皮吗",
+        "preview_text": "2FR ［55条］:虾皮吗",
+        "time": "15:15"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［2条］安静:收意大利本土⋯",
+        "preview_text": "［2条］安静:收意大利本土⋯",
+        "time": "14:57"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］中国驻俄罗斯大使馆:张⋯",
+        "preview_text": "［4条］中国驻俄罗斯大使馆:张⋯",
+        "time": "14:33"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "民以的 ［70条］可可西里:好的",
+        "preview_text": "民以的 ［70条］可可西里:好的",
+        "time": "15:14"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 1,
+      "visible_unread_message_badge_total": 112274,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "Cd|刘汉林",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T07:16:18.892025+00:00",
+  "worker_pid": 55256
+}

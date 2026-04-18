@@ -1,0 +1,91 @@
+{
+  "job_id": "b8737d5077654e9d960923655bb983dc",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T10:52:32.870062+00:00",
+  "cursor": 473,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"Fg\", \"preview\": \"［243条］出口润祥捷肖继红.\", \"preview_text\": \"［243条］出口润祥捷肖继红.\", \"time\": \"16:17\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 16:00\", \"preview\": \"［69条］:他说真人过，不…\", \"preview_text\": \"［69条］:他说真人过，不…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［13条］Lucy:低价出一个加..这\", \"preview_text\": \"［13条］Lucy:低价出一个加..这\", \"time\": \"16:06\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］Qin...\", \"preview_text\": \"［@所有人］［999+条］Qin...\", \"time\": \"16:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［11条］众发跨境:uk个人本.\", \"preview_text\": \"［11条］众发跨境:uk个人本.\", \"time\": \"15:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯.\", \"preview\": \"［76条］再版小树:pop卖的..\", \"preview_text\": \"［76条］再版小树:pop卖的..\", \"time\": \"16:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "Fg",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［243条］出口润祥捷肖继红.",
+        "preview_text": "［243条］出口润祥捷肖继红.",
+        "time": "16:17"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 16:00",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［69条］:他说真人过，不…",
+        "preview_text": "［69条］:他说真人过，不…",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［13条］Lucy:低价出一个加..这",
+        "preview_text": "［13条］Lucy:低价出一个加..这",
+        "time": "16:06"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［@所有人］［999+条］Qin...",
+        "preview_text": "［@所有人］［999+条］Qin...",
+        "time": "16:12"
+      },
+      {
+        "name": "跨境电商同行",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［11条］众发跨境:uk个人本.",
+        "preview_text": "［11条］众发跨境:uk个人本.",
+        "time": "15:52"
+      },
+      {
+        "name": "速卖通纯商家运营交⋯.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［76条］再版小树:pop卖的..",
+        "preview_text": "［76条］再版小树:pop卖的..",
+        "time": "16:11"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "Fg",
+        "东南亚虾皮 tk lazad... 16:00",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "跨境电商同行",
+        "速卖通纯商家运营交⋯."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T10:52:33.439022+00:00",
+  "worker_pid": 55256
+}

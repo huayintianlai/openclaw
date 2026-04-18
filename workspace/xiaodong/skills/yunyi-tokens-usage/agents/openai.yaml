@@ -1,0 +1,7 @@
+interface:
+  display_name: "云驿 Tokens 用量"
+  short_description: "自动打开云驿面板并读取顶部四张用量卡片"
+  default_prompt: "Use $yunyi-tokens-usage to query current Yunyi tokens usage and return the four core cards."
+
+policy:
+  allow_implicit_invocation: true

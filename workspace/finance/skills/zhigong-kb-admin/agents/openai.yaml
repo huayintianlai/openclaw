@@ -1,0 +1,7 @@
+interface:
+  display_name: "智工空间治理（财务）"
+  short_description: "财务页面知识库治理与结构化追加"
+  default_prompt: "Use $zhigong-kb-admin to run a dry-run audit of finance KB pages, then append approved updates after explicit apply confirmation."
+
+policy:
+  allow_implicit_invocation: true

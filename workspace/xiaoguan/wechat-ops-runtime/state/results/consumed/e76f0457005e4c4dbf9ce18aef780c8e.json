@@ -1,0 +1,45 @@
+{
+  "result_id": "e76f0457005e4c4dbf9ce18aef780c8e",
+  "job_id": "76e046af07c44900a86545bf4e2af605",
+  "type": "chat.visible.delta",
+  "created_at": "2026-03-28T06:48:25.753570+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 53,
+  "signature": "[{\"speaker\": \"乐华什么价\", \"text\": \"7.5 万，已激活，波兰和德国gong\", \"time\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "added_count": 1,
+      "speakers": [
+        "乐华什么价"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "view": "chat_detail",
+      "current_contact": "Cd|刘汉林",
+      "messages": [
+        {
+          "speaker": "乐华什么价",
+          "time": null,
+          "text": "7.5 万，已激活，波兰和德国gong"
+        }
+      ],
+      "added_messages": [
+        {
+          "speaker": "乐华什么价",
+          "time": null,
+          "text": "7.5 万，已激活，波兰和德国gong"
+        }
+      ],
+      "removed_messages": [
+        {
+          "speaker": "后跟你说",
+          "time": "14:34",
+          "text": "Cd| 刘汉林：15814012779 532989100@qq.com"
+        }
+      ],
+      "window_shift": true
+    }
+  }
+}

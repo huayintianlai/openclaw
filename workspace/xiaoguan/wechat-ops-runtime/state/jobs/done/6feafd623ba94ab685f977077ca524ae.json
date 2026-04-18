@@ -1,0 +1,131 @@
+{
+  "job_id": "6feafd623ba94ab685f977077ca524ae",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-29T03:27:27.633799+00:00",
+  "cursor": 527,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［379条］信驰二手车跨境•..\", \"preview_text\": \"［379条］信驰二手车跨境•..\", \"time\": \"11:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:06\", \"preview\": \"［126条］卷丘的大弟子:@…\", \"preview_text\": \"［126条］卷丘的大弟子:@…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"亚马逊卖家交流群（1）\", \"preview\": \"［6条］亚马逊-美国-Gavin...\", \"preview_text\": \"［6条］亚马逊-美国-Gavin...\", \"time\": \"10:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［42条］服务商|遗憾::哪⋯\", \"preview_text\": \"［42条］服务商|遗憾::哪⋯\", \"time\": \"11:22\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［5条］中国签证网:美国/加拿大⋯\", \"preview_text\": \"［5条］中国签证网:美国/加拿大⋯\", \"time\": \"10:59\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"宋瑞阳°\", \"preview\": \"\", \"preview_text\": \"\", \"time\": \"昨天 16:21\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］Qin.\", \"preview_text\": \"［@所有人］［999+条］Qin.\", \"time\": \"11:17\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［74条］美客多摩托车配件:…\", \"preview_text\": \"［74条］美客多摩托车配件:…\", \"time\": \"10:00\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［12条］小白猫跨境～未回复..这\", \"preview_text\": \"［12条］小白猫跨境～未回复..这\", \"time\": \"昨天 16:49\", \"unread_badge_count\": 10, \"unread_count\": 10}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运⋯\", \"preview\": \"［78条］JaneCcc:半托罚的.•B\", \"preview_text\": \"［78条］JaneCcc:半托罚的.•B\", \"time\": \"昨天 16:42\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［379条］信驰二手车跨境•..",
+        "preview_text": "［379条］信驰二手车跨境•..",
+        "time": "11:26"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 11:06",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［126条］卷丘的大弟子:@…",
+        "preview_text": "［126条］卷丘的大弟子:@…",
+        "time": ""
+      },
+      {
+        "name": "亚马逊卖家交流群（1）",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［6条］亚马逊-美国-Gavin...",
+        "preview_text": "［6条］亚马逊-美国-Gavin...",
+        "time": "10:52"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［42条］服务商|遗憾::哪⋯",
+        "preview_text": "［42条］服务商|遗憾::哪⋯",
+        "time": "11:22"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［5条］中国签证网:美国/加拿大⋯",
+        "preview_text": "［5条］中国签证网:美国/加拿大⋯",
+        "time": "10:59"
+      },
+      {
+        "name": "宋瑞阳°",
+        "unread_count": 1,
+        "unread_badge_count": 1,
+        "has_unread_badge": true,
+        "preview": "",
+        "preview_text": "",
+        "time": "昨天 16:21"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［@所有人］［999+条］Qin.",
+        "preview_text": "［@所有人］［999+条］Qin.",
+        "time": "11:17"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［74条］美客多摩托车配件:…",
+        "preview_text": "［74条］美客多摩托车配件:…",
+        "time": "10:00"
+      },
+      {
+        "name": "跨境电商同行",
+        "unread_count": 10,
+        "unread_badge_count": 10,
+        "has_unread_badge": true,
+        "preview": "［12条］小白猫跨境～未回复..这",
+        "preview_text": "［12条］小白猫跨境～未回复..这",
+        "time": "昨天 16:49"
+      },
+      {
+        "name": "速卖通纯商家运⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［78条］JaneCcc:半托罚的.•B",
+        "preview_text": "［78条］JaneCcc:半托罚的.•B",
+        "time": "昨天 16:42"
+      }
+    ],
+    "app_has_unread_badge": true,
+    "app_unread_badge_count": 1,
+    "summary": {
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 10,
+      "visible_unread_sessions_with_numeric_badge": 2,
+      "visible_unread_message_badge_total": 11,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad... 11:06",
+        "亚马逊卖家交流群（1）",
+        "优质跨境服务群2",
+        "公众号",
+        "宋瑞阳°",
+        "希音卖家群",
+        "美客多卖家交流探讨群",
+        "跨境电商同行",
+        "速卖通纯商家运⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T03:27:32.689166+00:00",
+  "worker_pid": 55256
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "智工空间协作（小冠）"
+  short_description: "运营与交付页面的知识库更新与治理"
+  default_prompt: "Use $zhigong-kb-admin to audit target KB pages in dry-run mode, then append updates only after explicit apply confirmation."
+
+policy:
+  allow_implicit_invocation: true

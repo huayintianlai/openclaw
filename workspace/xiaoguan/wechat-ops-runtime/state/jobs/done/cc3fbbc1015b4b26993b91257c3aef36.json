@@ -1,0 +1,91 @@
+{
+  "job_id": "cc3fbbc1015b4b26993b91257c3aef36",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T04:57:18.951310+00:00",
+  "cursor": 328,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［175条］出口润祥捷肖继红…\", \"preview_text\": \"［175条］出口润祥捷肖继红…\", \"time\": \"12:55\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"［31条］卷丘:［动画表情］\", \"preview_text\": \"［31条］卷丘:［动画表情］\", \"time\": \"12:13\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［16条］侣途跨境:收美国希⋯这|\", \"preview_text\": \"［16条］侣途跨境:收美国希⋯这|\", \"time\": \"12:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱..\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱..\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯.\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［175条］出口润祥捷肖继红…",
+        "preview_text": "［175条］出口润祥捷肖继红…",
+        "time": "12:55"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad...",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［31条］卷丘:［动画表情］",
+        "preview_text": "［31条］卷丘:［动画表情］",
+        "time": "12:13"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［16条］侣途跨境:收美国希⋯这|",
+        "preview_text": "［16条］侣途跨境:收美国希⋯这|",
+        "time": "12:37"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［3条］深港出海:一枚戒指卖出⋯",
+        "preview_text": "［3条］深港出海:一枚戒指卖出⋯",
+        "time": "12:54"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱..",
+        "preview_text": "［14条］悟:出谷歌个人邮箱..",
+        "time": "11:41."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［65条］ Jason huang: 豪宅",
+        "preview_text": "［65条］ Jason huang: 豪宅",
+        "time": "11:39"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T04:57:22.139779+00:00",
+  "worker_pid": 55256
+}

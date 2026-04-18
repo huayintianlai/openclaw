@@ -1,0 +1,72 @@
+{
+  "result_id": "4be528d62bdf48d381e70e37e82c5aeb",
+  "job_id": "5630c37117de40aeb960a8a1ee0a8500",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-29T11:29:16.436593+00:00",
+  "source": "watcher:unread",
+  "cursor": 660,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"宋瑞阳°\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"昨天 16:21\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"巴西◎美客多本\", \"preview\": \"［34条］大鱼:［链接］DD+7..•込\", \"preview_text\": \"［34条］大鱼:［链接］DD+7..•込\", \"time\": \"昨天 09:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多自发货..•Q\", \"preview\": \"［193条］竖琴:急巴西本..\", \"preview_text\": \"［193条］竖琴:急巴西本..\", \"time\": \"昨天 13:16\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 3,
+      "visible_unread_session_count": 3,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "names": [
+        "宋瑞阳°",
+        "巴西◎美客多本",
+        "美客多自发货..•Q"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "宋瑞阳°",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "昂",
+          "preview_text": "昂",
+          "time": "昨天 16:21"
+        },
+        {
+          "name": "巴西◎美客多本",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［34条］大鱼:［链接］DD+7..•込",
+          "preview_text": "［34条］大鱼:［链接］DD+7..•込",
+          "time": "昨天 09:37"
+        },
+        {
+          "name": "美客多自发货..•Q",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［193条］竖琴:急巴西本..",
+          "preview_text": "［193条］竖琴:急巴西本..",
+          "time": "昨天 13:16"
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 3,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "宋瑞阳°",
+          "巴西◎美客多本",
+          "美客多自发货..•Q"
+        ]
+      },
+      "available": true
+    }
+  }
+}

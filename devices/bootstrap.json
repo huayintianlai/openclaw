@@ -1,0 +1,18 @@
+{
+  "kt9IdM6JKILOJmIUli8OZ3kiBn71R3B1eZGKCOs8ccU": {
+    "token": "kt9IdM6JKILOJmIUli8OZ3kiBn71R3B1eZGKCOs8ccU",
+    "ts": 1775302498113,
+    "profile": {
+      "roles": [
+        "node",
+        "operator"
+      ],
+      "scopes": [
+        "operator.read",
+        "operator.talk.secrets",
+        "operator.write"
+      ]
+    },
+    "issuedAtMs": 1775302498113
+  }
+}

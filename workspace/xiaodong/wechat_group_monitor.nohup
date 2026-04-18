@@ -1,0 +1,97 @@
+[2026-03-24 20:07:10] [INFO] group monitor started (target=优质跨境服务群2, poll=30s)
+[2026-03-24 20:07:31] [INFO] new intel captured (294 chars)
+[2026-03-24 20:08:22] [INFO] new intel captured (286 chars)
+[2026-03-24 20:09:10] [INFO] new intel captured (242 chars)
+[2026-03-24 20:10:03] [INFO] new intel captured (229 chars)
+[2026-03-24 20:10:47] [INFO] new intel captured (262 chars)
+[2026-03-24 20:11:32] [INFO] new intel captured (258 chars)
+[2026-03-24 20:12:20] [INFO] new intel captured (288 chars)
+[2026-03-24 20:13:07] [INFO] new intel captured (229 chars)
+[2026-03-24 20:14:34] [INFO] new intel captured (280 chars)
+[2026-03-24 20:15:25] [INFO] new intel captured (287 chars)
+[2026-03-24 20:16:15] [INFO] new intel captured (301 chars)
+[2026-03-24 20:17:01] [INFO] new intel captured (271 chars)
+[2026-03-24 20:17:50] [INFO] new intel captured (304 chars)
+[2026-03-24 20:18:43] [INFO] new intel captured (278 chars)
+[2026-03-24 20:19:46] [INFO] new intel captured (236 chars)
+[2026-03-24 20:20:39] [INFO] new intel captured (253 chars)
+[2026-03-24 20:21:31] [INFO] new intel captured (316 chars)
+[2026-03-24 20:22:22] [INFO] new intel captured (247 chars)
+[2026-03-24 20:23:14] [INFO] new intel captured (253 chars)
+[2026-03-24 20:24:04] [INFO] new intel captured (287 chars)
+[2026-03-24 20:24:52] [INFO] new intel captured (230 chars)
+[2026-03-24 20:25:43] [INFO] new intel captured (301 chars)
+[2026-03-24 20:26:32] [INFO] new intel captured (220 chars)
+[2026-03-24 20:27:21] [INFO] new intel captured (186 chars)
+[2026-03-24 20:28:05] [INFO] new intel captured (135 chars)
+[2026-03-24 20:28:56] [INFO] new intel captured (145 chars)
+[2026-03-24 20:29:41] [INFO] new intel captured (137 chars)
+[2026-03-24 20:30:27] [INFO] new intel captured (173 chars)
+[2026-03-24 20:31:13] [INFO] new intel captured (176 chars)
+[2026-03-24 20:31:57] [INFO] new intel captured (121 chars)
+[2026-03-24 20:32:48] [INFO] new intel captured (166 chars)
+[2026-03-24 20:33:33] [INFO] new intel captured (141 chars)
+[2026-03-24 20:34:18] [INFO] new intel captured (146 chars)
+[2026-03-24 20:35:04] [INFO] new intel captured (182 chars)
+[2026-03-24 20:35:48] [INFO] new intel captured (156 chars)
+[2026-03-24 20:36:33] [INFO] new intel captured (128 chars)
+[2026-03-24 20:37:23] [INFO] new intel captured (142 chars)
+[2026-03-24 20:38:08] [INFO] new intel captured (158 chars)
+[2026-03-24 20:39:18] [WARN] ai_see error: Command '['/opt/homebrew/bin/peekaboo', 'see', '--app', '微信', '--window-id', '180', '--analyze', '请只输出当前微信聊天窗口顶部的群名称，只输出名字本身']' timed out after 40 seconds
+[2026-03-24 20:39:18] [INFO] not in target group | current=__ERROR__
+[2026-03-24 20:40:01] [INFO] new intel captured (159 chars)
+[2026-03-24 20:41:01] [INFO] new intel captured (273 chars)
+[2026-03-24 20:41:51] [INFO] new intel captured (319 chars)
+[2026-03-24 20:42:44] [INFO] new intel captured (308 chars)
+[2026-03-24 20:43:40] [INFO] new intel captured (339 chars)
+[2026-03-24 20:44:36] [INFO] new intel captured (277 chars)
+[2026-03-24 20:45:26] [INFO] new intel captured (351 chars)
+[2026-03-24 20:46:15] [INFO] new intel captured (336 chars)
+[2026-03-24 20:47:07] [INFO] new intel captured (326 chars)
+[2026-03-24 20:48:06] [INFO] new intel captured (398 chars)
+[2026-03-24 20:49:05] [INFO] new intel captured (323 chars)
+[2026-03-24 20:49:59] [INFO] new intel captured (288 chars)
+[2026-03-24 20:50:54] [INFO] new intel captured (330 chars)
+[2026-03-24 20:51:47] [INFO] new intel captured (316 chars)
+[2026-03-24 20:52:40] [INFO] new intel captured (334 chars)
+[2026-03-24 20:53:32] [INFO] new intel captured (372 chars)
+[2026-03-24 20:54:27] [INFO] new intel captured (315 chars)
+[2026-03-24 20:55:19] [INFO] new intel captured (333 chars)
+[2026-03-24 20:56:13] [INFO] new intel captured (343 chars)
+[2026-03-24 20:56:49] [INFO] not in target group | current=优质跨境服务群 2
+[2026-03-24 20:57:26] [INFO] not in target group | current=优质跨境服务群 2
+[2026-03-24 20:58:01] [INFO] not in target group | current=优质跨境服务群 2
+[2026-03-24 20:58:39] [INFO] not in target group | current=优质跨境服务群 2
+[2026-03-24 20:59:31] [INFO] new intel captured (344 chars)
+[2026-03-24 21:00:31] [INFO] new intel captured (289 chars)
+[2026-03-24 21:01:27] [INFO] new intel captured (311 chars)
+[2026-03-24 21:02:26] [INFO] new intel captured (318 chars)
+[2026-03-24 21:03:20] [INFO] new intel captured (330 chars)
+[2026-03-24 21:04:19] [INFO] new intel captured (307 chars)
+[2026-03-24 21:04:55] [INFO] not in target group | current=Sunny
+[2026-03-24 21:05:31] [INFO] not in target group | current=Sunny
+[2026-03-24 21:06:08] [INFO] not in target group | current=Sunny
+[2026-03-24 21:06:59] [INFO] not in target group | current=Sunny
+[2026-03-24 21:07:37] [INFO] not in target group | current=Sunny
+[2026-03-24 21:08:12] [INFO] not in target group | current=Sunny
+[2026-03-24 21:08:48] [INFO] not in target group | current=Sunny
+[2026-03-24 21:09:24] [INFO] not in target group | current=Sunny
+[2026-03-24 21:10:07] [INFO] not in target group | current=Sunny
+[2026-03-24 21:10:44] [INFO] not in target group | current=Sunny
+[2026-03-24 21:11:20] [INFO] not in target group | current=Sunny
+[2026-03-24 21:11:56] [INFO] not in target group | current=Sunny
+[2026-03-24 21:12:31] [INFO] not in target group | current=Sunny
+[2026-03-24 21:13:07] [INFO] not in target group | current=Sunny
+[2026-03-24 21:13:45] [INFO] not in target group | current=抱歉，我无法根据图片提供聊天窗口顶部的名称。
+[2026-03-24 21:14:20] [INFO] not in target group | current=Sunny
+[2026-03-24 21:14:58] [INFO] not in target group | current=Sunny
+[2026-03-24 21:15:34] [INFO] not in target group | current=KentZ
+[2026-03-24 21:16:09] [INFO] not in target group | current=KentZ
+[2026-03-24 21:16:44] [INFO] not in target group | current=KentZ
+[2026-03-24 21:17:20] [INFO] not in target group | current=KentZ
+[2026-03-24 21:17:51] [INFO] not in target group | current=
+[2026-03-24 21:18:26] [INFO] not in target group | current=KentZ
+[2026-03-24 21:19:03] [INFO] not in target group | current=KentZ
+[2026-03-24 21:20:00] [INFO] not in target group | current=KentZ
+[2026-03-24 21:20:39] [INFO] not in target group | current=KentZ
+[2026-03-24 21:21:00] [INFO] group monitor stopping (PID=12432)

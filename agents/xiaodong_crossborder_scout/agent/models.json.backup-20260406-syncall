@@ -1,0 +1,332 @@
+{
+  "providers": {
+    "minimax": {
+      "baseUrl": "https://api.minimaxi.com/anthropic",
+      "api": "anthropic-messages",
+      "authHeader": true,
+      "models": [
+        {
+          "contextWindow": 128000,
+          "cost": {
+            "cacheRead": 0.21,
+            "cacheWrite": 2.625,
+            "input": 2.1,
+            "output": 8.4
+          },
+          "id": "MiniMax-M2.5",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 4096,
+          "name": "MiniMax MiniMax-M2.5",
+          "reasoning": false
+        }
+      ],
+      "apiKey": "MINIMAX_API_KEY"
+    },
+    "moonshot": {
+      "baseUrl": "https://api.moonshot.ai/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "contextWindow": 256000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "kimi-k2.5",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "Kimi K2.5",
+          "reasoning": false,
+          "compat": {
+            "supportsUsageInStreaming": true
+          }
+        }
+      ],
+      "apiKey": "MOONSHOT_API_KEY"
+    },
+    "kimi-coding": {
+      "baseUrl": "https://api.kimi.com/coding/",
+      "api": "anthropic-messages",
+      "headers": {
+        "User-Agent": "claude-code/0.1.0"
+      },
+      "models": [
+        {
+          "id": "k2p5",
+          "name": "Kimi for Coding",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 32768
+        }
+      ],
+      "apiKey": "KIMI_API_KEY"
+    },
+    "custom": {
+      "api": "openai-completions",
+      "apiKey": "LITELLM_MASTER_KEY",
+      "authHeader": true,
+      "baseUrl": "http://127.0.0.1:4000",
+      "models": [
+        {
+          "contextWindow": 1050000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 2.5,
+            "output": 15
+          },
+          "id": "gpt",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT (via LiteLLM)",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 200000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "claude",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32000,
+          "name": "Claude (via LiteLLM)",
+          "reasoning": false
+        }
+      ]
+    },
+    "deepseek": {
+      "baseUrl": "https://api.deepseek.com/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "contextWindow": 128000,
+          "id": "deepseek-chat",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-chat",
+          "reasoning": false
+        }
+      ],
+      "apiKey": "DEEPSEEK_API_KEY"
+    },
+    "grok": {
+      "api": "openai-completions",
+      "apiKey": "GROK_API_KEY",
+      "baseUrl": "https://api.x.ai/v1",
+      "models": [
+        {
+          "contextWindow": 128000,
+          "id": "grok-2-latest",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "grok-2-latest",
+          "reasoning": false
+        }
+      ]
+    },
+    "gemini": {
+      "api": "openai-completions",
+      "apiKey": "GEMINI_API_KEY",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "models": [
+        {
+          "contextWindow": 2097152,
+          "id": "gemini-2.5-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "gemini-2.5-pro",
+          "reasoning": true
+        }
+      ]
+    },
+    "minimax-portal": {
+      "baseUrl": "https://api.minimax.io/anthropic",
+      "api": "anthropic-messages",
+      "authHeader": true,
+      "models": [
+        {
+          "id": "MiniMax-M2.7",
+          "name": "MiniMax M2.7",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cacheRead": 0.06,
+            "cacheWrite": 0.375
+          },
+          "contextWindow": 204800,
+          "maxTokens": 131072
+        },
+        {
+          "id": "MiniMax-M2.7-highspeed",
+          "name": "MiniMax M2.7 Highspeed",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cacheRead": 0.06,
+            "cacheWrite": 0.375
+          },
+          "contextWindow": 204800,
+          "maxTokens": 131072
+        }
+      ],
+      "apiKey": "MINIMAX_API_KEY"
+    },
+    "yunyi-codex": {
+      "api": "openai-responses",
+      "apiKey": "YUNYI_API_KEY",
+      "auth": "api-key",
+      "authHeader": false,
+      "baseUrl": "https://yunyi.cfd/codex",
+      "headers": {},
+      "models": [
+        {
+          "contextWindow": 1050000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "gpt-5.4",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT 5.4",
+          "reasoning": true
+        }
+      ]
+    },
+    "yunyi-claude": {
+      "api": "anthropic-messages",
+      "apiKey": "YUNYI_CLAUDE_API_KEY",
+      "auth": "api-key",
+      "authHeader": false,
+      "baseUrl": "https://yunyi.rdzhvip.com/claude",
+      "headers": {},
+      "models": [
+        {
+          "contextWindow": 200000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "claude-opus-4-6",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32000,
+          "name": "Claude Opus 4.6",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 200000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "claude-sonnet-4-6",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 16000,
+          "name": "Claude Sonnet 4.6",
+          "reasoning": false
+        }
+      ]
+    },
+    "kimi": {
+      "baseUrl": "https://api.kimi.com/coding/",
+      "api": "anthropic-messages",
+      "headers": {
+        "User-Agent": "claude-code/0.1.0"
+      },
+      "models": [
+        {
+          "id": "kimi-code",
+          "name": "Kimi Code",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 32768
+        },
+        {
+          "id": "k2p5",
+          "name": "Kimi Code (legacy model id)",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 32768
+        }
+      ],
+      "apiKey": "KIMI_API_KEY"
+    }
+  }
+}

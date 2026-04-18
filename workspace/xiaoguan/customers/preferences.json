@@ -1,0 +1,16 @@
+{
+    "description": "存储客户偏好与来源",
+    "data": [
+        {
+            "id": "SKY",
+            "source": "KentZ",
+            "preferences": {
+                "resource_type": "Shopify",
+                "quantity": 2
+            },
+            "contact_method": "telegram",
+            "last_contact": "2026-02-28",
+            "created_at": "2026-02-28"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+  "result_id": "23657491212a4e758e321a4cc54fb985",
+  "job_id": "f48fa3bac4344f658a515d31ec629281",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:13:49.823013+00:00",
+  "source": "watcher:unread",
+  "cursor": 256,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［122条］一汽丰田杨洋 155.\", \"preview_text\": \"［122条］一汽丰田杨洋 155.\", \"time\": \"11:06\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 10:46\", \"preview\": \"［24条］阿撒:［动画表情］\", \"preview_text\": \"［24条］阿撒:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［4条］A ErQiao:出三个T..B\", \"preview_text\": \"［4条］A ErQiao:出三个T..B\", \"time\": \"11:10\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 3,
+      "visible_unread_session_count": 3,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "MI",
+        "东南亚虾皮 tk lazad... 10:46",
+        "优质跨境服务群2"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "MI",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［122条］一汽丰田杨洋 155.",
+          "preview_text": "［122条］一汽丰田杨洋 155.",
+          "time": "11:06"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 10:46",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［24条］阿撒:［动画表情］",
+          "preview_text": "［24条］阿撒:［动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［4条］A ErQiao:出三个T..B",
+          "preview_text": "［4条］A ErQiao:出三个T..B",
+          "time": "11:10"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 3,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "MI",
+          "东南亚虾皮 tk lazad... 10:46",
+          "优质跨境服务群2"
+        ]
+      },
+      "available": true
+    }
+  }
+}

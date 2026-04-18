@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-search-plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Knowledge base search plugin for OpenClaw",
+  "main": "index.ts",
+  "dependencies": {
+    "@sinclair/typebox": "0.34.47"
+  },
+  "openclaw": {
+    "extensions": ["index.ts"]
+  }
+}

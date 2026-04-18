@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "7c69acdd-4fbc-43b0-84e0-42774e8a9fad",
+      "agentId": "xiaodong",
+      "name": "早报天气",
+      "enabled": false,
+      "createdAtMs": 1772425183302,
+      "updatedAtMs": 1772816709228,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "获取兰州天气，发送早报问候"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "lastRunAtMs": 1772816400023,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 184587,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "14ba38e1-4b47-4921-8d32-d135522dd73f",
+      "agentId": "xiaodong",
+      "name": "提醒异地备份",
+      "enabled": false,
+      "createdAtMs": 1772850830639,
+      "updatedAtMs": 1772851597608,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "提醒老大完成 Linux 异地存储备份"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {}
+    },
+    {
+      "id": "e4619913-6556-4194-97c2-aeaa0bf3cded",
+      "agentId": "xiaodong",
+      "name": "每周跨境风险扫描",
+      "description": "每周一 09:00 调用 xiaodong_crossborder_scout 执行近 30 天默认口径的跨境风险扫描",
+      "enabled": true,
+      "createdAtMs": 1773378305617,
+      "updatedAtMs": 1775236667936,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "你现在以跨境电商公司的老板/运营总监视角做周扫描。目标不是资讯汇总，而是：1) 识别会导致卖家亏损/封店/合规处罚/成本上升的风险；2) 识别政策变化带来的可执行机会。重点范围：欧洲企业注册（法国/德国）、欧盟VAT/税务、支付、物流、合规政策，以及指定平台（16个平台）招商政策、卖家门槛、风控与处罚变化。输出必须分为：A高风险（立即影响，给出影响对象+损失路径+建议动作）；B中风险（持续观察，给出触发条件）；C机会（窗口期+适配卖家类型+行动建议）。每条必须附来源链接与日期（绝对日期），至少双来源交叉验证；没有证据的不写。禁止空泛趋势、禁止与卖家收益无关信息。若本次无高质量情报，明确返回“本次无有效可执行情报”，并给出失败原因与下次改进策略。",
+        "timeoutSeconds": 420
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "ou_87bb675cf1a555992cf71df25f860c63",
+        "bestEffort": false
+      },
+      "state": {
+        "nextRunAtMs": 1775437200000,
+        "lastRunAtMs": 1775235218922,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 166120,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      },
+      "failureAlert": {
+        "after": 2,
+        "channel": "feishu",
+        "to": "ou_87bb675cf1a555992cf71df25f860c63",
+        "cooldownMs": 43200000
+      }
+    },
+    {
+      "id": "d3e23874-cab0-4c25-8aac-22947adcfc0d",
+      "agentId": "xiaodong",
+      "name": "早报天气",
+      "enabled": true,
+      "createdAtMs": 1774192058900,
+      "updatedAtMs": 1775262666314,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "现在是早上8:30，请执行今日早报任务：查询兰州天气和科技新闻，发送早安问候和今日简报给用户。",
+        "model": "yunyi-claude/claude-opus-4-6",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "ou_87bb675cf1a555992cf71df25f860c63",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775349000000,
+        "lastRunAtMs": 1775262600021,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 66293,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "FallbackSummaryError: All models failed (3): custom/gpt-5.4: 400 expired, 账号已过期 (auth) | minimax/MiniMax-M2.5: LLM request timed out. (unknown) | moonshot/kimi-k2.5: HTTP 401: Invalid Authentication (auth)",
+        "lastErrorReason": "auth"
+      }
+    },
+    {
+      "id": "fd8b47cf-5304-4ab3-ad5e-8203a68caf94",
+      "agentId": "xiaodong",
+      "name": "临时跨境扫描汇报-明早10点",
+      "description": "一次性任务：明早10点运行跨境风险扫描并汇报",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775236811417,
+      "updatedAtMs": 1775268065802,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-04T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请以跨境电商老板/运营总监视角执行一次近30天风险与机会扫描：聚焦欧洲企业注册（法/德）、欧盟VAT税务、支付、物流、平台政策与风控。按A高风险/B中风险/C机会输出，每条要有影响对象、损失或收益路径、可执行动作，附绝对日期+来源链接，优先双来源交叉验证。最后给老板一版简洁汇报（先结论后行动）。",
+        "timeoutSeconds": 420
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "ou_87bb675cf1a555992cf71df25f860c63"
+      },
+      "state": {
+        "lastRunAtMs": 1775268000013,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 65789,
+        "lastError": "FallbackSummaryError: All models failed (3): custom/gpt-5.4: 400 expired, 账号已过期 (auth) | minimax/MiniMax-M2.5: LLM request timed out. (unknown) | moonshot/kimi-k2.5: HTTP 401: Invalid Authentication (auth)",
+        "lastErrorReason": "auth",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    }
+  ]
+}

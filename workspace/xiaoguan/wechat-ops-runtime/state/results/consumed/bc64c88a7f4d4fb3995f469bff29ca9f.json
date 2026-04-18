@@ -1,0 +1,127 @@
+{
+  "result_id": "bc64c88a7f4d4fb3995f469bff29ca9f",
+  "job_id": "6cea5ed6dc844a6f92fd5f62c22397ae",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T06:48:25.746662+00:00",
+  "source": "watcher:unread",
+  "cursor": 387,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［215条］小刘卖车 出口内销..B\", \"preview_text\": \"［215条］小刘卖车 出口内销..B\", \"time\": \"14:47\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"bol@卡芙兰\", \"preview\": \"乐华什么价\", \"preview_text\": \"乐华什么价\", \"time\": \"14:47\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"C 13:16\", \"preview\": \"［193条］竖琴:急需巴西本..\", \"preview_text\": \"［193条］竖琴:急需巴西本..\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 14:29\", \"preview\": \"2FR ［49条］不吃鱼:只有双节当天 B\", \"preview_text\": \"2FR ［49条］不吃鱼:只有双节当天 B\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张…\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张…\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［65条］可乐:巴西本土有要⋯这\", \"preview_text\": \"［65条］可乐:巴西本土有要⋯这\", \"time\": \"13:59\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱...\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［73条］1688运營:［动画表.\", \"preview_text\": \"［73条］1688运營:［动画表.\", \"time\": \"13:58\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 8,
+      "visible_unread_session_count": 8,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "bol@卡芙兰",
+        "C 13:16",
+        "东南亚虾皮 tk lazad... 14:29",
+        "公众号",
+        "美客多卖家交流探讨群",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［215条］小刘卖车 出口内销..B",
+          "preview_text": "［215条］小刘卖车 出口内销..B",
+          "time": "14:47"
+        },
+        {
+          "name": "bol@卡芙兰",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "乐华什么价",
+          "preview_text": "乐华什么价",
+          "time": "14:47"
+        },
+        {
+          "name": "C 13:16",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［193条］竖琴:急需巴西本..",
+          "preview_text": "［193条］竖琴:急需巴西本..",
+          "time": ""
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 14:29",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "2FR ［49条］不吃鱼:只有双节当天 B",
+          "preview_text": "2FR ［49条］不吃鱼:只有双节当天 B",
+          "time": ""
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［4条］中国驻俄罗斯大使馆:张…",
+          "preview_text": "［4条］中国驻俄罗斯大使馆:张…",
+          "time": "14:33"
+        },
+        {
+          "name": "美客多卖家交流探讨群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［65条］可乐:巴西本土有要⋯这",
+          "preview_text": "［65条］可乐:巴西本土有要⋯这",
+          "time": "13:59"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱...",
+          "preview_text": "［14条］悟:出谷歌个人邮箱...",
+          "time": "11:41."
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［73条］1688运營:［动画表.",
+          "preview_text": "［73条］1688运營:［动画表.",
+          "time": "13:58"
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "visible_session_count": 13,
+        "visible_unread_session_count": 8,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "bol@卡芙兰",
+          "C 13:16",
+          "东南亚虾皮 tk lazad... 14:29",
+          "公众号",
+          "美客多卖家交流探讨群",
+          "跨境电商交流乙群",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

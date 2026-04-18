@@ -1,0 +1,4 @@
+#!/bin/zsh
+set -euo pipefail
+
+exec /Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime/bin/xiaoguan-wechat-worker "$@"

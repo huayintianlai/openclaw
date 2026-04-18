@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  haystack-api:
+    image: haystack-api:v2
+    build: .
+    container_name: haystack-api
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - QDRANT_URL=http://127.0.0.1:6333
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+      - QDRANT_COLLECTION=company-kb-files-v2
+      - ZHIPU_API_KEY=${ZHIPU_API_KEY}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-embedding-3}
+      - EMBEDDING_DIM=${EMBEDDING_DIM:-2048}
+      - API_TOKEN=${API_TOKEN}
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data

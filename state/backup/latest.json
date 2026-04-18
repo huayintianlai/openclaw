@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-03-13T07:15:16Z",
+  "profile": "core",
+  "repos": [
+    "local",
+    "offsite"
+  ],
+  "snapshot_ids": {
+    "local": "055133fb4ea958422eb652d5d7e66504352ee64777fabbca552b4c2284f4b755",
+    "offsite": "5eba7b314f748347e33b7d408b5f9fe1ebfc5d7b538380d21c7bc270d1a0d2d8"
+  },
+  "duration_sec": 4,
+  "files_count": 1446,
+  "bytes_added": 39736,
+  "verify_passed": true,
+  "errors": []
+}

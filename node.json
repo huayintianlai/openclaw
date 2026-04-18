@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "nodeId": "a4e7e0ff-9a8d-4a7b-bcdd-aec7172adf87",
+  "displayName": "mac-browser-node",
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 18789,
+    "tls": false
+  }
+}

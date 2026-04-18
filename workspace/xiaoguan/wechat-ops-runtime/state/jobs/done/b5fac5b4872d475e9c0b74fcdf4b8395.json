@@ -1,0 +1,64 @@
+{
+  "job_id": "b5fac5b4872d475e9c0b74fcdf4b8395",
+  "type": "chat.visible.delta",
+  "source": "watcher:chat_visible",
+  "created_at": "2026-03-28T05:04:27.779267+00:00",
+  "cursor": 42,
+  "signature": "[{\"speaker\": \"品： Microsoft\", \"text\": \"•Fkymcpndghg@hotmal.com\", \"time\": \"12:50\"}, {\"speaker\": \"验证你的邮箱\", \"text\": \"我们会由 ccwns@163ccm 发送验证码。为了验证这 是见的油子谢件地址。请在下力的入。\", \"time\": \"12:50\"}, {\"speaker\": \"您好 我在修改 密码跟备用邮箱\", \"text\": \"⑤ 口 ×、\", \"time\": \"12:50\"}]",
+  "payload": {
+    "watcher": "chat_visible",
+    "view": "chat_detail",
+    "current_contact": "Cd|刘汉林",
+    "messages": [
+      {
+        "speaker": "品： Microsoft",
+        "time": "12:50",
+        "text": "•Fkymcpndghg@hotmal.com"
+      },
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会由 ccwns@163ccm 发送验证码。为了验证这 是见的油子谢件地址。请在下力的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "⑤ 口 ×、"
+      }
+    ],
+    "added_messages": [
+      {
+        "speaker": "品： Microsoft",
+        "time": "12:50",
+        "text": "•Fkymcpndghg@hotmal.com"
+      },
+      {
+        "speaker": "验证你的邮箱",
+        "time": "12:50",
+        "text": "我们会由 ccwns@163ccm 发送验证码。为了验证这 是见的油子谢件地址。请在下力的入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": "12:50",
+        "text": "⑤ 口 ×、"
+      }
+    ],
+    "removed_messages": [
+      {
+        "speaker": "验证你的邮箱",
+        "time": null,
+        "text": "我们会问 ccwxt@163ccm 发选验证码。为了检证这 是恕的电子邮件地址，请在下力输入。"
+      },
+      {
+        "speaker": "您好 我在修改 密码跟备用邮箱",
+        "time": null,
+        "text": "请问163邮箱账号是多少 我需要接收验 证码"
+      }
+    ],
+    "window_shift": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:04:29.956213+00:00",
+  "worker_pid": 55256
+}

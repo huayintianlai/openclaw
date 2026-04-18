@@ -1,0 +1,160 @@
+{
+  "result_id": "04a97a53f3ca41da85a1d57d9d1ad96e",
+  "job_id": "fc41371538bc412da419e6bb0834ee9a",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-29T06:28:59.993895+00:00",
+  "source": "watcher:unread",
+  "cursor": 624,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［414条］方程豹 睿蓝国际..\", \"preview_text\": \"［414条］方程豹 睿蓝国际..\", \"time\": \"14:26\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 11:06\", \"preview\": \"［126条］卷丘的大弟子:@…\", \"preview_text\": \"［126条］卷丘的大弟子:@…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"亚马逊卖家交流群（1）\", \"preview\": \"［6条］亚马逊-美国-Gavin...\", \"preview_text\": \"［6条］亚马逊-美国-Gavin...\", \"time\": \"10:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［50条］不上进的薛火火（跨..\", \"preview_text\": \"［50条］不上进的薛火火（跨..\", \"time\": \"13:56\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［5条］中国签证网:美国/加拿大⋯\", \"preview_text\": \"［5条］中国签证网:美国/加拿大⋯\", \"time\": \"10:59\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"【@所有人］［999+条」Max•\", \"preview_text\": \"【@所有人］［999+条」Max•\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"昨天 16:21|\", \"preview\": \"昂\", \"preview_text\": \"昂\", \"time\": \"\", \"unread_badge_count\": 1, \"unread_count\": 1}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［15条」悟:出谷歇个人邮箱⋯.\", \"preview_text\": \"［15条」悟:出谷歇个人邮箱⋯.\", \"time\": \"12:11.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［12条］小白猫跨境～未回复...这\", \"preview_text\": \"［12条］小白猫跨境～未回复...这\", \"time\": \"昨天 16:49\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运.\", \"preview\": \"178条］JaneCcc:半托罚的.B\", \"preview_text\": \"178条］JaneCcc:半托罚的.B\", \"time\": \"昨天 16:42\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"鹵通区\", \"preview\": \"［76条］宋:想进墨西哥，沙…\", \"preview_text\": \"［76条］宋:想进墨西哥，沙…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 11,
+      "visible_unread_session_count": 11,
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad... 11:06",
+        "亚马逊卖家交流群（1）",
+        "优质跨境服务群2",
+        "公众号",
+        "希音卖家群",
+        "昨天 16:21|",
+        "跨境电商交流乙群",
+        "跨境电商同行",
+        "速卖通纯商家运.",
+        "鹵通区"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［414条］方程豹 睿蓝国际..",
+          "preview_text": "［414条］方程豹 睿蓝国际..",
+          "time": "14:26"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 11:06",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［126条］卷丘的大弟子:@…",
+          "preview_text": "［126条］卷丘的大弟子:@…",
+          "time": ""
+        },
+        {
+          "name": "亚马逊卖家交流群（1）",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［6条］亚马逊-美国-Gavin...",
+          "preview_text": "［6条］亚马逊-美国-Gavin...",
+          "time": "10:52"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［50条］不上进的薛火火（跨..",
+          "preview_text": "［50条］不上进的薛火火（跨..",
+          "time": "13:56"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［5条］中国签证网:美国/加拿大⋯",
+          "preview_text": "［5条］中国签证网:美国/加拿大⋯",
+          "time": "10:59"
+        },
+        {
+          "name": "希音卖家群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "【@所有人］［999+条」Max•",
+          "preview_text": "【@所有人］［999+条」Max•",
+          "time": "12:03"
+        },
+        {
+          "name": "昨天 16:21|",
+          "unread_count": 1,
+          "unread_badge_count": 1,
+          "has_unread_badge": true,
+          "preview": "昂",
+          "preview_text": "昂",
+          "time": ""
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［15条」悟:出谷歇个人邮箱⋯.",
+          "preview_text": "［15条」悟:出谷歇个人邮箱⋯.",
+          "time": "12:11."
+        },
+        {
+          "name": "跨境电商同行",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［12条］小白猫跨境～未回复...这",
+          "preview_text": "［12条］小白猫跨境～未回复...这",
+          "time": "昨天 16:49"
+        },
+        {
+          "name": "速卖通纯商家运.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "178条］JaneCcc:半托罚的.B",
+          "preview_text": "178条］JaneCcc:半托罚的.B",
+          "time": "昨天 16:42"
+        },
+        {
+          "name": "鹵通区",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［76条］宋:想进墨西哥，沙…",
+          "preview_text": "［76条］宋:想进墨西哥，沙…",
+          "time": ""
+        }
+      ],
+      "app_has_unread_badge": true,
+      "app_unread_badge_count": 1,
+      "summary": {
+        "app_has_unread_badge": true,
+        "app_unread_badge_count": 1,
+        "visible_session_count": 13,
+        "visible_unread_session_count": 11,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 1,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "东南亚虾皮 tk lazad... 11:06",
+          "亚马逊卖家交流群（1）",
+          "优质跨境服务群2",
+          "公众号",
+          "希音卖家群",
+          "昨天 16:21|",
+          "跨境电商交流乙群",
+          "跨境电商同行",
+          "速卖通纯商家运.",
+          "鹵通区"
+        ]
+      },
+      "available": true
+    }
+  }
+}

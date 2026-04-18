@@ -1,0 +1,91 @@
+{
+  "job_id": "42bdf141713b4dd481d6442ca2f2ab9c",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T05:31:47.028635+00:00",
+  "cursor": 354,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"3口:\", \"preview\": \"倒效留 ［193条］竖琴:急需巴西本…\", \"preview_text\": \"倒效留 ［193条］竖琴:急需巴西本…\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［191条］小刘卖车 出口内销..这\", \"preview_text\": \"［191条］小刘卖车 出口内销..这\", \"time\": \"13:12\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"PR8\", \"preview\": \"［32条］卷丘的大弟子:啥情…这\", \"preview_text\": \"［32条］卷丘的大弟子:啥情…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［20条］The ocean: 出几个..这\", \"preview_text\": \"［20条］The ocean: 出几个..这\", \"time\": \"13:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱.B\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱.B\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "3口:",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "倒效留 ［193条］竖琴:急需巴西本…",
+        "preview_text": "倒效留 ［193条］竖琴:急需巴西本…",
+        "time": ""
+      },
+      {
+        "name": "AA汽车出口资源交.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［191条］小刘卖车 出口内销..这",
+        "preview_text": "［191条］小刘卖车 出口内销..这",
+        "time": "13:12"
+      },
+      {
+        "name": "PR8",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［32条］卷丘的大弟子:啥情…这",
+        "preview_text": "［32条］卷丘的大弟子:啥情…这",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［20条］The ocean: 出几个..这",
+        "preview_text": "［20条］The ocean: 出几个..这",
+        "time": "13:29"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［3条］深港出海:一枚戒指卖出⋯",
+        "preview_text": "［3条］深港出海:一枚戒指卖出⋯",
+        "time": "12:54"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱.B",
+        "preview_text": "［14条］悟:出谷歌个人邮箱.B",
+        "time": "11:41."
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 6,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "3口:",
+        "AA汽车出口资源交.",
+        "PR8",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T05:31:50.168897+00:00",
+  "worker_pid": 55256
+}

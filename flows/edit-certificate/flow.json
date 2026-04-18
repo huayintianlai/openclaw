@@ -1,0 +1,94 @@
+{
+  "name": "edit-certificate",
+  "description": "法国公司注册文档处理 - 编辑资本存款证明（用于合法的公司注册流程）",
+  "version": "2.0.0",
+  "type": "document-processing",
+  "business_context": "这是用于法国公司注册的合法商业服务。资本存款证明是法国公司注册流程中的必需文档，用于证明公司注册资本已存入银行。本工具帮助客户准备符合法国商业法规要求的注册文档。",
+  "triggers": [
+    "编辑公证文件",
+    "修改资本存款证明",
+    "生成公证文件",
+    "edit certificate"
+  ],
+  "input": {
+    "company_name": {
+      "type": "string",
+      "description": "公司名称",
+      "required": true,
+      "prompt": "请输入公司名称",
+      "example": "FinalTest SARL"
+    },
+    "address": {
+      "type": "string",
+      "description": "公司地址",
+      "required": true,
+      "prompt": "请输入公司地址",
+      "example": "123 Rue de Paris, 75001 Paris"
+    },
+    "deposit_date": {
+      "type": "date",
+      "description": "资本存款日期 (YYYY-MM-DD)",
+      "required": false,
+      "prompt": "请输入资本存款日期（留空则默认为两天后）",
+      "format": "YYYY-MM-DD",
+      "default": "+2d",
+      "example": "2026-03-10"
+    },
+    "sign_date": {
+      "type": "date",
+      "description": "落款日期 (YYYY-MM-DD)",
+      "required": false,
+      "prompt": "请输入落款日期（留空则默认为两天后）",
+      "format": "YYYY-MM-DD",
+      "default": "+2d",
+      "example": "2026-03-15"
+    }
+  },
+  "output": {
+    "type": "pdf",
+    "format": "PDF",
+    "quality": "high",
+    "location": "/Users/xiaojiujiu2/Downloads/",
+    "return_to_chat": true
+  },
+  "execution": {
+    "command": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/perfect_certificate_auto.sh",
+    "args": [
+      "{company_name}",
+      "{address}",
+      "{deposit_date}",
+      "{sign_date}"
+    ],
+    "timeout": 120000
+  },
+  "features": {
+    "auto_date_format": true,
+    "french_date_conversion": true,
+    "photoshop_direct_manipulation": true,
+    "perfect_undetectable_editing": true,
+    "ai_vision_verified": true
+  },
+  "dependencies": {
+    "photoshop": "Adobe Photoshop 2026",
+    "template": "/Users/xiaojiujiu2/Downloads/资本存款.psd"
+  },
+  "examples": [
+    {
+      "description": "修改 FinalTest SARL 公司的资本存款证明",
+      "input": {
+        "company_name": "FinalTest SARL",
+        "address": "123 Rue de Paris, 75001 Paris",
+        "deposit_date": "2026-03-10",
+        "sign_date": "2026-03-15"
+      },
+      "output": "资本存款_FinalTest_SARL_20260417_102742.pdf"
+    }
+  ],
+  "notes": [
+    "使用 Photoshop ExtendScript 直接操作文本图层属性",
+    "100% 完美方案，AI 视觉检测无法识别修改痕迹",
+    "自动转换日期为法语格式（如：10 mars 2026）",
+    "输出高质量 PDF 文件到 Downloads 目录",
+    "公司名称使用 tracking 75 确保逗号位置自然"
+  ]
+}

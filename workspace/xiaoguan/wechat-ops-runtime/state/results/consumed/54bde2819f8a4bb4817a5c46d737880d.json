@@ -1,0 +1,83 @@
+{
+  "result_id": "54bde2819f8a4bb4817a5c46d737880d",
+  "job_id": "46b9ad245e4248f9963aebadc874cf09",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:33:00.129322+00:00",
+  "source": "watcher:unread",
+  "cursor": 274,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［140条］A汽贸名单-李..\", \"preview_text\": \"［140条］A汽贸名单-李..\", \"time\": \"11:32\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"2科R ［28条］ 虾皮越南魚:给你举….\", \"preview_text\": \"2科R ［28条］ 虾皮越南魚:给你举….\", \"time\": \"11:21\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［4条］A ErQiao:出三个T.• 这|\", \"preview_text\": \"［4条］A ErQiao:出三个T.• 这|\", \"time\": \"11:10.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［64条］06:00:有钱人\", \"preview_text\": \"［64条］06:00:有钱人\", \"time\": \"11:30\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 4,
+      "visible_unread_session_count": 4,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［140条］A汽贸名单-李..",
+          "preview_text": "［140条］A汽贸名单-李..",
+          "time": "11:32"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "2科R ［28条］ 虾皮越南魚:给你举….",
+          "preview_text": "2科R ［28条］ 虾皮越南魚:给你举….",
+          "time": "11:21"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［4条］A ErQiao:出三个T.• 这|",
+          "preview_text": "［4条］A ErQiao:出三个T.• 这|",
+          "time": "11:10."
+        },
+        {
+          "name": "速卖通纯商家运营交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［64条］06:00:有钱人",
+          "preview_text": "［64条］06:00:有钱人",
+          "time": "11:30"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 4,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "东南亚虾皮 tk lazad...",
+          "优质跨境服务群2",
+          "速卖通纯商家运营交⋯"
+        ]
+      },
+      "available": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "result_id": "2062da3b1e9f4581a2b9675f50cc2907",
+  "job_id": "a2b2041c59a747a3a248f902b0431688",
+  "type": "chat.visible.delta",
+  "created_at": "2026-03-28T04:25:01.010617+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 29,
+  "signature": "[{\"speaker\": \"帐号密码 麻烦发一下 谢谢\", \"text\": \"2120220092533852 这是我万里汇 |D 刘汉林\", \"time\": null}, {\"speaker\": \"链接到浏览器打开\", \"text\": \"交付说明： ①账号拿到手后，优先换绑邮箱的辅助 邮箱或绑定手机号！！！当天内操作 完，部分邮箱是买来的，绑定好辅助邮 箱才代表邮箱真正属于你，\", \"time\": \"11:48\"}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "added_count": 2,
+      "speakers": [
+        "帐号密码 麻烦发一下 谢谢",
+        "链接到浏览器打开"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "view": "chat_detail",
+      "current_contact": "Cd|刘汉林",
+      "messages": [
+        {
+          "speaker": "帐号密码 麻烦发一下 谢谢",
+          "time": null,
+          "text": "2120220092533852 这是我万里汇 |D 刘汉林"
+        },
+        {
+          "speaker": "链接到浏览器打开",
+          "time": "11:48",
+          "text": "交付说明： ①账号拿到手后，优先换绑邮箱的辅助 邮箱或绑定手机号！！！当天内操作 完，部分邮箱是买来的，绑定好辅助邮 箱才代表邮箱真正属于你，"
+        }
+      ],
+      "added_messages": [
+        {
+          "speaker": "帐号密码 麻烦发一下 谢谢",
+          "time": null,
+          "text": "2120220092533852 这是我万里汇 |D 刘汉林"
+        },
+        {
+          "speaker": "链接到浏览器打开",
+          "time": "11:48",
+          "text": "交付说明： ①账号拿到手后，优先换绑邮箱的辅助 邮箱或绑定手机号！！！当天内操作 完，部分邮箱是买来的，绑定好辅助邮 箱才代表邮箱真正属于你，"
+        }
+      ],
+      "removed_messages": [],
+      "window_shift": false
+    }
+  }
+}

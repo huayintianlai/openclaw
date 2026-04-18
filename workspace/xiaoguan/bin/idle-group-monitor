@@ -1,0 +1,217 @@
+#!/usr/bin/env python3
+# idle-group-monitor
+# 当用户空闲超过 IDLE_THRESHOLD_SECONDS 时，自动切回服务商群监听模式
+# 运行方式: python3 idle-group-monitor [--once] [--threshold 1800] [--poll 60]
+
+import subprocess
+import sys
+import time
+import json
+import argparse
+import os
+from datetime import datetime
+
+DEFAULT_IDLE_THRESHOLD = 1800  # 30分钟
+POLL_INTERVAL = 60
+WECHAT_OPS = "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/bin/wechat-ops"
+STATE_FILE = "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime/state/idle-monitor-state.json"
+RETRY_COUNT = 3
+RETRY_WAIT = 15  # 秒
+MONITOR_GROUP_NAME = "优质跨境服务群2"  # 空闲时回调的监控群
+
+
+def get_idle_seconds():
+    """获取当前系统用户空闲时长（秒）"""
+    try:
+        result = subprocess.run(
+            ["/usr/sbin/ioreg", "-c", "IOHIDSystem"],
+            capture_output=True, text=True, timeout=5
+        )
+        for line in result.stdout.splitlines():
+            if "HIDIdleTime" in line:
+                parts = line.strip().split()
+                ns = int(parts[-1])
+                return ns / 1_000_000_000
+    except Exception as e:
+        print(f"[idle-monitor] get_idle_seconds error: {e}", file=sys.stderr)
+    return 0.0
+
+
+def run_wechat_ops(args, timeout=20):
+    """调用 wechat-ops 并返回 JSON 结果"""
+    try:
+        result = subprocess.run(
+            [WECHAT_OPS] + args,
+            capture_output=True, text=True, timeout=timeout
+        )
+        try:
+            return json.loads(result.stdout)
+        except Exception:
+            return {"ok": False, "error": "json_parse_error", "raw": result.stdout[:200]}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+def run_with_retry(args, retries=RETRY_COUNT, wait=RETRY_WAIT, timeout=20):
+    """遇到 operation_busy 时自动重试"""
+    for attempt in range(1, retries + 1):
+        result = run_wechat_ops(args, timeout=timeout)
+        if result.get("ok"):
+            return result
+        err = result.get("error_code", "")
+        if err == "operation_busy":
+            print(f"[idle-monitor] operation_busy，第 {attempt}/{retries} 次重试，等待 {wait}s...")
+            time.sleep(wait)
+        else:
+            print(f"[idle-monitor] 命令失败: error_code={err}, message={result.get('message', '')}")
+            return result
+    print(f"[idle-monitor] 重试 {retries} 次后仍失败")
+    return {"ok": False, "error_code": "max_retries_exceeded"}
+
+
+def activate_wechat():
+    """唤醒屏幕 + 通过 AppleScript 把微信窗口激活到前台"""
+    # 先唤醒显示器（空闲期屏幕可能已熄灭，screencapture/peekaboo 会失败）
+    try:
+        subprocess.run(["caffeinate", "-u", "-t", "1"], timeout=5, capture_output=True)
+        time.sleep(2)  # 等待屏幕完全亮起
+        print("[idle-monitor] 已唤醒屏幕")
+    except Exception as e:
+        print(f"[idle-monitor] 唤醒屏幕失败: {e}", file=sys.stderr)
+    script = 'tell application "WeChat" to activate'
+    try:
+        subprocess.run(["osascript", "-e", script], timeout=5, capture_output=True)
+        time.sleep(2)  # 等待微信窗口渲染完毕
+        print("[idle-monitor] 已激活微信窗口")
+        return True
+    except Exception as e:
+        print(f"[idle-monitor] 激活微信失败: {e}", file=sys.stderr)
+        return False
+
+
+def switch_to_group_listen():
+    """
+    切回服务商群监听：
+    1. 激活微信窗口（避免 window_not_found）
+    2. 检查 daemon 是否在跑，没跑则启动
+    3. prepare-send 导航到监控群（不 commit，tx 自动过期）
+    4. 等待窗口稳定后读取可见消息
+    5. 写入状态
+    """
+    print(f"[idle-monitor] {datetime.now().isoformat()} 用户空闲，切回服务商群监听模式")
+
+    # Step 1: 激活微信，确保窗口可访问
+    activate_wechat()
+
+    # Step 2: 停止 daemon，释放 operation_lock，确保后续命令能拿到锁
+    status = run_wechat_ops(["daemon", "status"])
+    daemon_was_running = status.get("ok") and status.get("status") == "running"
+    if daemon_was_running:
+        print("[idle-monitor] 暂停 daemon 以释放锁...")
+        run_wechat_ops(["daemon", "stop"])
+        time.sleep(2)  # 等待 daemon 进程退出
+
+    # Step 3: 导航到监控群（prepare-send，不 commit），target_mismatch 时重试
+    print(f"[idle-monitor] 导航到监控群: {MONITOR_GROUP_NAME}")
+    nav_result = {"ok": False, "error_code": "not_started"}
+    nav_ok = False
+    for _nav_attempt in range(1, 4):
+        nav_result = run_wechat_ops(
+            ["chat", "prepare-send", "--name", MONITOR_GROUP_NAME, "--text", "[idle-monitor-nav]"],
+            timeout=60
+        )
+        nav_ok = nav_result.get("ok", False)
+        nav_err = nav_result.get("error_code") or nav_result.get("error", "")
+        nav_contact = nav_result.get("current_contact", nav_result.get("opened_contact", ""))
+        print(f"[idle-monitor] 导航尝试 {_nav_attempt}/3: ok={nav_ok}, error={nav_err}, contact={nav_contact}")
+        if nav_ok:
+            time.sleep(2)  # 等待窗口稳定
+            break
+        if nav_err == "target_mismatch":
+            print(f"[idle-monitor] target_mismatch，等待 3s 后重试...")
+            time.sleep(3)
+        elif nav_err == "operation_busy":
+            print(f"[idle-monitor] operation_busy，等待 {RETRY_WAIT}s 后重试...")
+            time.sleep(RETRY_WAIT)
+        else:
+            print(f"[idle-monitor] 不可重试的错误，放弃导航")
+            break
+    nav_err = nav_result.get("error_code") or nav_result.get("error", "")
+    if not nav_ok:
+        print(f"[idle-monitor] 导航最终失败，仍尝试读取当前窗口消息")
+
+    # Step 4: 读取可见消息
+    result = run_wechat_ops(["chat", "read-visible-messages"], timeout=30)
+    ok = result.get("ok", False)
+    print(f"[idle-monitor] read-visible-messages: ok={ok}")
+    if not ok:
+        print(f"[idle-monitor] 失败原因: {result.get('error_code')} / {result.get('message', '')}")
+
+    # Step 5: 重启 daemon
+    print("[idle-monitor] 重启 daemon...")
+    start_result = run_wechat_ops(["daemon", "start", "--watches", "unread,chat_visible,moments"])
+    print(f"[idle-monitor] daemon restart: ok={start_result.get('ok')}")
+
+    save_state({
+        "last_switch_at": datetime.now().isoformat(),
+        "triggered_by": "idle",
+        "navigate_ok": nav_ok,
+        "navigate_group": MONITOR_GROUP_NAME,
+        "read_visible_ok": ok,
+        "error_code": result.get("error_code") if not ok else None
+    })
+
+    return ok
+
+
+def save_state(data):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    with open(STATE_FILE, "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Idle group monitor for wechat-ops")
+    parser.add_argument("--once", action="store_true", help="只检测一次后退出")
+    parser.add_argument(
+        "--threshold", type=int, default=DEFAULT_IDLE_THRESHOLD,
+        help=f"空闲阈值（秒），默认 {DEFAULT_IDLE_THRESHOLD}"
+    )
+    parser.add_argument(
+        "--poll", type=int, default=POLL_INTERVAL,
+        help=f"轮询间隔（秒），默认 {POLL_INTERVAL}"
+    )
+    args = parser.parse_args()
+
+    print(f"[idle-monitor] 启动，空闲阈值={args.threshold}s，轮询间隔={args.poll}s")
+
+    switched_this_idle_period = False
+
+    while True:
+        idle = get_idle_seconds()
+        print(f"[idle-monitor] 当前空闲: {idle:.1f}s / 阈值: {args.threshold}s")
+
+        if idle >= args.threshold:
+            if not switched_this_idle_period:
+                ok = switch_to_group_listen()
+                switched_this_idle_period = True
+                if ok:
+                    print("[idle-monitor] 切换成功 ✓")
+                else:
+                    print("[idle-monitor] 切换失败，下次空闲期会重试")
+                    switched_this_idle_period = False  # 失败则下轮重试
+            else:
+                print("[idle-monitor] 仍在空闲期，已切换过，跳过重复执行")
+        else:
+            if switched_this_idle_period:
+                print(f"[idle-monitor] 用户回来了（idle={idle:.1f}s），重置切换标志")
+            switched_this_idle_period = False
+
+        if args.once:
+            break
+
+        time.sleep(args.poll)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,49 @@
+{
+  "result_id": "28cd6625d8cc485dbc803de863af1a0b",
+  "job_id": "238ae3ccfccd4fda8e29afec810eb34c",
+  "type": "watcher.health.changed",
+  "created_at": "2026-03-29T15:00:26.781255+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 64,
+  "signature": "[{\"speaker\": \"罚的比temu 还重\", \"text\": \"卖的少，\", \"time\": \"昨天 15:42\"}, {\"speaker\": \"JaneCcc\", \"text\": \"都不多。。\", \"time\": \"昨天 16:42\"}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "watcher": "chat_visible",
+      "status": "recovered",
+      "error_code": null
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "status": "recovered",
+      "previous_healthy": false,
+      "current_healthy": true,
+      "state": {
+        "watcher": "chat_visible",
+        "enabled": true,
+        "healthy": true,
+        "available": false,
+        "phase": "chat_visible_snapshot",
+        "last_checked_at": "2026-03-29T15:00:21.471033+00:00",
+        "last_success_at": "2026-03-29T11:33:34.376737+00:00",
+        "last_error_at": "2026-03-29T14:59:25.885295+00:00",
+        "last_error_code": null,
+        "consecutive_failures": 0,
+        "cursor": 64,
+        "signature": "[{\"speaker\": \"罚的比temu 还重\", \"text\": \"卖的少，\", \"time\": \"昨天 15:42\"}, {\"speaker\": \"JaneCcc\", \"text\": \"都不多。。\", \"time\": \"昨天 16:42\"}]",
+        "recommended_next_step": null,
+        "payload": {
+          "ok": true,
+          "phase": "chat_visible_snapshot",
+          "current_view": "chat_list",
+          "current_contact": "服务商|任我行-炎",
+          "recommended_next_step": null,
+          "view": "chat_list",
+          "available": false,
+          "messages": [],
+          "signature": ""
+        }
+      }
+    }
+  }
+}

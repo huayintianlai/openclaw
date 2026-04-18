@@ -1,0 +1,105 @@
+{
+  "result_id": "3611066597ac41bc88c4a8be179a95fe",
+  "job_id": "718753ec46174266a34a5cc325b70e74",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T07:58:34.459732+00:00",
+  "source": "watcher:unread",
+  "cursor": 453,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［233条］ 蟹老板 以租代⋯\", \"preview_text\": \"［233条］ 蟹老板 以租代⋯\", \"time\": \"15:51\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"PR\", \"preview\": \"［67条］ HAHAHUBB:真人吗 这\", \"preview_text\": \"［67条］ HAHAHUBB:真人吗 这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［10条］001-鱼儿:新蛋3.•\", \"preview_text\": \"［10条］001-鱼儿:新蛋3.•\", \"time\": \"15:51\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的\", \"preview_text\": \"［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商同行\", \"preview\": \"［11条］众发跨境:uk个人本⋯这\", \"preview_text\": \"［11条］众发跨境:uk个人本⋯这\", \"time\": \"15:52\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"175条］ JaneCcc:卖的少，…B\", \"preview_text\": \"175条］ JaneCcc:卖的少，…B\", \"time\": \"15:43\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交.",
+        "PR",
+        "优质跨境服务群2",
+        "美客多卖家交流探讨群",
+        "跨境电商同行",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［233条］ 蟹老板 以租代⋯",
+          "preview_text": "［233条］ 蟹老板 以租代⋯",
+          "time": "15:51"
+        },
+        {
+          "name": "PR",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［67条］ HAHAHUBB:真人吗 这",
+          "preview_text": "［67条］ HAHAHUBB:真人吗 这",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［10条］001-鱼儿:新蛋3.•",
+          "preview_text": "［10条］001-鱼儿:新蛋3.•",
+          "time": "15:51"
+        },
+        {
+          "name": "美客多卖家交流探讨群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［70条］可可西里:好的",
+          "preview_text": "［70条］可可西里:好的",
+          "time": "15:14"
+        },
+        {
+          "name": "跨境电商同行",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［11条］众发跨境:uk个人本⋯这",
+          "preview_text": "［11条］众发跨境:uk个人本⋯这",
+          "time": "15:52"
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "175条］ JaneCcc:卖的少，…B",
+          "preview_text": "175条］ JaneCcc:卖的少，…B",
+          "time": "15:43"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交.",
+          "PR",
+          "优质跨境服务群2",
+          "美客多卖家交流探讨群",
+          "跨境电商同行",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

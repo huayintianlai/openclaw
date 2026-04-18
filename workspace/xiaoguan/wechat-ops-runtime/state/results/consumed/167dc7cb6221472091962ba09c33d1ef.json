@@ -1,0 +1,105 @@
+{
+  "result_id": "167dc7cb6221472091962ba09c33d1ef",
+  "job_id": "9a2a53ed4df54b74abbf3871996eb0ea",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T05:21:27.749810+00:00",
+  "source": "watcher:unread",
+  "cursor": 350,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交. 13:12\", \"preview\": \"［191条］小刘卖车 出口内销..这\", \"preview_text\": \"［191条］小刘卖车 出口内销..这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Q13:16\", \"preview\": \"［193条］竖琴:急需巴西本⋯\", \"preview_text\": \"［193条］竖琴:急需巴西本⋯\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 12:13\", \"preview\": \"［31条］卷丘:「动画表情］\", \"preview_text\": \"［31条］卷丘:「动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［18条］青草池塘:出美国希⋯\", \"preview_text\": \"［18条］青草池塘:出美国希⋯\", \"time\": \"13:20\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱.\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱.\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交. 13:12",
+        "Q13:16",
+        "东南亚虾皮 tk lazad... 12:13",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交. 13:12",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［191条］小刘卖车 出口内销..这",
+          "preview_text": "［191条］小刘卖车 出口内销..这",
+          "time": ""
+        },
+        {
+          "name": "Q13:16",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［193条］竖琴:急需巴西本⋯",
+          "preview_text": "［193条］竖琴:急需巴西本⋯",
+          "time": ""
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 12:13",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［31条］卷丘:「动画表情］",
+          "preview_text": "［31条］卷丘:「动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［18条］青草池塘:出美国希⋯",
+          "preview_text": "［18条］青草池塘:出美国希⋯",
+          "time": "13:20"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［3条］深港出海:一枚戒指卖出⋯",
+          "preview_text": "［3条］深港出海:一枚戒指卖出⋯",
+          "time": "12:54"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱.",
+          "preview_text": "［14条］悟:出谷歌个人邮箱.",
+          "time": "11:41."
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交. 13:12",
+          "Q13:16",
+          "东南亚虾皮 tk lazad... 12:13",
+          "优质跨境服务群2",
+          "公众号",
+          "跨境电商交流乙群"
+        ]
+      },
+      "available": true
+    }
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "7c5c804f9d3bd823b23e79836e7e2cb71aaaf4fb3ae34087fc52c9afdf2960ef": {
+    "deviceId": "7c5c804f9d3bd823b23e79836e7e2cb71aaaf4fb3ae34087fc52c9afdf2960ef",
+    "publicKey": "rE7f8kR5mngu78VaPfzdyNekGNSQaNjjN1yDmZxcRWA",
+    "platform": "darwin",
+    "clientId": "node-host",
+    "clientMode": "node",
+    "role": "node",
+    "roles": [
+      "node",
+      "operator"
+    ],
+    "tokens": {
+      "node": {
+        "token": "MGDYi5HWKILkzaXfw_bVv4Xuy_uscgDxWEOb53LvGj4",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1773408908498,
+        "lastUsedAtMs": 1774371594737
+      },
+      "operator": {
+        "token": "qp8WhjJ6m-3CYaw3DWKJNazNuRoaNH5OF5vI987oeEg",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.read",
+          "operator.write",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.talk.secrets"
+        ],
+        "createdAtMs": 1773409285168,
+        "rotatedAtMs": 1773409285168,
+        "lastUsedAtMs": 1773409285168
+      }
+    },
+    "createdAtMs": 1773408908498,
+    "approvedAtMs": 1773408908498,
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "displayName": "mac-browser-node"
+  },
+  "660017e88a29737eb2ee876e184aa5cdd63fc6893a138d13be60e8a65bf06724": {
+    "deviceId": "660017e88a29737eb2ee876e184aa5cdd63fc6893a138d13be60e8a65bf06724",
+    "publicKey": "3rFw19URmZ5SLnHioBJC2XwtHP8vbJub5CdPsoknnpw",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "eSgsvOnJVQhPNybzcu7HRv75hJPIREJ-lgDHTfUiuO0",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1773412627048
+      }
+    },
+    "createdAtMs": 1773412627048,
+    "approvedAtMs": 1773412627048
+  },
+  "e53b822c8bb8248d465ba617a7b4df89496c701cb292d04982b8998f00203357": {
+    "deviceId": "e53b822c8bb8248d465ba617a7b4df89496c701cb292d04982b8998f00203357",
+    "publicKey": "bVf3eI-f_4oAR29FhdmAjHDuNqPgNTeiRYkE9kzZKD8",
+    "displayName": "OPPO A93 5G",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "node",
+    "role": "node",
+    "roles": [
+      "node"
+    ],
+    "tokens": {
+      "node": {
+        "token": "XfIXL-m-r6KDvwdMCjm3TtdzyOmTFPSgkpt1EnePfEs",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1774407670443
+      }
+    },
+    "createdAtMs": 1774407670443,
+    "approvedAtMs": 1774407670443
+  },
+  "fa1a1a12997b673891ab33801769d638d871eb1bef6efb6b733e8c53b5c2e16f": {
+    "deviceId": "fa1a1a12997b673891ab33801769d638d871eb1bef6efb6b733e8c53b5c2e16f",
+    "publicKey": "6Ij-klLVBWiwuJeuBEBNcsh6TNUHEQ9AOFREjKiC9R8",
+    "displayName": "OPPO A93 5G",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "node",
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "tokens": {
+      "node": {
+        "token": "OiNSSMLnbuklLeg-E429M0yDjG4QNJmhzLQxvfF8eKk",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1774408135880
+      },
+      "operator": {
+        "token": "S7wS1C_WSMIKO_XLLr0KlCujsIifI_ci0x-v-kPnCOM",
+        "role": "operator",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1774408618321
+      }
+    },
+    "createdAtMs": 1774408135880,
+    "approvedAtMs": 1774408618321
+  },
+  "4e5f5ed5479f09b64c23f1d1694a2d0ccefc428513f50d0e1e66b67367eb817b": {
+    "deviceId": "4e5f5ed5479f09b64c23f1d1694a2d0ccefc428513f50d0e1e66b67367eb817b",
+    "publicKey": "AWxz_zHHImUoEpOYRM8ttbz3aMd9KCIA750ZwC8RLWA",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "yuAj286ikn5_3XT0RfBG-ivZM0ZqTSaK02rbxsZW50w",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1775208240449
+      }
+    },
+    "createdAtMs": 1775208240449,
+    "approvedAtMs": 1775208240449
+  },
+  "e6fbb1587ad906685e9137469ea2c43507817bfd3fb2c614fbab50228c616321": {
+    "deviceId": "e6fbb1587ad906685e9137469ea2c43507817bfd3fb2c614fbab50228c616321",
+    "publicKey": "wncsKMjbJ87mDWt1FVcI7Nyp1-Ior8mUzeWyZ70-IC8",
+    "displayName": "Redmi K30",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "remoteIp": "192.168.10.68",
+    "tokens": {
+      "operator": {
+        "token": "QI129obvfSoc9g2dhojhzi5tE-wpwBlzwtvwcDlxrW0",
+        "role": "operator",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775287692977,
+        "lastUsedAtMs": 1775298933703
+      },
+      "node": {
+        "token": "DkbMD8M19-hGoswf8xziOb8ceCP6P0xz94i6c8RdcQk",
+        "role": "node",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775287783050,
+        "lastUsedAtMs": 1775298933684
+      }
+    },
+    "createdAtMs": 1775287692977,
+    "approvedAtMs": 1775287783050
+  },
+  "077ac0cdedd77528109a1c93d69f1af41c51dca5e1351e906ef6e3cd95559d3b": {
+    "deviceId": "077ac0cdedd77528109a1c93d69f1af41c51dca5e1351e906ef6e3cd95559d3b",
+    "publicKey": "3O12eiD6PH-Kkc2z3z-pcjYWdUbR_jlatnkTmIQvT3s",
+    "displayName": "Mi 10 Lite Zoom",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "remoteIp": "192.168.10.122",
+    "tokens": {
+      "node": {
+        "token": "KlINn_2QrgyZd3gAbMlTCCV2PKyJXgo4wDpW46pKhs0",
+        "role": "node",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775288289394,
+        "lastUsedAtMs": 1775611007212
+      },
+      "operator": {
+        "token": "k1CxzK1rQLg54l0m5z_RS3iO6HW-dujNO-KjTC37tTc",
+        "role": "operator",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775288379225,
+        "lastUsedAtMs": 1775649370790
+      }
+    },
+    "createdAtMs": 1775288289394,
+    "approvedAtMs": 1775288379225
+  },
+  "56fc92fe5f730c258139adc56443ce516574acafefc90e8a61d335402c72459d": {
+    "deviceId": "56fc92fe5f730c258139adc56443ce516574acafefc90e8a61d335402c72459d",
+    "publicKey": "GLRNd4FVoikmb4TDv7JNNxyCgze4P9CW9Y34iakThog",
+    "displayName": "Redmi K30 5G",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "node",
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "remoteIp": "192.168.10.112",
+    "tokens": {
+      "operator": {
+        "token": "RkVgJOvmM3AbR6FuyflmGhCORMabGY90lKIPhIJfsuk",
+        "role": "operator",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775288673234,
+        "lastUsedAtMs": 1775776824028
+      },
+      "node": {
+        "token": "TP2GmCTxrNFDnY6_CujdazPHlsgCtOKyL-spwVoiL7s",
+        "role": "node",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775288689353,
+        "lastUsedAtMs": 1775612038448
+      }
+    },
+    "createdAtMs": 1775288673234,
+    "approvedAtMs": 1775288689352
+  },
+  "c4b6d84939efd96e07624dc11559381eb4c640e8e20a62be6bd8bc4489f0f0c2": {
+    "deviceId": "c4b6d84939efd96e07624dc11559381eb4c640e8e20a62be6bd8bc4489f0f0c2",
+    "publicKey": "7lBbkfMaoZ92SvpkeJGWYcljc1h5nvPfYtZEKp-njlg",
+    "displayName": "M2002J9E",
+    "platform": "android",
+    "deviceFamily": "Android",
+    "clientId": "openclaw-android",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "remoteIp": "192.168.10.3",
+    "tokens": {
+      "operator": {
+        "token": "6Y7En5DpkSGzE7L_p1FEy8PZYSKce22ZpIp2Eh2jS1Q",
+        "role": "operator",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775288989338,
+        "lastUsedAtMs": 1775649100932
+      },
+      "node": {
+        "token": "VSCvJMg0YQ_p_YusnIxSORD9Gkeh_3af-aIQ8Csypjk",
+        "role": "node",
+        "scopes": [
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1775289011327,
+        "lastUsedAtMs": 1775612222487
+      }
+    },
+    "createdAtMs": 1775288989338,
+    "approvedAtMs": 1775289011327
+  },
+  "d09d0ccf8d890081cd5e6cb7ced379e37dec70d524ba5d64e7c7f77a32e063cb": {
+    "deviceId": "d09d0ccf8d890081cd5e6cb7ced379e37dec70d524ba5d64e7c7f77a32e063cb",
+    "publicKey": "F-O7Ep5dnMJud_9LJo8XYyyLLREkEMhFzfSPCj--VeQ",
+    "platform": "darwin",
+    "clientId": "cli",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read"
+    ],
+    "approvedScopes": [
+      "operator.read"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "IAk5nf4sxGizHPycykbiriLg8FytPV2BEXTPjYGuRZQ",
+        "role": "operator",
+        "scopes": [
+          "operator.read"
+        ],
+        "createdAtMs": 1775646196219,
+        "lastUsedAtMs": 1775646199442
+      }
+    },
+    "createdAtMs": 1775646196218,
+    "approvedAtMs": 1775646196218
+  },
+  "6fc759e93c839b5b72aca170bb56e63f565327899c89993ca4598c405c76a36a": {
+    "deviceId": "6fc759e93c839b5b72aca170bb56e63f565327899c89993ca4598c405c76a36a",
+    "publicKey": "oKTfkcnPpMsKv3MWIUmuaFtNom0OYOW3UHCZ-rfuRDQ",
+    "platform": "darwin",
+    "clientId": "cli",
+    "clientMode": "cli",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read"
+    ],
+    "approvedScopes": [
+      "operator.read"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "Td2g7yreEgKMgoOsFx2Zysep0Pq7mN-6W0wqgi3C29g",
+        "role": "operator",
+        "scopes": [
+          "operator.read"
+        ],
+        "createdAtMs": 1776343087012,
+        "lastUsedAtMs": 1776404652069
+      }
+    },
+    "createdAtMs": 1776343087011,
+    "approvedAtMs": 1776343087011
+  }
+}

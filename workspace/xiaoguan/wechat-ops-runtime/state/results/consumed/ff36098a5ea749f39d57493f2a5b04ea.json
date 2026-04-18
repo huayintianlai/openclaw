@@ -1,0 +1,94 @@
+{
+  "result_id": "ff36098a5ea749f39d57493f2a5b04ea",
+  "job_id": "3819bb5468ff40ffba8f9956967e233c",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T07:24:55.105085+00:00",
+  "source": "watcher:unread",
+  "cursor": 417,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［226条］A奥迪宝马奔驰凯⋯\", \"preview_text\": \"［226条］A奥迪宝马奔驰凯⋯\", \"time\": \"15:16\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad..\", \"preview\": \"［55条］:虾皮吗\", \"preview_text\": \"［55条］:虾皮吗\", \"time\": \"15:15\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"（6条］成功跨境:出1家希⋯•\", \"preview_text\": \"（6条］成功跨境:出1家希⋯•\", \"time\": \"15:18\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张…\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张…\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的\", \"preview_text\": \"［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 5,
+      "visible_unread_session_count": 5,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "MI",
+        "东南亚虾皮 tk lazad..",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "MI",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［226条］A奥迪宝马奔驰凯⋯",
+          "preview_text": "［226条］A奥迪宝马奔驰凯⋯",
+          "time": "15:16"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad..",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［55条］:虾皮吗",
+          "preview_text": "［55条］:虾皮吗",
+          "time": "15:15"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "（6条］成功跨境:出1家希⋯•",
+          "preview_text": "（6条］成功跨境:出1家希⋯•",
+          "time": "15:18"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［4条］中国驻俄罗斯大使馆:张…",
+          "preview_text": "［4条］中国驻俄罗斯大使馆:张…",
+          "time": "14:33"
+        },
+        {
+          "name": "美客多卖家交流探讨群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［70条］可可西里:好的",
+          "preview_text": "［70条］可可西里:好的",
+          "time": "15:14"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 5,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "MI",
+          "东南亚虾皮 tk lazad..",
+          "优质跨境服务群2",
+          "公众号",
+          "美客多卖家交流探讨群"
+        ]
+      },
+      "available": true
+    }
+  }
+}

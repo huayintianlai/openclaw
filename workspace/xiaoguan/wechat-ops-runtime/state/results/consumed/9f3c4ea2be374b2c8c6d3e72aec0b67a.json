@@ -1,0 +1,94 @@
+{
+  "result_id": "9f3c4ea2be374b2c8c6d3e72aec0b67a",
+  "job_id": "30cd6039573c471b8852d3cc2fe58354",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T07:47:45.419927+00:00",
+  "source": "watcher:unread",
+  "cursor": 440,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"15:43|\", \"preview\": \"［75条］ JaneCcc:卖的少，…这\", \"preview_text\": \"［75条］ JaneCcc:卖的少，…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯•\", \"preview\": \"［230条］沃尔沃，雷克 红..\", \"preview_text\": \"［230条］沃尔沃，雷克 红..\", \"time\": \"15:38\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad..\", \"preview\": \"［61条］ Loess: 跳KYC\", \"preview_text\": \"［61条］ Loess: 跳KYC\", \"time\": \"15:43\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"（9条］飞飞鱼 （JK™M）:希音⋯\", \"preview_text\": \"（9条］飞飞鱼 （JK™M）:希音⋯\", \"time\": \"15:47\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的\", \"preview_text\": \"［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 5,
+      "visible_unread_session_count": 5,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "15:43|",
+        "AA汽车出口资源交⋯•",
+        "东南亚虾皮 tk lazad..",
+        "优质跨境服务群2",
+        "美客多卖家交流探讨群"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "15:43|",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［75条］ JaneCcc:卖的少，…这",
+          "preview_text": "［75条］ JaneCcc:卖的少，…这",
+          "time": ""
+        },
+        {
+          "name": "AA汽车出口资源交⋯•",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［230条］沃尔沃，雷克 红..",
+          "preview_text": "［230条］沃尔沃，雷克 红..",
+          "time": "15:38"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad..",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［61条］ Loess: 跳KYC",
+          "preview_text": "［61条］ Loess: 跳KYC",
+          "time": "15:43"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "（9条］飞飞鱼 （JK™M）:希音⋯",
+          "preview_text": "（9条］飞飞鱼 （JK™M）:希音⋯",
+          "time": "15:47"
+        },
+        {
+          "name": "美客多卖家交流探讨群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［70条］可可西里:好的",
+          "preview_text": "［70条］可可西里:好的",
+          "time": "15:14"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 5,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "15:43|",
+          "AA汽车出口资源交⋯•",
+          "东南亚虾皮 tk lazad..",
+          "优质跨境服务群2",
+          "美客多卖家交流探讨群"
+        ]
+      },
+      "available": true
+    }
+  }
+}

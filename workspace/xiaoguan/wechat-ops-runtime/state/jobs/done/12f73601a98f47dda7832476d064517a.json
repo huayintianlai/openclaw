@@ -1,0 +1,81 @@
+{
+  "job_id": "12f73601a98f47dda7832476d064517a",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T07:38:47.632120+00:00",
+  "cursor": 430,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［229条］A缤越丰田方程的..\", \"preview_text\": \"［229条］A缤越丰田方程的..\", \"time\": \"15:38\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"PR:\", \"preview\": \"［60条］.:哦哦\", \"preview_text\": \"［60条］.:哦哦\", \"time\": \"15:38\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"18条］希音 temu一手源头..这\", \"preview_text\": \"18条］希音 temu一手源头..这\", \"time\": \"15:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［4条］中国驻俄罗斯大使馆:张…\", \"preview_text\": \"［4条］中国驻俄罗斯大使馆:张…\", \"time\": \"14:33\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多卖家交流探讨群\", \"preview\": \"［70条］可可西里:好的\", \"preview_text\": \"［70条］可可西里:好的\", \"time\": \"15:14\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "MI",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［229条］A缤越丰田方程的..",
+        "preview_text": "［229条］A缤越丰田方程的..",
+        "time": "15:38"
+      },
+      {
+        "name": "PR:",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［60条］.:哦哦",
+        "preview_text": "［60条］.:哦哦",
+        "time": "15:38"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "18条］希音 temu一手源头..这",
+        "preview_text": "18条］希音 temu一手源头..这",
+        "time": "15:33"
+      },
+      {
+        "name": "公众号",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［4条］中国驻俄罗斯大使馆:张…",
+        "preview_text": "［4条］中国驻俄罗斯大使馆:张…",
+        "time": "14:33"
+      },
+      {
+        "name": "美客多卖家交流探讨群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［70条］可可西里:好的",
+        "preview_text": "［70条］可可西里:好的",
+        "time": "15:14"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 5,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "MI",
+        "PR:",
+        "优质跨境服务群2",
+        "公众号",
+        "美客多卖家交流探讨群"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T07:38:50.084085+00:00",
+  "worker_pid": 55256
+}

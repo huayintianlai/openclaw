@@ -1,0 +1,81 @@
+{
+  "job_id": "ecca23f64b224d4aad14d484f073d814",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T03:42:22.736332+00:00",
+  "cursor": 282,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交流⋯11:41\", \"preview\": \"［146条］方程豹 睿蓝国际.\", \"preview_text\": \"［146条］方程豹 睿蓝国际.\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［8条］服务商|遗憾:低价⋯.这\", \"preview_text\": \"［8条］服务商|遗憾:低价⋯.这\", \"time\": \"11:36\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"及蔭強\", \"preview\": \"［28条］虾皮越南魚:给你举…这\", \"preview_text\": \"［28条］虾皮越南魚:给你举…这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱...\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱...\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交⋯\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交流⋯11:41",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［146条］方程豹 睿蓝国际.",
+        "preview_text": "［146条］方程豹 睿蓝国际.",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［8条］服务商|遗憾:低价⋯.这",
+        "preview_text": "［8条］服务商|遗憾:低价⋯.这",
+        "time": "11:36"
+      },
+      {
+        "name": "及蔭強",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［28条］虾皮越南魚:给你举…这",
+        "preview_text": "［28条］虾皮越南魚:给你举…这",
+        "time": ""
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱...",
+        "preview_text": "［14条］悟:出谷歌个人邮箱...",
+        "time": "11:41."
+      },
+      {
+        "name": "速卖通纯商家运营交⋯",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［65条］ Jason huang: 豪宅",
+        "preview_text": "［65条］ Jason huang: 豪宅",
+        "time": "11:39"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 5,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交流⋯11:41",
+        "优质跨境服务群2",
+        "及蔭強",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交⋯"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T03:42:27.372922+00:00",
+  "worker_pid": 55256
+}

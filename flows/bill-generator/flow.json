@@ -1,0 +1,127 @@
+{
+  "name": "bill-generator",
+  "version": "1.0.0",
+  "description": "PDF账单生成工作流",
+  "steps": [
+    {
+      "id": "upload_id_card",
+      "name": "上传身份证照片",
+      "type": "input",
+      "required": true,
+      "validation": {
+        "fileType": ["jpg", "jpeg", "png"],
+        "maxSize": 10485760
+      }
+    },
+    {
+      "id": "ocr_recognition",
+      "name": "OCR识别",
+      "type": "tool",
+      "tool": "bill_ocr_id_card",
+      "input": {
+        "image_path": "{{steps.upload_id_card.output}}"
+      },
+      "validation": {
+        "confidence": {
+          "min": 0.8
+        },
+        "required_fields": ["name", "address"]
+      },
+      "retry": {
+        "maxAttempts": 2,
+        "onFailure": "prompt_user_retry"
+      }
+    },
+    {
+      "id": "confirm_identity",
+      "name": "确认身份信息",
+      "type": "confirmation",
+      "message": "识别到以下信息，请确认：\n- 姓名：{{steps.ocr_recognition.output.name}}\n- 身份证号：{{steps.ocr_recognition.output.id_number}}\n- 地址：{{steps.ocr_recognition.output.address}}\n\n是否正确？",
+      "options": ["确认", "修改", "重新识别"],
+      "onModify": "allow_manual_edit",
+      "onRetry": "goto:ocr_recognition"
+    },
+    {
+      "id": "select_template",
+      "name": "选择PDF模板",
+      "type": "config",
+      "default": "/Volumes/KenDisk/Coding/openclaw-runtime/workspace/afeng/template_real.pdf",
+      "validation": {
+        "fileExists": true,
+        "fileType": "pdf"
+      }
+    },
+    {
+      "id": "generate_bill",
+      "name": "生成PDF账单",
+      "type": "tool",
+      "tool": "bill_generate",
+      "input": {
+        "template_path": "{{steps.select_template.output}}",
+        "identity": {
+          "name": "{{steps.confirm_identity.output.name}}",
+          "address": "{{steps.confirm_identity.output.address}}",
+          "id_number": "{{steps.confirm_identity.output.id_number}}"
+        }
+      },
+      "validation": {
+        "outputExists": true,
+        "fileSize": {
+          "min": 1024
+        }
+      }
+    },
+    {
+      "id": "preview_comparison",
+      "name": "预览对比图",
+      "type": "display",
+      "content": {
+        "type": "image",
+        "path": "{{steps.generate_bill.output.comparison_image}}"
+      },
+      "message": "请检查生成的账单是否正确"
+    },
+    {
+      "id": "final_confirmation",
+      "name": "最终确认",
+      "type": "confirmation",
+      "message": "账单已生成，是否满意？",
+      "options": ["满意，下载", "重新生成", "取消"],
+      "onRetry": "goto:confirm_identity",
+      "onCancel": "cleanup_and_exit"
+    },
+    {
+      "id": "complete",
+      "name": "完成",
+      "type": "output",
+      "message": "✓ 账单生成成功！\n\n文件位置：{{steps.generate_bill.output.file_path}}\n户名：{{steps.confirm_identity.output.name}}",
+      "cleanup": true
+    }
+  ],
+  "errorHandling": {
+    "ocr_failed": {
+      "message": "身份证识别失败，请确保照片清晰、光线充足",
+      "action": "goto:upload_id_card"
+    },
+    "template_not_found": {
+      "message": "PDF模板文件未找到，请联系管理员",
+      "action": "exit"
+    },
+    "generation_failed": {
+      "message": "PDF生成失败，请稍后重试",
+      "action": "log_and_exit"
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "fields": [
+      "timestamp",
+      "user_id",
+      "identity_name_masked",
+      "template_used",
+      "fields_modified",
+      "result",
+      "error_message"
+    ]
+  }
+}

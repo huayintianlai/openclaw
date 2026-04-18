@@ -1,0 +1,72 @@
+{
+  "result_id": "e1429f83e0e1467382b9524a9c507868",
+  "job_id": "614d4e1955f34f34b8762d43cc508c73",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T02:56:50.825112+00:00",
+  "source": "watcher:unread",
+  "cursor": 243,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯\", \"preview\": \"［117条］Amy 大众 捷达出..\", \"preview_text\": \"［117条］Amy 大众 捷达出..\", \"time\": \"10:56\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad...\", \"preview\": \"FR ［24条］阿撒:［动画表情］\", \"preview_text\": \"FR ［24条］阿撒:［动画表情］\", \"time\": \"10:46\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"希音美窖多一手源头-跨境.\", \"preview_text\": \"希音美窖多一手源头-跨境.\", \"time\": \"10:41\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 3,
+      "visible_unread_session_count": 3,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "AA汽车出口资源交⋯",
+        "东南亚虾皮 tk lazad...",
+        "优质跨境服务群2"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "AA汽车出口资源交⋯",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［117条］Amy 大众 捷达出..",
+          "preview_text": "［117条］Amy 大众 捷达出..",
+          "time": "10:56"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad...",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "FR ［24条］阿撒:［动画表情］",
+          "preview_text": "FR ［24条］阿撒:［动画表情］",
+          "time": "10:46"
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "希音美窖多一手源头-跨境.",
+          "preview_text": "希音美窖多一手源头-跨境.",
+          "time": "10:41"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 3,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "AA汽车出口资源交⋯",
+          "东南亚虾皮 tk lazad...",
+          "优质跨境服务群2"
+        ]
+      },
+      "available": true
+    }
+  }
+}

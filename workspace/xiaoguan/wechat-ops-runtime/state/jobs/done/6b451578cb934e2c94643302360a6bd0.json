@@ -1,0 +1,71 @@
+{
+  "job_id": "6b451578cb934e2c94643302360a6bd0",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-29T15:03:25.003882+00:00",
+  "cursor": 664,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交.\", \"preview\": \"［16条］大梅子:增值不回传⋯..\", \"preview_text\": \"［16条］大梅子:增值不回传⋯..\", \"time\": \"22:30\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"Tk 东南亚交流群茶⋯..\", \"preview\": \"［62条］五星闪耀:一一打破….\", \"preview_text\": \"［62条］五星闪耀:一一打破….\", \"time\": \"19:29\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］Max...\", \"preview_text\": \"［@所有人］［999+条］Max...\", \"time\": \"12:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［15条］悟:出谷歌个人邮箱..\", \"preview_text\": \"［15条］悟:出谷歌个人邮箱..\", \"time\": \"12:11\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［16条］大梅子:增值不回传⋯..",
+        "preview_text": "［16条］大梅子:增值不回传⋯..",
+        "time": "22:30"
+      },
+      {
+        "name": "Tk 东南亚交流群茶⋯..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［62条］五星闪耀:一一打破….",
+        "preview_text": "［62条］五星闪耀:一一打破….",
+        "time": "19:29"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［@所有人］［999+条］Max...",
+        "preview_text": "［@所有人］［999+条］Max...",
+        "time": "12:03"
+      },
+      {
+        "name": "跨境电商交流乙群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［15条］悟:出谷歌个人邮箱..",
+        "preview_text": "［15条］悟:出谷歌个人邮箱..",
+        "time": "12:11"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 4,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交.",
+        "Tk 东南亚交流群茶⋯..",
+        "希音卖家群",
+        "跨境电商交流乙群"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T15:03:32.785961+00:00",
+  "worker_pid": 55256
+}

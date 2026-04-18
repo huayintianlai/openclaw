@@ -1,0 +1,22 @@
+#!/bin/bash
+# 公证文件编辑快捷命令
+
+WORKSPACE="/Volumes/KenDisk/Coding/openclaw-runtime/workspace"
+SCRIPT="$WORKSPACE/certificate_editor.py"
+
+# 检查参数
+if [ $# -eq 0 ]; then
+    # 交互式模式
+    python3 "$SCRIPT"
+elif [ $# -eq 4 ]; then
+    # 命令行模式
+    python3 "$SCRIPT" "$1" "$2" "$3" "$4"
+else
+    echo "用法:"
+    echo "  交互式: edit-cert"
+    echo "  命令行: edit-cert <psd文件> <公司名> <地址> <日期>"
+    echo ""
+    echo "示例:"
+    echo "  edit-cert '资本存款.psd' 'HavenVine' '60 rue Francois 1er 75008 Paris' '2026-03-10'"
+    exit 1
+fi

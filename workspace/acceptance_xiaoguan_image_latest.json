@@ -1,0 +1,436 @@
+{
+  "checks": [
+    {
+      "check": "image_exists",
+      "ok": true,
+      "path": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/inbox/2026-03-23/om_x100b533b0bcb38a8b26586d8685ac66__01__ddb3504a-b382-45f5-bd2b-4be5c422ff64.png"
+    },
+    {
+      "check": "knowledge_health",
+      "ok": true,
+      "health": {
+        "status": "ok",
+        "embedding_provider": "openai",
+        "model": "text-embedding-3-small",
+        "vision_provider": "gemini",
+        "vision_model": "gemini-2.5-pro",
+        "openai_vision_model": "gpt-4.1-mini",
+        "collection": "company-kb-local-v1",
+        "db_path": "/Users/xiaojiujiu2/.openclaw/knowledge/server_patch/data/kb.sqlite"
+      }
+    },
+    {
+      "check": "reset_main_session",
+      "ok": true,
+      "result": {
+        "ok": true,
+        "key": "agent:xiaoguan:main",
+        "entry": {
+          "sessionId": "c5b7670e-ab21-4d72-80b4-f149c91405da",
+          "updatedAt": 1774526474282,
+          "systemSent": false,
+          "abortedLastRun": false,
+          "model": "claude-sonnet-4-6",
+          "modelProvider": "yunyi-claude",
+          "origin": {
+            "label": "heartbeat",
+            "provider": "heartbeat",
+            "from": "heartbeat",
+            "to": "heartbeat"
+          },
+          "lastChannel": "feishu",
+          "lastTo": "heartbeat",
+          "skillsSnapshot": {
+            "prompt": "Remote macOS node available (mac-browser-node). Run macOS-only skills via nodes.run on that node.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.\n</description>\n    <location>~/.openclaw/workspace/xiaoguan/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新、删除任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。\n</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>1password</name>\n    <description>Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/1password/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>apple-notes</name>\n    <description>Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/apple-notes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>apple-reminders</name>\n    <description>Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>camsnap</name>\n    <description>Capture frames or clips from RTSP/ONVIF cameras.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/camsnap/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>imsg</name>\n    <description>iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>zhigong-kb-admin</name>\n    <description>管理【智工空间】飞书知识库协作页面的技能。用户提到智工空间、飞书知识库、目录治理、Handoff、ADR、归档时触发。默认先 dry-run 输出待变更清单，只有用户明确说“执行/apply”才写入。使用官方 `feishu_fetch_doc` / `feishu_search_doc_wiki` / `feishu_wiki_space_node` / `feishu_update_doc`；不具备创建/移动/重命名能力时必须给人工步骤，不假执行。</description>\n    <location>~/.openclaw/workspace/xiaoguan/skills/zhigong-kb-admin/SKILL.md</location>\n  </skill>\n</available_skills>",
+            "skills": [
+              {
+                "name": "feishu-bitable"
+              },
+              {
+                "name": "feishu-calendar"
+              },
+              {
+                "name": "feishu-channel-rules"
+              },
+              {
+                "name": "feishu-create-doc"
+              },
+              {
+                "name": "feishu-fetch-doc"
+              },
+              {
+                "name": "feishu-im-read"
+              },
+              {
+                "name": "feishu-task"
+              },
+              {
+                "name": "feishu-troubleshoot"
+              },
+              {
+                "name": "feishu-update-doc"
+              },
+              {
+                "name": "1password",
+                "requiredEnv": []
+              },
+              {
+                "name": "apple-notes",
+                "requiredEnv": []
+              },
+              {
+                "name": "apple-reminders",
+                "requiredEnv": []
+              },
+              {
+                "name": "camsnap",
+                "requiredEnv": []
+              },
+              {
+                "name": "coding-agent",
+                "requiredEnv": []
+              },
+              {
+                "name": "healthcheck"
+              },
+              {
+                "name": "imsg",
+                "requiredEnv": []
+              },
+              {
+                "name": "openai-image-gen",
+                "primaryEnv": "OPENAI_API_KEY",
+                "requiredEnv": [
+                  "OPENAI_API_KEY"
+                ]
+              },
+              {
+                "name": "openai-whisper",
+                "requiredEnv": []
+              },
+              {
+                "name": "openai-whisper-api",
+                "primaryEnv": "OPENAI_API_KEY",
+                "requiredEnv": [
+                  "OPENAI_API_KEY"
+                ]
+              },
+              {
+                "name": "skill-creator"
+              },
+              {
+                "name": "video-frames",
+                "requiredEnv": []
+              },
+              {
+                "name": "weather",
+                "requiredEnv": []
+              },
+              {
+                "name": "zhigong-kb-admin"
+              }
+            ],
+            "resolvedSkills": [
+              {
+                "name": "feishu-bitable",
+                "description": "飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到\"多维表格\"、\"bitable\"、\"数据表\"、\"记录\"、\"字段\"\n(5) 需要批量导入数据或批量更新多维表格\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-bitable",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-calendar",
+                "description": "飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-calendar",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-channel-rules",
+                "description": "Lark/Feishu channel output rules. Always active in Lark conversations.\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/skills/feishu-channel-rules/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/skills/feishu-channel-rules",
+                "source": "openclaw-workspace",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-create-doc",
+                "description": "创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-fetch-doc",
+                "description": "获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-im-read",
+                "description": "飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到\"聊天记录\"、\"消息\"、\"群里说了什么\"、\"话题回复\"、\"搜索消息\"、\"图片\"、\"文件下载\"\n(6) 需要按时间范围过滤消息、分页获取更多消息\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-im-read",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-task",
+                "description": "飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新、删除任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到\"任务\"、\"待办\"、\"to-do\"、\"清单\"、\"task\"\n(5) 需要设置任务负责人、关注人、截止时间\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-task",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-troubleshoot",
+                "description": "飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "feishu-update-doc",
+                "description": "更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。\n",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc",
+                "source": "openclaw-extra",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "1password",
+                "description": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/1password/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/1password",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "apple-notes",
+                "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-notes/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-notes",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "apple-reminders",
+                "description": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "camsnap",
+                "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/camsnap/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/camsnap",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "coding-agent",
+                "description": "Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "healthcheck",
+                "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "imsg",
+                "description": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "openai-image-gen",
+                "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "openai-whisper",
+                "description": "Local speech-to-text with the Whisper CLI (no API key).",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "openai-whisper-api",
+                "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper-api",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "skill-creator",
+                "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "video-frames",
+                "description": "Extract frames or short clips from videos using ffmpeg.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/video-frames",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "weather",
+                "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+                "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
+                "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/weather",
+                "source": "openclaw-bundled",
+                "disableModelInvocation": false
+              },
+              {
+                "name": "zhigong-kb-admin",
+                "description": "管理【智工空间】飞书知识库协作页面的技能。用户提到智工空间、飞书知识库、目录治理、Handoff、ADR、归档时触发。默认先 dry-run 输出待变更清单，只有用户明确说“执行/apply”才写入。使用官方 `feishu_fetch_doc` / `feishu_search_doc_wiki` / `feishu_wiki_space_node` / `feishu_update_doc`；不具备创建/移动/重命名能力时必须给人工步骤，不假执行。",
+                "filePath": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/skills/zhigong-kb-admin/SKILL.md",
+                "baseDir": "/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/skills/zhigong-kb-admin",
+                "source": "openclaw-workspace",
+                "disableModelInvocation": false
+              }
+            ],
+            "version": 0
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0,
+          "totalTokensFresh": true
+        }
+      }
+    },
+    {
+      "check": "knowledge_ingest",
+      "ok": true,
+      "result": {
+        "status": "success",
+        "duplicate": false,
+        "file_id": "3d24344e-fd5d-45ee-99d5-f7ec62119d41",
+        "filename": "om_x100b533b0bcb38a8b26586d8685ac66__01__ddb3504a-b382-45f5-bd2b-4be5c422ff64.png",
+        "type": "image",
+        "chunks": 1
+      }
+    },
+    {
+      "check": "knowledge_search_filename",
+      "ok": true,
+      "result": {
+        "status": "success",
+        "query": "om_x100b533b0bcb38a8b26586d8685ac66__01__ddb3504a-b382-45f5-bd2b-4be5c422ff64.png",
+        "results": [
+          {
+            "file_id": "3d24344e-fd5d-45ee-99d5-f7ec62119d41",
+            "filename": "om_x100b533b0bcb38a8b26586d8685ac66__01__ddb3504a-b382-45f5-bd2b-4be5c422ff64.png",
+            "text": "## 摘要 这是一段即时通讯聊天截图，内容是关于是否能够入驻“新蛋”平台的询问和回复。对话中一方问是否能入驻，另一方回复暂时不能并带有歉意。主要用于工作沟通或业务咨询。 ## 可见文字 - CD-刘-炎 - 新蛋能不能入驻 - 暂时还不能，骚瑞 ## 角色与方向 - 会话对象：CD-刘-炎 和 另一个未知身份用户 - 左侧气泡由 CD-刘-炎 发送，内容是“新蛋能不能入驻” - 右侧气泡由对方发送，内容是“暂时还不能，骚瑞” - 判断依据：左侧头像显示为CD-刘-炎，左侧气泡一般是发起人消息，右侧绿色气泡带头像表情包样式，通常为对方回复。 ## 版面元素 - 左侧用户头像（CD-刘-炎） - 左侧白色消息气泡 - 右侧绿色消息气泡 - 右侧表情包图标 - 顶部联系人名字及语音电话等图标 ## 关键词 - 新蛋 - 入驻 - 聊天截图 - 业务咨询 - 暂时不能 ## OCR 参考 CD-刘-炎 新蛋能不能入驻 13:31 14:26 暂时还不能，骚瑞",
+            "excerpt": "## 摘要 这是一段即时通讯聊天截图，内容是关于是否能够入驻“新蛋”平台的询问和回复。对话中一方问是否能入驻，另一方回复暂时不能并带有歉意。主要用于工作沟通或业务咨询。 ## 可见文字 - CD-刘-炎 - 新蛋能不能入驻 - 暂时还不能，骚瑞 ## 角色与方向 - 会话对象：CD-刘-炎 和 另一个未知身份用户 - 左侧气泡由 CD-刘-炎 发送，内容是“新蛋能不能入驻” - 右侧气泡由对方发送，内容是“暂时还不能，骚瑞” - 判断依据：左侧头像显示为CD-刘-炎，左侧气泡一般是发起人消息，右侧绿色气泡带头像表情",
+            "score": 0.28489202,
+            "area": "acceptance-xiaoguan-image",
+            "source_type": "image",
+            "owner_type": "agent",
+            "owner_id": "xiaoguan",
+            "page_no": null,
+            "slide_no": null,
+            "chunk_no": 0,
+            "storage_path": "/Users/xiaojiujiu2/.openclaw/knowledge/server_patch/data/files/ef8ef885e6132db56a83ec76eea5989fb09d507ae2d01b136e008e40700a1dd6/om_x100b533b0bcb38a8b26586d8685ac66__01__ddb3504a-b382-45f5-bd2b-4be5c422ff64.png"
+          }
+        ]
+      }
+    },
+    {
+      "check": "knowledge_has_contact",
+      "ok": true,
+      "expected": "CD-刘-炎"
+    },
+    {
+      "check": "knowledge_has_left_text",
+      "ok": true,
+      "expected": "新蛋能不能入驻"
+    },
+    {
+      "check": "knowledge_has_right_text",
+      "ok": true,
+      "expected": "暂时还不能，骚瑞"
+    },
+    {
+      "check": "knowledge_has_role_section",
+      "ok": true,
+      "expected": "角色与方向"
+    },
+    {
+      "check": "agent_exit_code",
+      "ok": true,
+      "exit_code": 0
+    },
+    {
+      "check": "agent_payload_nonempty",
+      "ok": true,
+      "text": "知识库已命中，结果如下：\n\n1. **会话对象**：CD-刘-炎\n2. **左侧白气泡**（CD-刘-炎 发）：「新蛋能不能入驻」\n3. **右侧绿色气泡**（你/KentZ 发）：「暂时还不能，骚瑞」"
+    },
+    {
+      "check": "agent_contact",
+      "ok": true,
+      "expected": "CD-刘-炎"
+    },
+    {
+      "check": "agent_left_text",
+      "ok": true,
+      "expected": "新蛋能不能入驻"
+    },
+    {
+      "check": "agent_right_text",
+      "ok": true,
+      "expected": "暂时还不能"
+    },
+    {
+      "check": "agent_forbidden_读不到",
+      "ok": true,
+      "forbidden": "读不到"
+    },
+    {
+      "check": "agent_forbidden_image_key",
+      "ok": true,
+      "forbidden": "image_key"
+    },
+    {
+      "check": "agent_forbidden_file_key",
+      "ok": true,
+      "forbidden": "file_key"
+    },
+    {
+      "check": "agent_forbidden_原图",
+      "ok": true,
+      "forbidden": "原图"
+    },
+    {
+      "check": "agent_forbidden_用户帮",
+      "ok": true,
+      "forbidden": "用户帮"
+    }
+  ]
+}

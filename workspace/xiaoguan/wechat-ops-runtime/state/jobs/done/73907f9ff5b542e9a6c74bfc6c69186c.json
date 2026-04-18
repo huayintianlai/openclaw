@@ -1,0 +1,81 @@
+{
+  "job_id": "73907f9ff5b542e9a6c74bfc6c69186c",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-28T04:50:25.051937+00:00",
+  "cursor": 322,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"11:41|\", \"preview\": \"［14条］悟:出谷歌个人邮箱⋯这\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱⋯这\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"MI\", \"preview\": \"［172条］小刘卖车 出口内销⋯.这\", \"preview_text\": \"［172条］小刘卖车 出口内销⋯.这\", \"time\": \"12:49\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 12:13\", \"preview\": \"［31条］卷丘:［动画表情］\", \"preview_text\": \"［31条］卷丘:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［16条］侣途跨境:收美国希⋯这\", \"preview_text\": \"［16条］侣途跨境:收美国希⋯这\", \"time\": \"12:37\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.11:39\", \"preview\": \"［65条］Jason huang:豪宅\", \"preview_text\": \"［65条］Jason huang:豪宅\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "11:41|",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［14条］悟:出谷歌个人邮箱⋯这",
+        "preview_text": "［14条］悟:出谷歌个人邮箱⋯这",
+        "time": ""
+      },
+      {
+        "name": "MI",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［172条］小刘卖车 出口内销⋯.这",
+        "preview_text": "［172条］小刘卖车 出口内销⋯.这",
+        "time": "12:49"
+      },
+      {
+        "name": "东南亚虾皮 tk lazad... 12:13",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［31条］卷丘:［动画表情］",
+        "preview_text": "［31条］卷丘:［动画表情］",
+        "time": ""
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［16条］侣途跨境:收美国希⋯这",
+        "preview_text": "［16条］侣途跨境:收美国希⋯这",
+        "time": "12:37"
+      },
+      {
+        "name": "速卖通纯商家运营交.11:39",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［65条］Jason huang:豪宅",
+        "preview_text": "［65条］Jason huang:豪宅",
+        "time": ""
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 12,
+      "visible_unread_session_count": 5,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "11:41|",
+        "MI",
+        "东南亚虾皮 tk lazad... 12:13",
+        "优质跨境服务群2",
+        "速卖通纯商家运营交.11:39"
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-28T04:50:30.738992+00:00",
+  "worker_pid": 55256
+}

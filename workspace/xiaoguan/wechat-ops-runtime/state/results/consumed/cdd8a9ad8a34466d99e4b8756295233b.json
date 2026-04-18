@@ -1,0 +1,72 @@
+{
+  "result_id": "cdd8a9ad8a34466d99e4b8756295233b",
+  "job_id": "e45600f5a40f40eabcf76f195915cb61",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T03:03:52.220979+00:00",
+  "source": "watcher:unread",
+  "cursor": 249,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"m？\", \"preview\": \"［121条］栗子大众捷达汽车⋯.\", \"preview_text\": \"［121条］栗子大众捷达汽车⋯.\", \"time\": \"11:03\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 10:46\", \"preview\": \"［24条］阿撒:［动画表情］\", \"preview_text\": \"［24条］阿撒:［动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［2条］美客多沃尔玛跨境本.\", \"preview_text\": \"［2条］美客多沃尔玛跨境本.\", \"time\": \"11:02\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 3,
+      "visible_unread_session_count": 3,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "m？",
+        "东南亚虾皮 tk lazad... 10:46",
+        "优质跨境服务群2"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "m？",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［121条］栗子大众捷达汽车⋯.",
+          "preview_text": "［121条］栗子大众捷达汽车⋯.",
+          "time": "11:03"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 10:46",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［24条］阿撒:［动画表情］",
+          "preview_text": "［24条］阿撒:［动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［2条］美客多沃尔玛跨境本.",
+          "preview_text": "［2条］美客多沃尔玛跨境本.",
+          "time": "11:02"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 3,
+        "visible_unread_sessions_with_numeric_badge": 0,
+        "visible_unread_message_badge_total": 0,
+        "visible_unread_names": [
+          "m？",
+          "东南亚虾皮 tk lazad... 10:46",
+          "优质跨境服务群2"
+        ]
+      },
+      "available": true
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "result_id": "3b0407a47c004f87977c6f3f0727be1d",
+  "job_id": "cc6349a78d82466f88ecae56287f72a8",
+  "type": "unread.snapshot.changed",
+  "created_at": "2026-03-28T05:04:54.113014+00:00",
+  "source": "watcher:unread",
+  "cursor": 338,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"MT\", \"preview\": \"［189条】山东腾展1856113..B\", \"preview_text\": \"［189条】山东腾展1856113..B\", \"time\": \"13:02\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"东南亚虾皮 tk lazad... 12:13\", \"preview\": \"［31条］卷丘:「动画表情］\", \"preview_text\": \"［31条］卷丘:「动画表情］\", \"time\": \"\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"117条］AA跨境服务:ebay…\", \"preview_text\": \"117条］AA跨境服务:ebay…\", \"time\": \"13:04\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"公众号\", \"preview\": \"［3条］深港出海:一枚戒指卖出⋯\", \"preview_text\": \"［3条］深港出海:一枚戒指卖出⋯\", \"time\": \"12:54\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"跨境电商交流乙群\", \"preview\": \"［14条］悟:出谷歌个人邮箱…\", \"preview_text\": \"［14条］悟:出谷歌个人邮箱…\", \"time\": \"11:41.\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"速卖通纯商家运营交.\", \"preview\": \"［65条］ Jason huang: 豪宅\", \"preview_text\": \"［65条］ Jason huang: 豪宅\", \"time\": \"11:39\", \"unread_badge_count\": 192, \"unread_count\": 192}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "unread_count": 6,
+      "visible_unread_session_count": 6,
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "names": [
+        "MT",
+        "东南亚虾皮 tk lazad... 12:13",
+        "优质跨境服务群2",
+        "公众号",
+        "跨境电商交流乙群",
+        "速卖通纯商家运营交."
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "unread",
+      "view": "chat_list",
+      "items": [
+        {
+          "name": "MT",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［189条】山东腾展1856113..B",
+          "preview_text": "［189条】山东腾展1856113..B",
+          "time": "13:02"
+        },
+        {
+          "name": "东南亚虾皮 tk lazad... 12:13",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［31条］卷丘:「动画表情］",
+          "preview_text": "［31条］卷丘:「动画表情］",
+          "time": ""
+        },
+        {
+          "name": "优质跨境服务群2",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "117条］AA跨境服务:ebay…",
+          "preview_text": "117条］AA跨境服务:ebay…",
+          "time": "13:04"
+        },
+        {
+          "name": "公众号",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［3条］深港出海:一枚戒指卖出⋯",
+          "preview_text": "［3条］深港出海:一枚戒指卖出⋯",
+          "time": "12:54"
+        },
+        {
+          "name": "跨境电商交流乙群",
+          "unread_count": null,
+          "unread_badge_count": null,
+          "has_unread_badge": true,
+          "preview": "［14条］悟:出谷歌个人邮箱…",
+          "preview_text": "［14条］悟:出谷歌个人邮箱…",
+          "time": "11:41."
+        },
+        {
+          "name": "速卖通纯商家运营交.",
+          "unread_count": 192,
+          "unread_badge_count": 192,
+          "has_unread_badge": true,
+          "preview": "［65条］ Jason huang: 豪宅",
+          "preview_text": "［65条］ Jason huang: 豪宅",
+          "time": "11:39"
+        }
+      ],
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "summary": {
+        "app_has_unread_badge": false,
+        "app_unread_badge_count": null,
+        "visible_session_count": 12,
+        "visible_unread_session_count": 6,
+        "visible_unread_sessions_with_numeric_badge": 1,
+        "visible_unread_message_badge_total": 192,
+        "visible_unread_names": [
+          "MT",
+          "东南亚虾皮 tk lazad... 12:13",
+          "优质跨境服务群2",
+          "公众号",
+          "跨境电商交流乙群",
+          "速卖通纯商家运营交."
+        ]
+      },
+      "available": true
+    }
+  }
+}

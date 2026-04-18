@@ -1,0 +1,45 @@
+{
+  "job_id": "ea7eed3c895542faaf5f7e3c611c7868",
+  "type": "watcher.health.changed",
+  "source": "watcher:moments",
+  "created_at": "2026-03-29T15:00:21.472784+00:00",
+  "cursor": 0,
+  "signature": "",
+  "payload": {
+    "watcher": "moments",
+    "status": "recovered",
+    "previous_healthy": false,
+    "current_healthy": true,
+    "state": {
+      "watcher": "moments",
+      "enabled": true,
+      "healthy": true,
+      "available": false,
+      "phase": "moments_snapshot",
+      "last_checked_at": "2026-03-29T15:00:21.472756+00:00",
+      "last_success_at": null,
+      "last_error_at": "2026-03-29T14:59:25.885571+00:00",
+      "last_error_code": null,
+      "consecutive_failures": 0,
+      "cursor": 0,
+      "signature": "",
+      "recommended_next_step": null,
+      "payload": {
+        "ok": true,
+        "phase": "moments_snapshot",
+        "current_view": "chat_list",
+        "current_contact": "服务商|任我行-炎",
+        "recommended_next_step": null,
+        "view": "chat_list",
+        "available": false,
+        "items": [],
+        "feed_signature": "",
+        "signature": ""
+      }
+    }
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-29T15:00:26.784742+00:00",
+  "worker_pid": 55256
+}

@@ -1,0 +1,71 @@
+{
+  "job_id": "92f8bd71ba524b1e8f3e0f668287a291",
+  "type": "unread.snapshot.changed",
+  "source": "watcher:unread",
+  "created_at": "2026-03-27T22:16:55.254132+00:00",
+  "cursor": 209,
+  "signature": "[{\"has_unread_badge\": true, \"name\": \"AA汽车出口资源交⋯.\", \"preview\": \"［33条］ Aautomobil新能源...\", \"preview_text\": \"［33条］ Aautomobil新能源...\", \"time\": \"00:30\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"优质跨境服务群2\", \"preview\": \"［22条］A-跨境本士店:法..\", \"preview_text\": \"［22条］A-跨境本士店:法..\", \"time\": \"00:35\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"希音卖家群\", \"preview\": \"［@所有人］［999+条］Alin...\", \"preview_text\": \"［@所有人］［999+条］Alin...\", \"time\": \"23:27\", \"unread_badge_count\": null, \"unread_count\": null}, {\"has_unread_badge\": true, \"name\": \"美客多自发货交..\", \"preview\": \"［192条］美客多AA丁:怎么….\", \"preview_text\": \"［192条］美客多AA丁:怎么….\", \"time\": \"00:20\", \"unread_badge_count\": null, \"unread_count\": null}]",
+  "payload": {
+    "watcher": "unread",
+    "view": "chat_list",
+    "items": [
+      {
+        "name": "AA汽车出口资源交⋯.",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［33条］ Aautomobil新能源...",
+        "preview_text": "［33条］ Aautomobil新能源...",
+        "time": "00:30"
+      },
+      {
+        "name": "优质跨境服务群2",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［22条］A-跨境本士店:法..",
+        "preview_text": "［22条］A-跨境本士店:法..",
+        "time": "00:35"
+      },
+      {
+        "name": "希音卖家群",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［@所有人］［999+条］Alin...",
+        "preview_text": "［@所有人］［999+条］Alin...",
+        "time": "23:27"
+      },
+      {
+        "name": "美客多自发货交..",
+        "unread_count": null,
+        "unread_badge_count": null,
+        "has_unread_badge": true,
+        "preview": "［192条］美客多AA丁:怎么….",
+        "preview_text": "［192条］美客多AA丁:怎么….",
+        "time": "00:20"
+      }
+    ],
+    "app_has_unread_badge": false,
+    "app_unread_badge_count": null,
+    "summary": {
+      "app_has_unread_badge": false,
+      "app_unread_badge_count": null,
+      "visible_session_count": 11,
+      "visible_unread_session_count": 4,
+      "visible_unread_sessions_with_numeric_badge": 0,
+      "visible_unread_message_badge_total": 0,
+      "visible_unread_names": [
+        "AA汽车出口资源交⋯.",
+        "优质跨境服务群2",
+        "希音卖家群",
+        "美客多自发货交.."
+      ]
+    },
+    "available": true
+  },
+  "retry_count": 0,
+  "max_retries": 3,
+  "claimed_at": "2026-03-27T22:16:57.293957+00:00",
+  "worker_pid": 55256
+}

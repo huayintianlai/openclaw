@@ -1,0 +1,45 @@
+{
+  "result_id": "e2b47dc0bc39408eb36d58c4ba1c30fa",
+  "job_id": "3144c823b3154a189426966e8da0e3b5",
+  "type": "chat.visible.delta",
+  "created_at": "2026-03-28T06:36:27.971111+00:00",
+  "source": "watcher:chat_visible",
+  "cursor": 52,
+  "signature": "[{\"speaker\": \"后跟你说\", \"text\": \"Cd| 刘汉林：15814012779 532989100@qq.com\", \"time\": \"14:34\"}]",
+  "status": "ready",
+  "payload": {
+    "summary": {
+      "added_count": 1,
+      "speakers": [
+        "后跟你说"
+      ]
+    },
+    "watcher_payload": {
+      "watcher": "chat_visible",
+      "view": "chat_detail",
+      "current_contact": "Cd|刘汉林",
+      "messages": [
+        {
+          "speaker": "后跟你说",
+          "time": "14:34",
+          "text": "Cd| 刘汉林：15814012779 532989100@qq.com"
+        }
+      ],
+      "added_messages": [
+        {
+          "speaker": "后跟你说",
+          "time": "14:34",
+          "text": "Cd| 刘汉林：15814012779 532989100@qq.com"
+        }
+      ],
+      "removed_messages": [
+        {
+          "speaker": "后跟你说",
+          "time": "14:34",
+          "text": "或者你帮我改一下 我的邮箱 也可以啊 Cd| 刘汉林：15814012779 532989100@qq.com"
+        }
+      ],
+      "window_shift": true
+    }
+  }
+}

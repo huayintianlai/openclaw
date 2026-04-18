@@ -1,0 +1,7 @@
+#!/bin/zsh
+set -euo pipefail
+
+ROOT="/Users/xiaojiujiu2/.openclaw/workspace/xiaoguan/wechat-ops-runtime"
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export PATH="/usr/sbin:/usr/bin:/bin:/usr/local/bin:${PATH}"
+exec /usr/bin/python3 -m wechat_ops.cli "$@"

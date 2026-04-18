@@ -1,0 +1,12 @@
+{
+    "id": "tavily-search-plugin",
+    "name": "Tavily Web Search",
+    "description": "Expose web_search and web_fetch tools using Tavily API.",
+    "version": "1.0.0",
+    "configSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+    },
+    "uiHints": {}
+}

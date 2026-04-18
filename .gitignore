@@ -1,15 +1,9 @@
 *
 !.gitignore
-!openclaw.json
 !devices/
 !devices/mobile.registry.json
 !docs/
 !docs/mobile-runtime.md
-!extensions/
-!extensions/mobile-runtime-plugin/
-!extensions/mobile-runtime-plugin/**
-!extensions/bill-generator-plugin/
-!extensions/bill-generator-plugin/**
 !flows/
 !flows/mobile/
 !flows/mobile/**
